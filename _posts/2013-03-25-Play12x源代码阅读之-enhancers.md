@@ -1,0 +1,115 @@
+title: Play1.2.x源代码阅读之 enhancers
+tags:
+  - PlayFramework1
+date: 2013-03-25 16:35:37
+---
+
+Play中的代码增强是play的魔力之源。Play自己控制java源代码的编译与载入，所以有机会在载入到jvm之前，调用各种enhancer对字节码进行增强，从而获得超强的功能。
+
+Play的代码增强都是基于javassist这个超级强大又易用的字节码工具库。
+
+## play.classloading.enhancers.Enhancer
+
+Enhancer是一个abstract的基类，为其它enhancer做了一些准备工作，提供了一些工具方法。它创建了一个javassist.ClassPool实例，并把自定义的ApplicationClassLoader所使用的classpath、以及当前项目中的java源代码路径都传了进去，以保证javassist可以找到所有需要的源代码。
+
+Play中通常使用Annotation作为增强的标记，所以它提供了很多与之相关的工具方法，供子类使用，如hasAnnotation/createAnnotation等。
+
+最关键的方法是一个虚方法：enhanceThisClass(ApplicationClass applicationClass)，子类需要实现该方法。传入的ApplicationClass实例相当于一个java源文件，它保存了源文件，原始字节码等信息，在子类中可使用javassist相关方法对原始子节码进行操作，并把增强后的字节码赋给applicationClass.enhancedByteCode
+
+## play.classloading.enhancers.PropertiesEnhancer
+
+Play已经内置了一些enhancer。首先是这个PropertiesEnhancer，它可以让我们用字段来实现Property。
+
+在play中，我们可以这样定义类：
+
+    public class User {
+        public String name;
+        public String email;
+    }
+
+    同时在其它类中，也可以直接访问这些字段：
+
+    User user = new User();
+    System.out.println(user.name);
+
+    这种方式，让我们的代码看起来简单很多，因为我们不需要再定义一大堆的getter和setter，也不需要在赋值时使用user.setName(&#8221;)这种复杂的方式。
+
+    这样会让我们有些疑问，因为很多库如hibernate，会对getter/setter进行增强，插入它们自己的代码。而我们这样写，会不会跟他们产生矛盾？
+
+    Play通过javassist的强大功能，解决了这个问题。首先是为User类添加getter/setter：如果某个字段是public的，并且没有找到对应的getter/setter，则创建。然后，把项目中包括其它java类对这些字段的所有访问，全部替换为相应的getter/setter。
+
+    这样我们看到且操作的是字段，由实际上都被转换为getter/setter，所以不会与其它的库产生冲突。
+
+    ## play.classloading.enhancers.LVEnhancer
+
+    LV是指LocalVariable，这个类在Play1.2.5及之前的版本中不叫这个名字，我fork的是play1.3.x。
+
+    它的作用是为类中为每一个方法添加一个字段，记录其参数名称。因为play自己调用了eclipse的jdt进行编译，并且在编译时保留了参数名称，所以它可以得到正确的参数名称。这样做比较有用，你还记得我们在定义action时，可以直接定义一些参数，就能拿到同名的request param吗？
+
+    public static void login(String username, String password) {
+        // 直接使用username和password，它们对应reuqest.params.get("username")和get("password")
+    }
+
+    要是在别的框架中，最起码也要这么写：
+
+    public static void login(@Param("username") String username, 
+                             @Param("password") String password) {
+    }
+
+    这就是因为play已经事先把login方法对应的参数名记录下来了。
+
+    另外，play还会将局部变量的名字也保存起来，比如我可以在action中这么写：
+
+    public static void hello() {
+        String name = "world";
+        render(name);
+    }
+
+    Play将会把name这个名字与它的值保存在一个栈中，之后可以通过值找到相应的名字。
+
+    如果在其它的框架中，就得写成这样：
+
+    public static void hello() {
+        String name = "world";
+        Map<string object ,> data = new HashMap();
+        data.put("name", name);
+        render(data);
+    }
+
+    Play让我们的代码尽可能的简洁。
+
+    具体实现细节以后补充。
+
+    ## play.classloading.enhancers.SigEnhancer
+
+    该类会计算某一个类的特征，比如类名，各字段、方法相关的类型和名称，static初始化代码等，把它们保存applicationClass的sigChecksum字段中。
+
+    当Play执行detectChanges时，会在每次enhance一个类前后对比该值，如果发现变化了，则抛出异常。但我还不太明白为什么要这么做，留待以后。
+
+    ## play.classloading.enhancers.ControllersEnhancer
+
+    该类对controller进行增强。
+
+    我们在action中，可以直接调用一些static字段，如request.getXxx(), params.get(“xxx”)。在调用时，我们知道它们是“线程安全”的，但是，为什么？要知道它们是static的，是可以被多线程同时访问的。
+
+    原来ControllersEnhancer对它们进行的替换。当我们调用"params"'、 "request"、 "response"、 "session"、 "params"、 "renderArgs"、 "routeArgs"、 "validation"、 "inbound"、 "outbound"、 "flash" 这些参数时，它们都会被替换为：
+
+    Xxx.current()
+
+这样的形式，从而从ThreadLocal中获取当前线程绑定的值。
+
+该类还进行了其它增强，比如当一个action被调用时要进行判断，是当作一个普通的方法调用，还是返回一个redirect的response给客户端。
+
+另外，play中render()等方法，会以抛出异常的方式判断模板层，为了保证该异常不会被其它类捕获，在这里也进行了检查和屏蔽。
+
+## play.classloading.enhancers.MailerEnhancer
+
+该类向Mailer相关的controller中插入了一些保护性代码，具体作用不明。
+
+## play.classloading.enhancers.ContinuationEnhancer
+
+该类可让我们的controller支持如continuation，以支持像ajax聊天室那样的功能。即当我们的代码需要等待一些数据（如IO操作，新的聊天信息的到来）时，在保持http连接不断开的同时，腾出当前线程做别的事情。当需要的数据到达时，再恢复线程继续刚才的事情。这样就不会有线程处于无谓的等待状态，可处理更多的请求。
+
+Play使用了commons-javaflow这个库来实现该功能。当我们的代码调用了controller中的await方法时，则会使用org.apache.commons.javaflow.bytecode.transformation.asm.AsmClassTransformer这个类，来增强当前类。
+
+细节之处待以后研究。

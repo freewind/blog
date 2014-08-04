@@ -1,0 +1,528 @@
+title: 自己动手写模板引擎 – SharkDart (6) – 语法树与compiler
+tags:
+  - Dart
+date: 2014-03-20 23:45:04
+---
+
+
+在前面我们已经通过PetitParser可以成功的解析出模板文件中的内容，识别出标签、表达式等等，如果我们想对它们进行进一步处理，比如生成dart代码等，则需要构建出一棵语法树，再针对这棵语法树处理。
+
+## 语法节点类
+
+首先我们要定义一堆节点类，与解析出来的语法元素对应，方便后续处理。
+
+### SharkNode
+
+定义一个基类，表示一个节点：
+
+    abstract class SharkNode {
+      String toString();
+      CompilableElement toCompilable();
+    }
+    
+
+    其中的`toString()`方便测试及调试，在产品代码中基本上用不到。`toCompilable()`用来把该节点转换成一个可编译的元素。
+
+    与前面为了解析而定的规则对应，下边定义了如下几个类。为了方便表述，仅列出成员变量。
+
+    ### SharkDocument
+
+    `SharkDocument`表示整个模板，可看作根。它里面是一个列表，包含各子节点。
+
+    class SharkDocument extends SharkNode {
+      SharkNodeList children;
+    }
+    
+
+    ### SharkTag
+
+    `SharkTag`与标签结构对应，同时对应两种标签结构。定义如下：
+
+    class SharkTag extends SharkNode {
+      String tagName;
+      List<TagParam> tagParams;
+      SharkBlock body;
+    }
+    
+
+    如果参数是一段代码，而不是普通的参数列表，则下面的`List<tagParam>`仅会有一个元素，且其`paramVariable`的值就是这段代码。
+
+    ### TagParam
+
+    `TagParam`对应标签中的一个参数，它的定义如下：
+
+    class TagParam extends SharkNode {
+      String paramType;
+      String paramVariable;
+      SharkNode paramDescription;
+    }
+    
+
+    ### SharkBlock
+
+    `SharkBlock`对应标签的主体部分，也可以用于`TagParam`的`paramDescription`，定义如下：
+
+    class SharkBlock extends SharkNode {
+      SharkNodeList elements;
+    }
+    
+
+    它的内容也是一组节点。
+
+    ### SharkExpression
+
+    `SharkExpression`对应于一个表达式，包括简单和复杂的。它的内容比较简单，就是一个字符串，用于保存匹配到的表达式字符串。
+
+    class SharkExpression extends SharkNode {
+      String expression;
+    }
+    
+
+    ### SharkText
+
+    `SharkText`用于表达模板中的各种纯文本内容。
+
+    class SharkText extends SharkNode {
+      String content;
+    }
+    
+
+    ### SharkNodeList
+
+    这是一个工具类，表示由一组节点组成的列表。之所以把它独立出来，是因为把一个节点列表转换为`CompilableElement`的时候，逻辑比较复杂，而它在多处被引用，所以抽出来。它的实现细节将在本文最后讨论，这里先提一下。
+
+    可以看到节点类还是比较少的，这也正是由于我们设计了通用标签结构，否则的话，需要为每一个特点的语法标签准备一个单独的节点类。
+
+    ## 目标代码模板
+
+    在最开始说过，SharkDart模板是编译型的，它会生成相对应的可执行的dart代码供调用。我们应该考虑一下，生成的代码是什么样子才行？
+
+    ### 基本结构
+
+    由于dart中通过`library`关键字来区分模块，并且类的定义不是必须的，所以我打算为每一个模板文件生成一个独立的dart文件，并且有一个独立的包。在里面提供一个`render`方法，返回一个字符串，供调用。
+
+    最基本的代码结构应该是这样的：
+
+    library shark.views.mytemp;
+
+    String render() {
+      var _sb_ = new StringBuffer();
+
+      // fill the buffer with template nodes
+
+      return _sb_.toString()
+    }
+    
+
+    ### library
+
+    首先考虑`library`名称。为了跟别的包不冲突，我决定加上`shark.views`前缀。后面的部分，则是当前模板相对于模板根目录的路径。
+
+    比如模板根目录是`app/templates`，而模板文件是`app/templates/abc.shark`，则它产生的`library`声明应该是：
+
+    library shark.views.abc;
+    
+
+    如果模板文件是`app/templates/tags/menu.shark`，则`library`为：
+
+    library shark.views.tags.menu;
+    
+
+    ### 纯文本和表达式
+
+    然后是模板内容，考虑一个简单的模板，有文本和表达式：
+
+    Hello, @name!
+    
+
+    那么在生成的代码中，将会添加：
+
+    _sb_.write('Hello, ');
+    _sb_.write(name);
+    _sb_.write('!');
+    
+
+    即把纯文本当字符串输出，而变量原样输出。
+
+    ### 参数
+
+    再考虑参数，如果模板里有`@params`标签，用来说明自己可授受哪些参数调用，比如：
+
+    @params(String user, List<String> favors)
+    
+
+    那么输出代码中的`render()`签名就应该变化：
+
+    String render({String user, List<String> favors})
+    
+
+    ### import
+
+    如果模板中有`@extends`或`@render`标签，说明它会引用其它模板，则会生成相应的`import`语句：
+
+    import './layout1.dart' as _shark_render_0;
+    import './tags/menu.dart' as _shark_render_1;
+    
+
+    这里会为每一个导入的模板生成一个独立的名字供引用。
+
+    ### 继承及调用
+
+    考虑一下模板继承的问题。假如我现在有一个`layout.shark`和一个`index.shark`，定义如下：
+
+    layout.shark
+
+    <html>
+      <body>@renderBody()</body>
+    </html>
+    
+
+    index.shark
+
+    @extends(layout)
+    <div>
+      inner content
+    </div>
+    
+
+    我应该怎么生成代码，才能让`index.shark`能成功的继承`layout.shark`的内容呢？
+
+    我想到的最简单的办法就是在`index`中调用`layout`的`render`函数，然后把自己的内容当作参数传过去，比如：
+
+    layout.dart
+
+    library shark.views.layout;
+
+    String render({String body()}) {
+      if (implicitBody_ == null) {
+         implicitBody_ = () => '';
+      }
+      var _sb_ = new StringBuffer();
+      _sb_.write('<html>');
+      _sb_.write('<body>');
+      _sb_.write(body());
+      _sb_.write('</body>');
+      _sb_.write('</html>');
+      return _sb_.toString();
+    }
+    
+
+    index.dart
+
+    library shark.views.index;
+    import './layout.dart' as _shark_render_0;
+
+    String render() {
+      var _sb_ = new StringBuffer();
+      _sb_.write(_shark_render_0.render(body: () {
+        var _sb_ = new StringBuffer();
+        _sb_.write("<div>");
+        _sb_.write("  inner content");
+        _sb_.write("</div>");
+        return _sb_.toString();
+      });
+      return _sb_.toString();
+    }
+    
+
+    这样的话，我就需要为`render()`函数添加一个类似于`body()`这样的函数了。
+
+    但是马上就有一个新的问题：`render()`的参数是由用户在`@params`标签中声明的，难道要强迫用户在每个模板中都声明一个`@params(String body())`，哪怕它完全用不到？
+
+    为了解决这个问题，我打算直接在`render()`里添加一个`String implicitBody_()`参数，不让用户指定。并且，这个参数仅仅在模板间有调用的时候才会用到。所以名字中有`implicit`这个词。
+
+    String render({String implicitBody_()}) {
+      if (implicitBody_ == null) {
+        implicitBody_ = () => '';
+      }
+
+      var _sb_ = new StringBuffer();
+      // ...
+      return _sb_.toString();
+      }
+    }
+    
+
+    之所以不是`_implicitBody_`，是因为在dart中，如果函数或参数是public的，则不能以`_`开头。
+
+    ### 目标文件类
+
+    从上面的分析，我们已经可以确定生成的dart代码结构是什么样了。为了能体现这种结构，并在生成过程有让模板的各个部分有机会被修改，所以定义了下面这个类：
+
+    class CompilableTemplate {
+      Directory templateRootDir;
+      final String relativePath;
+
+      String libraryStatement;
+      List<String> importStatements = [];
+      String params;
+      static const defaultBodyParam = "String implicitBody_()";
+      List<_IndentCompilableElement> functionBody = [];
+
+      String generate() {
+        // generate library statment
+        // generate immport statments
+        // generate `render` function with params
+        // generate function body
+      }
+    }
+    
+
+    前两个是与模板根目录和模板文件路径相关的，放在这里是因为有些代码生成需要使用这两个信息。后面的五个就分别对应了前面考虑的各个点。
+
+    而在`generate`函数中，将会从上向下，依次生成各块代码。具体代码这里不列出，因为比较细碎，最好直接看源代码。
+
+    ## 语法节点类的编译
+
+    现在是时候把前面定义的各语法节点类编译成相应的dart代码了。
+
+    ### SharkDocument
+
+    `SharkDocument`比较简单，因为它是个虚拟出来的根，所以直接把任务交给子节点了：
+
+    class SharkDocument extends SharkNode {
+      SharkNodeList children;
+      CompilableElement toCompilable() => children.toCompilable();
+    }
+    
+
+    ### SharkTag
+
+    `SharkTag`也比较偷懒，直接把自己变成数组，把任务转交给`SharkNodeList`类了：
+
+    class SharkTag extends SharkNode {
+      CompilableElement toCompilable() => new SharkNodeList(this).toCompilable();
+    }
+    
+
+    ### TagParam
+
+    `TagParam`没有提供对应的`toCompilable()`方法，因为如何编译完全要看具体的标签，没法预先判断。
+
+    ### SharkBlock
+
+    `SharkBlock`将会包含很多子结点，所以也转交了。
+
+    class SharkBlock extends SharkNode {
+      SharkNodeList elements;
+      CompilableElement toCompilable() => elements.toCompilable();
+    }
+    
+
+    ### SharkExpression
+
+    `SharkExpression`自己处理了，它把自己持有的字符串变成了一个标记为`expression`的对象，告诉编译器要把这段内容当作一个表达式处理，而不要当成普通文本。
+
+    class SharkExpression extends SharkNode {
+      String expression;
+      CompilableElement toCompilable() => expr(expression);
+    }
+    
+
+    `expr()`的内容将在后面统一介绍，先不急。
+
+    ### SharkText
+
+    `SharkText`最简单，直接把持有的字符串标记为`text`，当编译器当成文本来处理。
+
+    class SharkText extends SharkNode {
+      String content;
+      CompilableElement toCompilable() => text(content);
+    }
+    
+
+    ## SharkNodeList
+
+    前面有好几个类都把自己的编译任务交给这个类了，是因为它需要对标签进行一些特别的处理。特别之处有两个：
+
+1.  一旦发现某节点是标签，则需要寻找一个TagHandler去处理
+2.  在处理一个标签时，需要把它后面跟着的同级节点一起带上
+
+    ### TagHandler
+
+    由于我们的标签结构是通用结构，不跟某一个具体的标签绑定，所以当编译器看到一个`SharkTag`的时候，它不知道怎么做，只能根据标签名去寻找我们给出的TagHandler.
+
+    SharkDart有一个全局对象，名为`tagRepository`，它是一个map，将标签名与相应的处理器保存起来。比如SharkDart内置的各处理器，是这样的：
+
+    initializeBuiltInTags() {
+      tagRepository.register('params', new ParamsTagHandler());
+      tagRepository.register('if', new IfTagHandler());
+      tagRepository.register('else', new ElseTagHandler());
+      tagRepository.register('elseif', new ElseIfTagHandler());
+      tagRepository.register('for', new ForTagHandler());
+      tagRepository.register('extends', new RenderTagHandler(true));
+      tagRepository.register('render', new RenderTagHandler(false));
+      tagRepository.register('renderBody', new RenderBodyTagHandler());
+      tagRepository.register('dart', new DartTagHandler());
+      tagRepository.register('plainText', new PlainTextTagHandler());
+    }
+    
+
+    `SharkNodeList`一旦发现自己遇到了一个`SharkTag`对象，则会执行以下代码：
+
+    var tagHandler = tagRepository.find(tag.tagName);
+    if (tagHandler == null) {
+      throw 'No tag handler found for tag: ${tag.tagName}';
+    }
+    tagHandler.handle(tag, list);
+    
+
+    可以看出它将会寻找相应的标签处理器，并转交给它们去处理
+
+    ### 后续结点
+
+    还记得在之前设计常用标签时，多次提到`@params`和`@extends`的主体部分可以不用花括号括起来吗？
+
+    @params(String user)
+    <div>
+      long long content
+    </div>
+    
+
+    对于这种情况，解析出来的`params`标签的主体实际上是空的，但是标签又需要把后面的内容拿过来使用。
+
+    所以我们在处理一个标签时，不但要把标签本身传给处理器，还要把它的后续同级节点一起传过去，让处理器自己决定用还是不用。
+
+    看回前面的这行代码：
+
+    tagHandler.handle(tag, list);
+    
+
+    它里面的`list`就是`tag`后续的同级节点。
+
+    所谓同级，就是说如果一个标签是嵌入在另一个标签里的，则它的后续节点只会是外层标签内部的，不会超出。比如：
+
+    @if(test1) {
+      @if(test2) {
+        <div>hello</div>
+      }
+      <div>inner</div>
+    }
+    <div>out</div>
+    
+
+    对于里面的`@if(test2)`来说，它的后续结点只会是`<div>inner</div>`，而没有`<div>out</div>`。
+
+    为了实现这个逻辑，所以才把节点列表抽出来处理。在遍历列表的时候，如果发现某一个节点是标签，则把它跟之后的所有元素一起传给标签处理器。标签处理器的返回结果是一个`TagHandleResult`:
+
+    class TagHandleResult {
+      List<CompilableElement> elements;
+      List tail;
+    }
+    
+
+    其中`elements`是处理器成功编译后的元素列表，而tail是用剩下的。如果某个标签处理器需要用后续结点，它就可以使用，然后把剩下的还回来；如果不用，则直接把传入的再还回来即可。
+
+    对于个功能，我开始不打算提供，因为会让思路有些难以理解。但是在用的时候，实在不想把长长的html内容放在花括号里，因为总觉得自己不是在编辑一个html文件。所以最后还是加上了这个功能。
+
+    ## 不同类型的编译元素
+
+    前面提到了`expr`和`text`，这是两种不同类型的编译元素，编译器要做不同的处理。
+
+    实际上我定义了六种类型，如下：
+
+    class CompilableElementType {
+      static final LIBRARY = new CompilableElementType();
+      static final IMPORT = new CompilableElementType();
+      static final FUNCTION_PARAM = new CompilableElementType();
+      static final FUNCTION_BODY_TEXT = new CompilableElementType();
+      static final FUNCTION_BODY_STATEMENT = new CompilableElementType();
+      static final FUNCTION_BODY_EXPRESSION = new CompilableElementType();
+    }
+    
+
+    这是由于标签处理器需要有灵活的方式去改变模板的内容。
+
+    比如不同的点，如`library`、`import`、 `param`等位置，编译器会把它们的内容覆盖或添加到`CompilableTemplate`相对应的字段里。
+
+    对于不同的类型，如`text`、`statement`、`expression`，编译器会在生成dart代码时，使用不同的输出方式：
+
+*   text: `buffer.writeln("_sb_.writeln('${_escapeQuotes(line)}');")`
+*   expression: `buffer.writeln('_sb_.write($expression);')`
+*   statement: `buffer.writeln(statement)`
+
+    其中`buffer`是用来收集输出的dart代码的，而`_sb_`是生成的dart里用来收集输出的，在前面应该多次看到。
+
+    看一段生成的dart代码，应该能就明白；
+
+    library shark.views.tags.if1;
+
+    String render({int num, String implicitBody_()}) {
+      if (implicitBody_ == null) {
+        implicitBody_ = () => '';
+      }
+      var _sb_ = new StringBuffer();
+      _sb_.writeln('Hello, the number is:');
+      _sb_.write('');
+      if (num == 1) {         // statement
+        _sb_.writeln('');
+        _sb_.write(num);      // expression
+        _sb_.write('');
+      }                       // statement
+      _sb_.writeln('');
+      _sb_.write('');
+      return _sb_.toString();
+    }
+    
+
+    其中的statement和expression都已经标出，其它的则是text.
+
+    为了让调用方便一些，我专门定义了一些简单的函数：
+
+    libraryStmt(String input) => 
+        new CompilableElement(CompilableElementType.LIBRARY, input);
+
+    importStmt(String input)
+    importStmtFromTemplate(FromTemplate func)
+    functionParams(String input)
+    stmt(String input)
+    expr(String input)
+    text(String input)
+    
+
+    这些函数将会在下一篇“自定义标签处理器”里用得比较多。
+
+    ## 编译模板文件
+
+    前面编译的基本流程都差不多了，我们现在看看如何从输入到输出吧。
+
+    在`Compiler`类里，提供了三个方法：
+
+    ### 编译一段文本
+
+    可以给出一段文本，直接让编译器把它编译成最终的dart代码，返回给调用者：
+
+    String compileTemplateString(String template)
+    
+
+    ### 编译单个文件
+
+    编译单个文件，需要提供模板根目录和模板文件相对于根目录的相对路径，这是因为需要由相对路径来确定`library`名：
+
+    Future<String> compileTemplateFile(Directory root, String relativeFilePath)
+    
+
+    它返回的是一个`Future<String>`对象，表示这是一个异步对象，我们可以在它的`then()`方法中，取得生成的dart代码：
+
+     compileTemplateFile("/myapp/templates", "user/index.shark").then((dart) {
+        print(dart);
+        // or save to a file
+     });
+    
+
+    之所以要弄个`Future`回来，这是因为dart跟nodejs一样，也是单线程基于事件的模型，IO操作都应该用异步。
+
+    ### 编译指定目录
+
+    还可以直接编译整个目录下的所有模板文件，并给出目标目录，让编译器把生成的dart文件写过去。
+
+    Future<List<File>> compileTemplateDir(
+        Directory templateRoot, 
+        {Directory targetDir, List<String> templateExtensions: const ['shark', 'html']})
+
+在默认情况下，只在模板根目录下寻找后缀名为'shark'或'html'的文件，目标目录默认跟模板根目录一致。
+
+与编译相关的基本流程就到这里，下一篇将讲解如何自定义标签处理器。
+
+（大家都累了吧，快结束了）
+
