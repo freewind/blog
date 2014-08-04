@@ -1,3 +1,5 @@
+---
+layout: post
 title: 1.4 Session and Flash scopes
 tags:
   - Java

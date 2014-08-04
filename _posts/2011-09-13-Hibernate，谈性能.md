@@ -1,3 +1,5 @@
+---
+layout: post
 title: Hibernate，谈性能
 tags:
   - Java

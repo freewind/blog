@@ -1,3 +1,5 @@
+---
+layout: post
 title: JavaScript/NodeJs半月总结
 tags:
   - JavaScript

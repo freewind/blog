@@ -1,3 +1,5 @@
+---
+layout: post
 title: 一个有趣的类scala.util.DynamicVariable
 tags:
   - Scala

@@ -1,3 +1,5 @@
+---
+layout: post
 title: Javascript UI–qooxdoo
 tags:
   - 未分类

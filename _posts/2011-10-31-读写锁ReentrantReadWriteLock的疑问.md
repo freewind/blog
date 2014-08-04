@@ -1,3 +1,5 @@
+---
+layout: post
 title: 读写锁ReentrantReadWriteLock的疑问
 tags:
   - Java

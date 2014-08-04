@@ -1,3 +1,5 @@
+---
+layout: post
 title: windows下安装使用coffeescript
 tags:
   - JavaScript

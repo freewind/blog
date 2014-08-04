@@ -1,3 +1,5 @@
+---
+layout: post
 title: "SQLite: android上的orm"
 tags:
   - Android

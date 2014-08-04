@@ -1,3 +1,5 @@
+---
+layout: post
 title: sbt+jrebel成功，jetty不用再重启
 tags:
   - Scala

@@ -1,3 +1,5 @@
+---
+layout: post
 title: 自己动手写IDEA plugin – PubEditor (7) 高亮
 tags:
   - 未分类

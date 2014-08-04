@@ -1,3 +1,5 @@
+---
+layout: post
 title: 读“悟透JavaScript”
 tags:
   - JavaScript

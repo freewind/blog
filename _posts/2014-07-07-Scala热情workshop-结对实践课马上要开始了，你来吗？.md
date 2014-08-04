@@ -1,3 +1,5 @@
+---
+layout: post
 title: "Scala热情workshop: 结对实践课马上要开始了，你来吗？"
 tags:
   - Scala

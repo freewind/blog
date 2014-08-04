@@ -1,3 +1,5 @@
+---
+layout: post
 title: 自己动手写模板引擎 – SharkDart (6) – 语法树与compiler
 tags:
   - Dart

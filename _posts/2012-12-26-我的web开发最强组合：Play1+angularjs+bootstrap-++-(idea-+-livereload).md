@@ -1,3 +1,5 @@
+---
+layout: post
 title: 我的web开发最强组合：Play1+angularjs+bootstrap ++ (idea + livereload)
 tags:
   - JavaScript

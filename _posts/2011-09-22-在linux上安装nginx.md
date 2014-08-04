@@ -1,3 +1,5 @@
+---
+layout: post
 title: 在linux上安装nginx
 tags:
   - Linux

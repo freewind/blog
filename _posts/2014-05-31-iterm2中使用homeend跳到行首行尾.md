@@ -1,3 +1,5 @@
+---
+layout: post
 title: iterm2中使用home/end跳到行首/行尾
 tags:
   - 未分类

@@ -1,3 +1,5 @@
+---
+layout: post
 title: Couchdb+angularjs安装与试用
 tags:
   - JavaScript

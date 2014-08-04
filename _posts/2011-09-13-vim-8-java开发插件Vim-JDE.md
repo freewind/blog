@@ -1,3 +1,5 @@
+---
+layout: post
 title: vim 8. java开发插件Vim JDE
 tags:
   - IDE

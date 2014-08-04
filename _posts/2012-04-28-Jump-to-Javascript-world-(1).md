@@ -1,3 +1,5 @@
+---
+layout: post
 title: Jump to Javascript world (1)
 tags:
   - JavaScript

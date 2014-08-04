@@ -1,3 +1,5 @@
+---
+layout: post
 title: 在Java项目中拥抱Nodejs — 使用gruntjs编译typescript，并将生成的js合并、压缩
 tags:
   - JavaScript

@@ -1,3 +1,5 @@
+---
+layout: post
 title: Try python
 tags:
   - 未分类

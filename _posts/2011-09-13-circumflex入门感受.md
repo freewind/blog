@@ -1,3 +1,5 @@
+---
+layout: post
 title: circumflex入门感受
 tags:
   - Scala

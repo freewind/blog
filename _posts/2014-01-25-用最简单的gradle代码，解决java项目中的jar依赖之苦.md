@@ -1,3 +1,5 @@
+---
+layout: post
 title: 用最简单的gradle代码，解决java项目中的jar依赖之苦
 tags:
   - Java

@@ -1,3 +1,5 @@
+---
+layout: post
 title: CoffeeScript
 tags:
   - JavaScript

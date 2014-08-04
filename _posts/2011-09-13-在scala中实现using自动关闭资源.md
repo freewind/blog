@@ -1,3 +1,5 @@
+---
+layout: post
 title: 在scala中实现using自动关闭资源
 tags:
   - Scala

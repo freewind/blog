@@ -1,3 +1,5 @@
+---
+layout: post
 title: haml – rails的新view层模板
 tags:
   - 未分类

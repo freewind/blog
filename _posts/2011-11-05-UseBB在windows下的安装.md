@@ -1,3 +1,5 @@
+---
+layout: post
 title: UseBB在windows下的安装
 tags:
   - Scala

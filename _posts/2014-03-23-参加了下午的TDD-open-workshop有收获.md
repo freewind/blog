@@ -1,3 +1,5 @@
+---
+layout: post
 title: 参加了下午的TDD open workshop有收获
 tags:
   - 未分类

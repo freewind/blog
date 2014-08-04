@@ -1,3 +1,5 @@
+---
+layout: post
 title: windows7 x64上安装oracle11g过程
 tags:
   - 未分类

@@ -1,3 +1,5 @@
+---
+layout: post
 title: windowsxp上的System.currentTimeMillis和System.nanoTime
 tags:
   - Java

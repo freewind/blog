@@ -1,3 +1,5 @@
+---
+layout: post
 title: 04. Session的Flash使用
 tags:
   - Scala

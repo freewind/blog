@@ -1,3 +1,5 @@
+---
+layout: post
 title: synchronized与lock，哪个效率更高
 tags:
   - 未分类

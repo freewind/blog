@@ -1,3 +1,5 @@
+---
+layout: post
 title: 复习ClassLoader
 tags:
   - Java

@@ -1,3 +1,5 @@
+---
+layout: post
 title: 刘松的node-webkit体验
 tags:
   - JavaScript

@@ -1,3 +1,5 @@
+---
+layout: post
 title: spring mvc，吐个槽
 tags:
   - Java

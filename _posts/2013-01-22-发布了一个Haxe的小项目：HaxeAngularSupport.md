@@ -1,3 +1,5 @@
+---
+layout: post
 title: 发布了一个Haxe的小项目：HaxeAngularSupport
 tags:
   - haxe

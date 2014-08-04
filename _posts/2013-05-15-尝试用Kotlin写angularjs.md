@@ -1,3 +1,5 @@
+---
+layout: post
 title: 尝试用Kotlin写angularjs
 tags:
   - 其它语言

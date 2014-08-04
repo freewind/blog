@@ -1,3 +1,5 @@
+---
+layout: post
 title: 继续用play，等待Kotlin
 tags:
   - 未分类

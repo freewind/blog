@@ -1,3 +1,5 @@
+---
+layout: post
 title: play之libs.F
 tags:
   - PlayFramework1

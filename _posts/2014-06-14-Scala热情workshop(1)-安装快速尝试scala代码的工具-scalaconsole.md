@@ -1,3 +1,5 @@
+---
+layout: post
 title: "Scala热情workshop(1). 安装快速尝试scala代码的工具: scalaconsole"
 tags:
   - scala-hot-workshop

@@ -1,3 +1,5 @@
+---
+layout: post
 title: madmanahong答“程序员学习数学的困惑”
 tags:
   - Math

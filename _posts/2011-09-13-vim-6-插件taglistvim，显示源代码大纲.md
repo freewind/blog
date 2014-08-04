@@ -1,3 +1,5 @@
+---
+layout: post
 title: vim 6. 插件taglist.vim，显示源代码大纲
 tags:
   - IDE

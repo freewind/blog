@@ -1,3 +1,5 @@
+---
+layout: post
 title: 在linux上安装postgresql详解
 tags:
   - Linux

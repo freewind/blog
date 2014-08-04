@@ -1,3 +1,5 @@
+---
+layout: post
 title: Node.js与cloud9小试
 tags:
   - JavaScript

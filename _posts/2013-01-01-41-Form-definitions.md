@@ -1,3 +1,5 @@
+---
+layout: post
 title: 4.1 Form definitions
 tags:
   - Java

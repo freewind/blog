@@ -1,3 +1,5 @@
+---
+layout: post
 title: 09. Comet sockets
 tags:
   - Scala

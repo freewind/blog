@@ -1,3 +1,5 @@
+---
+layout: post
 title: Couchdb+kanso试用
 tags:
   - JavaScript

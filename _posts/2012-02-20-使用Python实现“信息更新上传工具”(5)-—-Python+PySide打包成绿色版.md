@@ -1,3 +1,5 @@
+---
+layout: post
 title: 使用Python实现“信息更新上传工具”(5) — Python+PySide打包成绿色版
 tags:
   - Python

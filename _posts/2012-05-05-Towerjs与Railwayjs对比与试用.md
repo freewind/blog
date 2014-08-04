@@ -1,3 +1,5 @@
+---
+layout: post
 title: Towerjs与Railwayjs对比与试用
 tags:
   - JavaScript

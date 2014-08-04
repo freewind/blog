@@ -1,3 +1,5 @@
+---
+layout: post
 title: Express + Mongoose 极简入门
 tags:
   - JavaScript

@@ -1,3 +1,5 @@
+---
+layout: post
 title: Varnish重写url与backend的关系
 tags:
   - 未分类

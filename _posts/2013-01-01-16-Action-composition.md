@@ -1,3 +1,5 @@
+---
+layout: post
 title: 1.6 Action composition
 tags:
   - Java

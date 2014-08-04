@@ -1,3 +1,5 @@
+---
+layout: post
 title: AutoHotkey小试
 tags:
   - More ...

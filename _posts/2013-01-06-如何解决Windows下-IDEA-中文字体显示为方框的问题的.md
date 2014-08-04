@@ -1,3 +1,5 @@
+---
+layout: post
 title: 如何解决Windows下 IDEA 中文字体显示为方框的问题的
 tags:
   - IDE

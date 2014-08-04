@@ -1,3 +1,5 @@
+---
+layout: post
 title: scala中Iterator的比较
 tags:
   - Scala

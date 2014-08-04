@@ -1,3 +1,5 @@
+---
+layout: post
 title: 01. PlayFramework群规
 tags:
   - PlayFramework1

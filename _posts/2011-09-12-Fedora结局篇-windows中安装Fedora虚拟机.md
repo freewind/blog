@@ -1,3 +1,5 @@
+---
+layout: post
 title: Fedora结局篇 windows中安装Fedora虚拟机
 tags:
   - Linux

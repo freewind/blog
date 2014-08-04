@@ -1,3 +1,5 @@
+---
+layout: post
 title: "Play1学习: Play对controllers做了什么"
 tags:
   - PlayFramework1

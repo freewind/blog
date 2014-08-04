@@ -1,3 +1,5 @@
+---
+layout: post
 title: Groovy的JsonBuilder还是不够groovy
 tags:
   - 其它语言

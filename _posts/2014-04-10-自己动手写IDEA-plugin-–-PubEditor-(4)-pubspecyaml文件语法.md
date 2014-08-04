@@ -1,3 +1,5 @@
+---
+layout: post
 title: 自己动手写IDEA plugin – PubEditor (4) pubspec.yaml文件语法
 tags:
   - Dart

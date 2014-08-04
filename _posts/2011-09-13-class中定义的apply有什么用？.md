@@ -1,3 +1,5 @@
+---
+layout: post
 title: class中定义的apply有什么用？
 tags:
   - Scala

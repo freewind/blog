@@ -1,3 +1,5 @@
+---
+layout: post
 title: "推荐一个能使用“`和“`来表示代码块的javascript markdown库"
 tags:
   - JavaScript

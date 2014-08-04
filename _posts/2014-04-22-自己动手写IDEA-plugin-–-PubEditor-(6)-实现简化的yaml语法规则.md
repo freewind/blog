@@ -1,3 +1,5 @@
+---
+layout: post
 title: 自己动手写IDEA plugin – PubEditor (6) 实现简化的yaml语法规则
 tags:
   - 未分类

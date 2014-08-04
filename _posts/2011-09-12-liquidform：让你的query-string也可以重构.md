@@ -1,3 +1,5 @@
+---
+layout: post
 title: liquidform：让你的query string也可以重构
 tags:
   - Java

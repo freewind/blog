@@ -1,3 +1,5 @@
+---
+layout: post
 title: 3.1 Templates syntax
 tags:
   - Java

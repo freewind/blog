@@ -1,3 +1,5 @@
+---
+layout: post
 title: 申请amazon ec2 – 首年免费的vps
 tags:
   - 未分类

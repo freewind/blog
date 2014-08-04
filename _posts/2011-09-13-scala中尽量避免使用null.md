@@ -1,3 +1,5 @@
+---
+layout: post
 title: scala中尽量避免使用null
 tags:
   - Scala

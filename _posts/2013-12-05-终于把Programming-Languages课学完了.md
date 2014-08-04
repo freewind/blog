@@ -1,3 +1,5 @@
+---
+layout: post
 title: 终于把Programming Languages课学完了
 tags:
   - Programming Languages

@@ -1,3 +1,5 @@
+---
+layout: post
 title: 在同一台电脑上运行的socket server和client之间传数据，最大速度为多少？
 tags:
   - Java

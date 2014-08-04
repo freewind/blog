@@ -1,3 +1,5 @@
+---
+layout: post
 title: Hibernate与Jpa的关系，终于弄懂
 tags:
   - Java

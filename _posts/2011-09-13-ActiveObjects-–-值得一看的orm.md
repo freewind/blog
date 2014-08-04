@@ -1,3 +1,5 @@
+---
+layout: post
 title: ActiveObjects – 值得一看的orm
 tags:
   - Java

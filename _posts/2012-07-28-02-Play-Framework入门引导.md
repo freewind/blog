@@ -1,3 +1,5 @@
+---
+layout: post
 title: 02. Play Framework入门引导
 tags:
   - PlayFramework1

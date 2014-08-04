@@ -1,3 +1,5 @@
+---
+layout: post
 title: Atom vs Spark：用Node/Dart+css+html打造编辑器
 tags:
   - Dart

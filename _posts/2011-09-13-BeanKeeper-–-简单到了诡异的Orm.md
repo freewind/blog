@@ -1,3 +1,5 @@
+---
+layout: post
 title: BeanKeeper – 简单到了诡异的Orm
 tags:
   - Java

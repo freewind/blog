@@ -1,3 +1,5 @@
+---
+layout: post
 title: 动态改变类：Javassist
 tags:
   - Java

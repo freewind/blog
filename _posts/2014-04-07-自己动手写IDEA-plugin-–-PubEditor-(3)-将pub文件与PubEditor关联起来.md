@@ -1,3 +1,5 @@
+---
+layout: post
 title: 自己动手写IDEA plugin – PubEditor (3) 将pub文件与PubEditor关联起来
 tags:
   - Dart

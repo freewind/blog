@@ -1,3 +1,5 @@
+---
+layout: post
 title: JEasyTest
 tags:
   - Java

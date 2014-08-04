@@ -1,3 +1,5 @@
+---
+layout: post
 title: Android步步惊心 之 破碎的渐变色图片(png格式)
 tags:
   - Android

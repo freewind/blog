@@ -1,3 +1,5 @@
+---
+layout: post
 title: 在Eclipse下用Scala开发Android程序
 tags:
   - Android

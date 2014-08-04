@@ -1,3 +1,5 @@
+---
+layout: post
 title: 3.2 Common use cases
 tags:
   - Java

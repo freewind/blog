@@ -1,3 +1,5 @@
+---
+layout: post
 title: Android之残缺的神器：android-x86 + vmlite
 tags:
   - Android

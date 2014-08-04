@@ -1,3 +1,5 @@
+---
+layout: post
 title: "01. Actions, Controllers and Results"
 tags:
   - Scala

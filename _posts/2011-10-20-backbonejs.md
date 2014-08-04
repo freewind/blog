@@ -1,3 +1,5 @@
+---
+layout: post
 title: backbone.js
 tags:
   - JavaScript

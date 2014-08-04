@@ -1,3 +1,5 @@
+---
+layout: post
 title: 系统时间错误，导致连不上github.com
 tags:
   - 未分类

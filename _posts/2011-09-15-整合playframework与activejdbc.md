@@ -1,3 +1,5 @@
+---
+layout: post
 title: 整合playframework与activejdbc
 tags:
   - Java

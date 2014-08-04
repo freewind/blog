@@ -1,3 +1,5 @@
+---
+layout: post
 title: 在scala中，如何创建annotation
 tags:
   - Scala

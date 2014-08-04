@@ -1,3 +1,5 @@
+---
+layout: post
 title: Grunt + Bower + Requirejs + Angular
 tags:
   - 未分类

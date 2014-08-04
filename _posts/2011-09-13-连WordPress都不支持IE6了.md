@@ -1,3 +1,5 @@
+---
+layout: post
 title: 连WordPress都不支持IE6了
 tags:
   - 未分类

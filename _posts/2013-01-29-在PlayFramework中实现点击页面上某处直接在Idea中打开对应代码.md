@@ -1,3 +1,5 @@
+---
+layout: post
 title: 在PlayFramework中实现点击页面上某处直接在Idea中打开对应代码
 tags:
   - PlayFramework1

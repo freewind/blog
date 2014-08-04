@@ -1,3 +1,5 @@
+---
+layout: post
 title: 修改LiveWriter插件WintyCodeArea，生成google-code-prettify适用的代码块
 tags:
   - Windows

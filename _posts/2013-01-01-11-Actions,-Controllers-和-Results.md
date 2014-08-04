@@ -1,3 +1,5 @@
+---
+layout: post
 title: "1.1 Actions, Controllers 和 Results"
 tags:
   - Java

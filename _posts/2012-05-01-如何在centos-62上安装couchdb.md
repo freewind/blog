@@ -1,3 +1,5 @@
+---
+layout: post
 title: 如何在centos 6.2上安装couchdb?
 tags:
   - Linux

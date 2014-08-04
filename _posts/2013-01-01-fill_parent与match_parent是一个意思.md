@@ -1,3 +1,5 @@
+---
+layout: post
 title: fill_parent与match_parent是一个意思
 tags:
   - Android

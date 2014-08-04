@@ -1,3 +1,5 @@
+---
+layout: post
 title: 我为什么选择haxejs，而不是dart/typescript
 tags:
   - haxe

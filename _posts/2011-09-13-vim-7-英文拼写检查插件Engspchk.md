@@ -1,3 +1,5 @@
+---
+layout: post
 title: vim 7. 英文拼写检查插件Engspchk
 tags:
   - IDE

@@ -1,3 +1,5 @@
+---
+layout: post
 title: ArrayList与LinkedList的适用情形
 tags:
   - 未分类

@@ -1,3 +1,5 @@
+---
+layout: post
 title: 使用kotlin重写todomvc上的angularjs示例
 tags:
   - 其它语言

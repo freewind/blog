@@ -1,3 +1,5 @@
+---
+layout: post
 title: ArrayList.add在扩容时花费的时间
 tags:
   - Java

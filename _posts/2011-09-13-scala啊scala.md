@@ -1,3 +1,5 @@
+---
+layout: post
 title: scala啊scala
 tags:
   - Scala

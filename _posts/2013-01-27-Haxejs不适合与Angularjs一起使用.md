@@ -1,3 +1,5 @@
+---
+layout: post
 title: Haxejs不适合与Angularjs一起使用
 tags:
   - haxe

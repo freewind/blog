@@ -1,3 +1,5 @@
+---
+layout: post
 title: "自己动手写IDEA plugin – PubEditor (1) Hello, world"
 tags:
   - Dart

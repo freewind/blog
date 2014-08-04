@@ -1,3 +1,5 @@
+---
+layout: post
 title: CleanCode读书笔记
 tags:
   - 读书

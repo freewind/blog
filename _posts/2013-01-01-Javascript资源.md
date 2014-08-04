@@ -1,3 +1,5 @@
+---
+layout: post
 title: Javascript资源
 tags:
   - JavaScript

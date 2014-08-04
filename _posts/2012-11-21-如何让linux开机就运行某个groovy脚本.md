@@ -1,3 +1,5 @@
+---
+layout: post
 title: 如何让linux开机就运行某个groovy脚本
 tags:
   - Linux

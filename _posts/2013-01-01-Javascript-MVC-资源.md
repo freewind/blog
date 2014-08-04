@@ -1,3 +1,5 @@
+---
+layout: post
 title: Javascript MVC 资源
 tags:
   - JavaScript

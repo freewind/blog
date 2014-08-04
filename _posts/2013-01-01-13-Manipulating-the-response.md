@@ -1,3 +1,5 @@
+---
+layout: post
 title: 1.3 Manipulating the response
 tags:
   - Java

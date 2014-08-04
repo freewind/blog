@@ -1,3 +1,5 @@
+---
+layout: post
 title: Play1.2.x源代码阅读之 classloading
 tags:
   - PlayFramework1

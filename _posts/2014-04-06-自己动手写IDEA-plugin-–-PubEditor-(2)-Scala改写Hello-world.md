@@ -1,3 +1,5 @@
+---
+layout: post
 title: 自己动手写IDEA plugin – PubEditor (2) Scala改写Hello world
 tags:
   - Dart

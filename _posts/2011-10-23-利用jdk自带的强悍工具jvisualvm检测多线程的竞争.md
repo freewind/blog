@@ -1,3 +1,5 @@
+---
+layout: post
 title: 利用jdk自带的强悍工具jvisualvm检测多线程的竞争
 tags:
   - Java

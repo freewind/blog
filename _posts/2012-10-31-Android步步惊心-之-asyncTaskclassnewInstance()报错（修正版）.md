@@ -1,3 +1,5 @@
+---
+layout: post
 title: Android步步惊心 之 asyncTask.class.newInstance()报错（修正版）
 tags:
   - Android

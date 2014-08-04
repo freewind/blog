@@ -1,3 +1,5 @@
+---
+layout: post
 title: Scala热情workshop 2. Scala学习路线(3) scala资源
 tags:
   - scala-hot-workshop

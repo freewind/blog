@@ -1,3 +1,5 @@
+---
+layout: post
 title: Xtend rocks！
 tags:
   - xtend

@@ -1,3 +1,5 @@
+---
+layout: post
 title: 1.2 HTTP routing
 tags:
   - Java

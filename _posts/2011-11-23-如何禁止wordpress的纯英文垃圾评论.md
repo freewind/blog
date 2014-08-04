@@ -1,3 +1,5 @@
+---
+layout: post
 title: 如何禁止wordpress的纯英文垃圾评论
 tags:
   - 未分类

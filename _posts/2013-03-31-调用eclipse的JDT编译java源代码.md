@@ -1,3 +1,5 @@
+---
+layout: post
 title: 调用eclipse的JDT编译java源代码
 tags:
   - Java

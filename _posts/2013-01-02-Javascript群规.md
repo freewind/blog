@@ -1,3 +1,5 @@
+---
+layout: post
 title: Javascript群规
 tags:
   - JavaScript

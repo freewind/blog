@@ -1,3 +1,5 @@
+---
+layout: post
 title: 如何在playframework中集成livereload
 tags:
   - PlayFramework1

@@ -1,3 +1,5 @@
+---
+layout: post
 title: 在java中使用闭包 – lambdaj
 tags:
   - Java

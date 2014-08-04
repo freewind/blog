@@ -1,3 +1,5 @@
+---
+layout: post
 title: 使用haxejs进行typesafe的javascript开发
 tags:
   - JavaScript

@@ -1,3 +1,5 @@
+---
+layout: post
 title: Play2中如何实现play1中的Job?
 tags:
   - Play 2

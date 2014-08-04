@@ -1,3 +1,5 @@
+---
+layout: post
 title: 快速理解RequireJs
 tags:
   - 未分类

@@ -1,3 +1,5 @@
+---
+layout: post
 title: 易用强大的解析器PetitParser – (1) 安装及Hello World
 tags:
   - Dart

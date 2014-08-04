@@ -1,3 +1,5 @@
+---
+layout: post
 title: Hibernate使用注意事项
 tags:
   - Java

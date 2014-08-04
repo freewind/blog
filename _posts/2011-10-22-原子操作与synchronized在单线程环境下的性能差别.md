@@ -1,3 +1,5 @@
+---
+layout: post
 title: 原子操作与synchronized在单线程环境下的性能差别
 tags:
   - Java

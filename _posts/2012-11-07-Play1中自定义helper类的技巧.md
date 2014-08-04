@@ -1,3 +1,5 @@
+---
+layout: post
 title: Play1中自定义helper类的技巧
 tags:
   - PlayFramework1

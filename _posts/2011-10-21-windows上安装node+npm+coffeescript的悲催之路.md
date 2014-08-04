@@ -1,3 +1,5 @@
+---
+layout: post
 title: windows上安装node+npm+coffeescript的悲催之路
 tags:
   - JavaScript

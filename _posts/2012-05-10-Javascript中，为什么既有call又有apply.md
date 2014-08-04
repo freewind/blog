@@ -1,3 +1,5 @@
+---
+layout: post
 title: Javascript中，为什么既有call又有apply
 tags:
   - JavaScript

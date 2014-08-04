@@ -1,3 +1,5 @@
+---
+layout: post
 title: Dart中关于List.map的一个奇怪问题
 tags:
   - Dart

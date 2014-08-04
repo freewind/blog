@@ -1,3 +1,5 @@
+---
+layout: post
 title: 通过修改键盘布局使用mac的option键，为idea设置方便的快捷键
 tags:
   - Mac

@@ -1,3 +1,5 @@
+---
+layout: post
 title: java中的Continuation实现：commons-javaflow
 tags:
   - Java

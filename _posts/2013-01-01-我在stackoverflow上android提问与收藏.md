@@ -1,3 +1,5 @@
+---
+layout: post
 title: 我在stackoverflow上android提问与收藏
 tags:
   - Android

@@ -1,3 +1,5 @@
+---
+layout: post
 title: Scala workshop – Collections(1) – List
 tags:
   - scala-hot-workshop

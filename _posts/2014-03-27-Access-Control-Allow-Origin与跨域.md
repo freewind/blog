@@ -1,3 +1,5 @@
+---
+layout: post
 title: Access-Control-Allow-Origin与跨域
 tags:
   - 未分类

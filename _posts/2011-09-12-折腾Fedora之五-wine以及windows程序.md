@@ -1,3 +1,5 @@
+---
+layout: post
 title: 折腾Fedora之五 wine以及windows程序
 tags:
   - Linux

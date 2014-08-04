@@ -1,3 +1,5 @@
+---
+layout: post
 title: "scala中==是比较内容，但为什么Array(1,2)==Array(1,2)为false"
 tags:
   - Scala

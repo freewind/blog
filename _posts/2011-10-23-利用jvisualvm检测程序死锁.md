@@ -1,3 +1,5 @@
+---
+layout: post
 title: 利用jvisualvm检测程序死锁
 tags:
   - Java

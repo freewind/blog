@@ -1,3 +1,5 @@
+---
+layout: post
 title: Js UI库 modernizr
 tags:
   - JavaScript

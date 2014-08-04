@@ -1,3 +1,5 @@
+---
+layout: post
 title: "Scala热情workshop: 2. Scala学习路线(1)  初学者的观点"
 tags:
   - scala-hot-workshop
