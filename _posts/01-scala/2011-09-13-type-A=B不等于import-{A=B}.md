@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "type A=B不等于import {A=>B}"
-tags:
-  - Scala
+tags: Scala
 date: 2011-09-13 22:18:00
 ---
 

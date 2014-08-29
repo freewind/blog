@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 1.5 Body parsers
-tags:
-  - Java
+tags: Java
 date: 2013-01-01 16:52:13
 ---
 

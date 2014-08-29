@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 01. PlayFramework群规
-tags:
-  - PlayFramework1
+tags: PlayFramework1
 date: 2013-01-02 13:53:12
 ---
 

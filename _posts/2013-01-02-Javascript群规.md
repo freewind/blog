@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Javascript群规
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2013-01-02 13:51:10
 ---
 

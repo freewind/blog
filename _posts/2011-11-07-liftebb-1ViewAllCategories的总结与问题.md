@@ -1,8 +1,7 @@
 ---
 layout: post
 title: lift.ebb 1.ViewAllCategories的总结与问题
-tags:
-  - 未分类
+tags: 未分类
 date: 2011-11-07 17:39:30
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: CleanCode读书笔记
-tags:
-  - 读书
+tags: 读书
 date: 2014-01-19 00:05:59
 ---
 

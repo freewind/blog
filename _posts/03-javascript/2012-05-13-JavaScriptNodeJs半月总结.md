@@ -1,8 +1,7 @@
 ---
 layout: post
 title: JavaScript/NodeJs半月总结
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2012-05-13 00:48:24
 ---
 

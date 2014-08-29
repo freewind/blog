@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 参加了下午的TDD open workshop有收获
-tags:
-  - 未分类
+tags: 未分类
 date: 2014-03-23 00:56:54
 ---
 

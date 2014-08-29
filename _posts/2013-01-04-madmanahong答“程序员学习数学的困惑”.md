@@ -1,8 +1,7 @@
 ---
 layout: post
 title: madmanahong答“程序员学习数学的困惑”
-tags:
-  - Math
+tags: Math
 date: 2013-01-04 21:48:53
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: CoffeeScript
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2011-09-13 01:21:59
 ---
 

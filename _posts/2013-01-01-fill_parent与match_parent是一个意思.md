@@ -1,8 +1,7 @@
 ---
 layout: post
 title: fill_parent与match_parent是一个意思
-tags:
-  - Android
+tags: Android
 date: 2013-01-01 11:25:46
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 1.3 Manipulating the response
-tags:
-  - Java
+tags: Java
 date: 2013-01-01 16:50:42
 ---
 

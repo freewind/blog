@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "为什么Nil的类型是List[Nothing]，而不是List[Any]"
-tags:
-  - scala-hot-workshop
+tags: scala-hot-workshop
 date: 2014-07-23 21:50:24
 ---
 

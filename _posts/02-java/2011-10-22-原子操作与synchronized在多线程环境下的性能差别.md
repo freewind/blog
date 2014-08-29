@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 原子操作与synchronized在多线程环境下的性能差别
-tags:
-  - Java
+tags: Java
 date: 2011-10-22 22:05:03
 ---
 

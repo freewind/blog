@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 如何快速删除postgresql数据库所有的表
-tags:
-  - More ...
+tags: More ...
 date: 2012-02-05 16:42:33
 ---
 

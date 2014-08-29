@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Groovy的JsonBuilder还是不够groovy
-tags:
-  - 其它语言
+tags: 其它语言
 date: 2012-12-21 16:36:31
 ---
 

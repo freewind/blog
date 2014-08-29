@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 3.1 Templates syntax
-tags:
-  - Java
+tags: Java
 date: 2013-01-01 16:53:46
 ---
 

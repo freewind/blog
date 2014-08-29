@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Javascript资源
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2013-01-01 17:27:16
 ---
 

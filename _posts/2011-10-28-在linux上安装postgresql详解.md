@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 在linux上安装postgresql详解
-tags:
-  - Linux
+tags: Linux
 date: 2011-10-28 21:11:30
 ---
 

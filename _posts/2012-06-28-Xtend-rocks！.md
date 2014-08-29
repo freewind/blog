@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Xtend rocks！
-tags:
-  - xtend
+tags: xtend
 date: 2012-06-28 23:01:18
 ---
 

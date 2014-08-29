@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 如果synchronized中有IO操作，多线程并不会提高性能
-tags:
-  - Java
+tags: Java
 date: 2011-10-22 23:17:04
 ---
 

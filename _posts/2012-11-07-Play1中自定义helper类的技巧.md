@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Play1中自定义helper类的技巧
-tags:
-  - PlayFramework1
+tags: PlayFramework1
 date: 2012-11-07 13:07:10
 ---
 

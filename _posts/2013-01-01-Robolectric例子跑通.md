@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Robolectric例子跑通
-tags:
-  - Android
+tags: Android
 date: 2013-01-01 11:24:19
 ---
 

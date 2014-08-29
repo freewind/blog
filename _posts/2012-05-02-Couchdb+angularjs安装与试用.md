@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Couchdb+angularjs安装与试用
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2012-05-02 01:40:10
 ---
 

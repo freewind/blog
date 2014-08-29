@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Grunt + Bower + Requirejs + Angular
-tags:
-  - 未分类
+tags: 未分类
 date: 2014-07-27 22:08:46
 ---
 

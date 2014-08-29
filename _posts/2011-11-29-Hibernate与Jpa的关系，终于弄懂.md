@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Hibernate与Jpa的关系，终于弄懂
-tags:
-  - Java
+tags: Java
 date: 2011-11-29 15:46:14
 ---
 

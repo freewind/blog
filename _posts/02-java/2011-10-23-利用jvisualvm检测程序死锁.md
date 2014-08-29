@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 利用jvisualvm检测程序死锁
-tags:
-  - Java
+tags: Java
 date: 2011-10-23 13:25:18
 ---
 

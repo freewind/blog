@@ -1,8 +1,7 @@
 ---
 layout: post
 title: circumflex入门感受
-tags:
-  - Scala
+tags: Scala
 date: 2011-09-13 22:03:58
 ---
 

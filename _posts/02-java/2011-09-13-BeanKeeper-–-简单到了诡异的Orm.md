@@ -1,8 +1,7 @@
 ---
 layout: post
 title: BeanKeeper – 简单到了诡异的Orm
-tags:
-  - Java
+tags: Java
 date: 2011-09-13 01:46:00
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 如何禁止wordpress的纯英文垃圾评论
-tags:
-  - 未分类
+tags: 未分类
 date: 2011-11-23 23:02:42
 ---
 

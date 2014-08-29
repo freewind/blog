@@ -1,8 +1,7 @@
 ---
 layout: post
 title: liquidform：让你的query string也可以重构
-tags:
-  - Java
+tags: Java
 date: 2011-09-12 23:47:00
 ---
 

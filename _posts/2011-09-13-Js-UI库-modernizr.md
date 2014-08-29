@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Js UI库 modernizr
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2011-09-13 01:13:33
 ---
 

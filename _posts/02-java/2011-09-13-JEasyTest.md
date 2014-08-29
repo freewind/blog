@@ -1,8 +1,7 @@
 ---
 layout: post
 title: JEasyTest
-tags:
-  - Java
+tags: Java
 date: 2011-09-13 01:41:19
 ---
 

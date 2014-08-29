@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "play-groovy:离期望的playframework更近一步"
-tags:
-  - PlayFramework1
+tags: PlayFramework1
 date: 2012-11-16 23:36:35
 ---
 

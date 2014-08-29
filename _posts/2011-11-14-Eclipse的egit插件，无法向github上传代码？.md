@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Eclipse的egit插件，无法向github上传代码？
-tags:
-  - 未分类
+tags: 未分类
 date: 2011-11-14 22:13:19
 ---
 

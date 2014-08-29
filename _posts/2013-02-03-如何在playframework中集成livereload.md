@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 如何在playframework中集成livereload
-tags:
-  - PlayFramework1
+tags: PlayFramework1
 date: 2013-02-03 18:18:42
 ---
 

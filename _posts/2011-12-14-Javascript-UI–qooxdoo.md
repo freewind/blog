@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Javascript UI–qooxdoo
-tags:
-  - 未分类
+tags: 未分类
 date: 2011-12-14 21:47:42
 ---
 

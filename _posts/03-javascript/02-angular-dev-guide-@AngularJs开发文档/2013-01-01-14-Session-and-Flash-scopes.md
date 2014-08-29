@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 1.4 Session and Flash scopes
-tags:
-  - Java
+tags: Java
 date: 2013-01-01 16:51:21
 ---
 

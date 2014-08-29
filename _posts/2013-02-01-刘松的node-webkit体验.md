@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 刘松的node-webkit体验
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2013-02-01 11:19:47
 ---
 

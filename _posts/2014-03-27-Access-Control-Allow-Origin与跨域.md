@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Access-Control-Allow-Origin与跨域
-tags:
-  - 未分类
+tags: 未分类
 date: 2014-03-27 20:24:31
 ---
 

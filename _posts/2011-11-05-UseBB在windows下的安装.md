@@ -1,8 +1,7 @@
 ---
 layout: post
 title: UseBB在windows下的安装
-tags:
-  - Scala
+tags: Scala
 date: 2011-11-05 21:45:37
 ---
 

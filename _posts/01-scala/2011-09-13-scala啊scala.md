@@ -1,8 +1,7 @@
 ---
 layout: post
 title: scala啊scala
-tags:
-  - Scala
+tags: Scala
 date: 2011-09-13 01:57:25
 ---
 

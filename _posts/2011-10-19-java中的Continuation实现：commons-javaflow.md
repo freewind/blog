@@ -1,8 +1,7 @@
 ---
 layout: post
 title: java中的Continuation实现：commons-javaflow
-tags:
-  - Java
+tags: Java
 date: 2011-10-19 16:21:07
 ---
 

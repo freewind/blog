@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Scala热情workshop 2. Scala学习路线(2) 为什么学以及难度分块
-tags:
-  - scala-hot-workshop
+tags: scala-hot-workshop
 date: 2014-06-14 23:34:06
 ---
 

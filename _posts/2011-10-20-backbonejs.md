@@ -1,8 +1,7 @@
 ---
 layout: post
 title: backbone.js
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2011-10-20 18:17:17
 ---
 

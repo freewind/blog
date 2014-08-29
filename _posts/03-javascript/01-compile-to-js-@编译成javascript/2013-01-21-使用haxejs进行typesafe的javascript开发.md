@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 使用haxejs进行typesafe的javascript开发
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2013-01-21 23:27:42
 ---
 

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 在Eclipse下用Scala开发Android程序
-tags:
-  - Android
-  - Scala
+tags: Android Scala
 date: 2013-01-01 11:31:08
 ---
 

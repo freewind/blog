@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 使用Typescript来写javascript (目前相关工具不够成熟)
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2013-01-28 14:07:37
 ---
 

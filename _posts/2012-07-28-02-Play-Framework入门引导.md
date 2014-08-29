@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 02. Play Framework入门引导
-tags:
-  - PlayFramework1
+tags: PlayFramework1
 date: 2012-07-28 17:00:29
 ---
 

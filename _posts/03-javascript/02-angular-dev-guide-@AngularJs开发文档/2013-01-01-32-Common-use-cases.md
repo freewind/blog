@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 3.2 Common use cases
-tags:
-  - Java
+tags: Java
 date: 2013-01-01 16:54:30
 ---
 

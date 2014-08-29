@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "1.1 Actions, Controllers 和 Results"
-tags:
-  - Java
+tags: Java
 date: 2013-01-01 16:57:11
 ---
 

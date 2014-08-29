@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 连WordPress都不支持IE6了
-tags:
-  - 未分类
+tags: 未分类
 date: 2011-09-13 02:29:26
 ---
 

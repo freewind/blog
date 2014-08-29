@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 动态改变类：Javassist
-tags:
-  - Java
+tags: Java
 date: 2011-09-12 23:37:00
 ---
 

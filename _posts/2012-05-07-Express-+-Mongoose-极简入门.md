@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Express + Mongoose 极简入门
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2012-05-07 21:38:09
 ---
 

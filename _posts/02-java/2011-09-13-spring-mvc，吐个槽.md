@@ -1,8 +1,7 @@
 ---
 layout: post
 title: spring mvc，吐个槽
-tags:
-  - Java
+tags: Java
 date: 2011-09-13 01:57:59
 ---
 

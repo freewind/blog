@@ -1,8 +1,7 @@
 ---
 layout: post
 title: value.foreach( println(_.toInt) ) 为什么编译不过？
-tags:
-  - Scala
+tags: Scala
 date: 2013-05-19 21:28:52
 ---
 

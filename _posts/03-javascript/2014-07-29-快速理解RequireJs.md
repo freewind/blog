@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 快速理解RequireJs
-tags:
-  - 未分类
+tags: 未分类
 date: 2014-07-29 00:49:48
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 04. Session的Flash使用
-tags:
-  - Scala
+tags: Scala
 date: 2013-01-01 16:59:41
 ---
 

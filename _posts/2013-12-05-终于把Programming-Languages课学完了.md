@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 终于把Programming Languages课学完了
-tags:
-  - Programming Languages
+tags: Programming Languages
 date: 2013-12-05 23:41:32
 ---
 

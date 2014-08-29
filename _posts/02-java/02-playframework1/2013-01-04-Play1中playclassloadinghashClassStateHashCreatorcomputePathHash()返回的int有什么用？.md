@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Play1中play.classloading.hash.ClassStateHashCreator.computePathHash()返回的int有什么用？
-tags:
-  - PlayFramework1
+tags: PlayFramework1
 date: 2013-01-04 16:55:30
 ---
 

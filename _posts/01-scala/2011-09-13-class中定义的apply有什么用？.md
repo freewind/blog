@@ -1,8 +1,7 @@
 ---
 layout: post
 title: class中定义的apply有什么用？
-tags:
-  - Scala
+tags: Scala
 date: 2011-09-13 22:35:30
 ---
 

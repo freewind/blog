@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 在java中使用闭包 – lambdaj
-tags:
-  - Java
+tags: Java
 date: 2011-09-12 23:41:04
 ---
 

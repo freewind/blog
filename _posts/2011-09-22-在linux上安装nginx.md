@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 在linux上安装nginx
-tags:
-  - Linux
+tags: Linux
 date: 2011-09-22 00:13:11
 ---
 

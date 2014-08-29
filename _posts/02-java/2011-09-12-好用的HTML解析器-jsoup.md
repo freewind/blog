@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 好用的HTML解析器 jsoup
-tags:
-  - Java
+tags: Java
 date: 2011-09-12 23:42:52
 ---
 

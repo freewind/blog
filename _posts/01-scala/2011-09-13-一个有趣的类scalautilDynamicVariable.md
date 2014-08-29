@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 一个有趣的类scala.util.DynamicVariable
-tags:
-  - Scala
+tags: Scala
 date: 2011-09-13 21:41:00
 ---
 

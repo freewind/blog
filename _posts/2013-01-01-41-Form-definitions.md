@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 4.1 Form definitions
-tags:
-  - Java
+tags: Java
 date: 2013-01-01 16:55:11
 ---
 

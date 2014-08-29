@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Jump to Javascript world (1)
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2012-04-28 17:15:51
 ---
 

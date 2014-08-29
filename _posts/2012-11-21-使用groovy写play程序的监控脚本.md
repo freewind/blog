@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 使用groovy写play程序的监控脚本
-tags:
-  - 其它语言
+tags: 其它语言
 date: 2012-11-21 20:49:27
 ---
 

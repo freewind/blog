@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 折腾Fedora之五 wine以及windows程序
-tags:
-  - Linux
+tags: Linux
 date: 2011-09-12 23:31:00
 ---
 

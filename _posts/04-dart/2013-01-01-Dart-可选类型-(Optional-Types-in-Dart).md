@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Dart 可选类型 (Optional Types in Dart)
-tags:
-  - 其它语言
+tags: 其它语言
 date: 2013-01-01 17:24:58
 ---
 

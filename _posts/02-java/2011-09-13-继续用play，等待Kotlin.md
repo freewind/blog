@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 继续用play，等待Kotlin
-tags:
-  - 未分类
+tags: 未分类
 date: 2011-09-13 02:03:22
 ---
 

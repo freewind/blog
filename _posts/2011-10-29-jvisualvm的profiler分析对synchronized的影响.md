@@ -1,8 +1,7 @@
 ---
 layout: post
 title: jvisualvm的profiler分析对synchronized的影响
-tags:
-  - Java
+tags: Java
 date: 2011-10-29 12:50:15
 ---
 

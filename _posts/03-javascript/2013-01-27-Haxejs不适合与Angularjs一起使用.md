@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Haxejs不适合与Angularjs一起使用
-tags:
-  - haxe
+tags: haxe
 date: 2013-01-27 00:02:27
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 09. Comet sockets
-tags:
-  - Scala
+tags: Scala
 date: 2013-01-01 17:02:32
 ---
 

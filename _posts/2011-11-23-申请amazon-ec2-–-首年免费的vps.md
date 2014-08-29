@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 申请amazon ec2 – 首年免费的vps
-tags:
-  - 未分类
+tags: 未分类
 date: 2011-11-23 23:48:33
 ---
 

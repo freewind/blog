@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 在scala中实现using自动关闭资源
-tags:
-  - Scala
+tags: Scala
 date: 2011-09-13 21:48:00
 ---
 

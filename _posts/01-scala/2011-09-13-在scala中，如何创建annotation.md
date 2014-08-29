@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 在scala中，如何创建annotation
-tags:
-  - Scala
+tags: Scala
 date: 2011-09-13 22:27:00
 ---
 

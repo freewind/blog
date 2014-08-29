@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Javascript MVC 资源
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2013-01-01 17:27:52
 ---
 

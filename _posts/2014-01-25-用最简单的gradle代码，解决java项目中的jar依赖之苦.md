@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 用最简单的gradle代码，解决java项目中的jar依赖之苦
-tags:
-  - Java
+tags: Java
 date: 2014-01-25 16:41:51
 ---
 

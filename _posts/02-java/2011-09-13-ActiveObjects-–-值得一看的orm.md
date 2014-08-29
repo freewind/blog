@@ -1,8 +1,7 @@
 ---
 layout: post
 title: ActiveObjects – 值得一看的orm
-tags:
-  - Java
+tags: Java
 date: 2011-09-13 01:45:23
 ---
 

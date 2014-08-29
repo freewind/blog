@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Hibernate使用注意事项
-tags:
-  - Java
+tags: Java
 date: 2011-12-20 00:45:48
 ---
 

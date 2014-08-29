@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 自己动手写IDEA plugin – PubEditor (4) pubspec.yaml文件语法
-tags:
-  - Dart
+tags: Dart
 date: 2014-04-10 22:55:21
 ---
 

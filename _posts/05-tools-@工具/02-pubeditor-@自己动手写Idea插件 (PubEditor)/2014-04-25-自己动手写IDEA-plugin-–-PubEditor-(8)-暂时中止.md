@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 自己动手写IDEA plugin – PubEditor (8) 暂时中止
-tags:
-  - 未分类
+tags: 未分类
 date: 2014-04-25 23:13:06
 ---
 

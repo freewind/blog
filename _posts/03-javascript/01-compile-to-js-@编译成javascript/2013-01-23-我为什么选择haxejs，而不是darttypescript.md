@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 我为什么选择haxejs，而不是dart/typescript
-tags:
-  - haxe
+tags: haxe
 date: 2013-01-23 00:00:25
 ---
 

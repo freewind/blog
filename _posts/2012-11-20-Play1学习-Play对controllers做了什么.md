@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Play1学习: Play对controllers做了什么"
-tags:
-  - PlayFramework1
+tags: PlayFramework1
 date: 2012-11-20 15:44:07
 ---
 

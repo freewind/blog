@@ -1,8 +1,7 @@
 ---
 layout: post
 title: scala中尽量避免使用null
-tags:
-  - Scala
+tags: Scala
 date: 2011-09-13 22:01:16
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Play1.2.x源代码阅读之 enhancers
-tags:
-  - PlayFramework1
+tags: PlayFramework1
 date: 2013-03-25 16:35:37
 ---
 

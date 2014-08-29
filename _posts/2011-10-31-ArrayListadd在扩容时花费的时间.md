@@ -1,8 +1,7 @@
 ---
 layout: post
 title: ArrayList.add在扩容时花费的时间
-tags:
-  - Java
+tags: Java
 date: 2011-10-31 10:51:35
 ---
 

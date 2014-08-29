@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 如何一步步把dart的web-ui框架的示例程序todomvc编译成可在普通浏览器上浏览的网站
-tags:
-  - 其它语言
+tags: 其它语言
 date: 2013-05-31 00:16:12
 ---
 

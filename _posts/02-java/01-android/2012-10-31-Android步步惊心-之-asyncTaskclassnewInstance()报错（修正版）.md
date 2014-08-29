@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Android步步惊心 之 asyncTask.class.newInstance()报错（修正版）
-tags:
-  - Android
+tags: Android
 date: 2012-10-31 20:18:33
 ---
 

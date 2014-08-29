@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Javascript中，为什么既有call又有apply
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2012-05-10 21:47:47
 ---
 

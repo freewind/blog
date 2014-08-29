@@ -1,8 +1,7 @@
 ---
 layout: post
 title: vim 8. java开发插件Vim JDE
-tags:
-  - IDE
+tags: IDE
 date: 2011-09-13 01:04:55
 ---
 

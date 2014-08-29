@@ -1,8 +1,7 @@
 ---
 layout: post
 title: windows下安装使用coffeescript
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2011-10-20 23:58:44
 ---
 

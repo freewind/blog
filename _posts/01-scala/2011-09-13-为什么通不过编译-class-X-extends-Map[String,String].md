@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "为什么通不过编译 class X extends Map[String,String]"
-tags:
-  - Scala
+tags: Scala
 date: 2011-09-13 22:21:00
 ---
 

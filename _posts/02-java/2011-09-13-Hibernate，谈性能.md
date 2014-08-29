@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Hibernate，谈性能
-tags:
-  - Java
+tags: Java
 date: 2011-09-13 02:01:00
 ---
 

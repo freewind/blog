@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Towerjs与Railwayjs对比与试用
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2012-05-05 23:56:02
 ---
 

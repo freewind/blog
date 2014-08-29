@@ -1,8 +1,7 @@
 ---
 layout: post
 title: haml – rails的新view层模板
-tags:
-  - 未分类
+tags: 未分类
 date: 2011-09-13 01:54:00
 ---
 

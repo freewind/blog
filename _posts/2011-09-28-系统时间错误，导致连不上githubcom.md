@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 系统时间错误，导致连不上github.com
-tags:
-  - 未分类
+tags: 未分类
 date: 2011-09-28 07:59:38
 ---
 

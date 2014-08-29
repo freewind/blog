@@ -1,8 +1,7 @@
 ---
 layout: post
 title: AngularJs Tutorial 中文版(1)
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2013-01-01 11:59:52
 ---
 

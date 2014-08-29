@@ -1,8 +1,7 @@
 ---
 layout: post
 title: ArrayList与LinkedList的适用情形
-tags:
-  - 未分类
+tags: 未分类
 date: 2011-10-31 01:31:26
 ---
 

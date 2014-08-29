@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Android界面制作中最重要最强大的武器: 9-patch"
-tags:
-  - Android
+tags: Android
 date: 2012-11-02 12:57:02
 ---
 

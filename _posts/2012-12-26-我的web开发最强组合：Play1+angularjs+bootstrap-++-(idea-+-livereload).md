@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 我的web开发最强组合：Play1+angularjs+bootstrap ++ (idea + livereload)
-tags:
-  - JavaScript
-  - PlayFramework1
+tags: JavaScript PlayFramework1
 date: 2012-12-26 20:57:26
 ---
 

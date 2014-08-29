@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 发布了一个Haxe的小项目：HaxeAngularSupport
-tags:
-  - haxe
+tags: haxe
 date: 2013-01-22 21:35:58
 ---
 

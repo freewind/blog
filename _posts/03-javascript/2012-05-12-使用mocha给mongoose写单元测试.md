@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 使用mocha给mongoose写单元测试
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2012-05-12 16:21:54
 ---
 

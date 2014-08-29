@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 整合playframework与activejdbc
-tags:
-  - Java
-  - PlayFramework1
+tags: Java PlayFramework1
 date: 2011-09-15 23:03:15
 ---
 

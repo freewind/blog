@@ -1,8 +1,7 @@
 ---
 layout: post
 title: play之libs.F
-tags:
-  - PlayFramework1
+tags: PlayFramework1
 date: 2011-10-19 13:18:39
 ---
 

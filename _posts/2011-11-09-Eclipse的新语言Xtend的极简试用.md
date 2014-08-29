@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Eclipse的新语言Xtend的极简试用
-tags:
-  - Java
+tags: Java
 date: 2011-11-09 22:12:54
 ---
 

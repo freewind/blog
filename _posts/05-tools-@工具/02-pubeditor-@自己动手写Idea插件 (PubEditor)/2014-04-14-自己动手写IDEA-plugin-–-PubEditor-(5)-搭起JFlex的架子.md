@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 自己动手写IDEA plugin – PubEditor (5) 搭起JFlex的架子
-tags:
-  - Scala
+tags: Scala
 date: 2014-04-14 22:55:10
 ---
 

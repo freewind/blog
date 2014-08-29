@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Android之残缺的神器：android-x86 + vmlite
-tags:
-  - Android
+tags: Android
 date: 2012-10-18 22:47:02
 ---
 

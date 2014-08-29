@@ -1,8 +1,7 @@
 ---
 layout: post
 title: vim 6. 插件taglist.vim，显示源代码大纲
-tags:
-  - IDE
+tags: IDE
 date: 2011-09-13 00:07:49
 ---
 

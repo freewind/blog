@@ -1,8 +1,7 @@
 ---
 layout: post
 title: vim 7. 英文拼写检查插件Engspchk
-tags:
-  - IDE
+tags: IDE
 date: 2011-09-13 00:22:57
 ---
 

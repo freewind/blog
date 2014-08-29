@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Dart中unittest用法详解
-tags:
-  - Dart
+tags: Dart
 date: 2014-01-31 23:36:53
 ---
 

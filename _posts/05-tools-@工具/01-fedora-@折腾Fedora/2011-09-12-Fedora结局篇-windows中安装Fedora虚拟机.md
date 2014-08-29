@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Fedora结局篇 windows中安装Fedora虚拟机
-tags:
-  - Linux
+tags: Linux
 date: 2011-09-12 23:32:58
 ---
 

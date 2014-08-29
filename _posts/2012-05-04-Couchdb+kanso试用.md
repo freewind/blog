@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Couchdb+kanso试用
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2012-05-04 18:36:18
 ---
 

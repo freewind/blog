@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 读“悟透JavaScript”
-tags:
-  - JavaScript
+tags: JavaScript
 date: 2011-09-14 01:34:06
 ---
 

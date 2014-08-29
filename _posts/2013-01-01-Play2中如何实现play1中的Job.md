@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Play2中如何实现play1中的Job?
-tags:
-  - Play 2
+tags: Play 2
 date: 2013-01-01 17:04:55
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 复习ClassLoader
-tags:
-  - Java
+tags: Java
 date: 2011-09-15 15:38:53
 ---
 
