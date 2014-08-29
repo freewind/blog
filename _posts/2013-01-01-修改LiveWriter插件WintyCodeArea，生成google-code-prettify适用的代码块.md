@@ -25,12 +25,12 @@ date: 2013-01-01 20:30:32
           .Replace("<P>", "").Replace("</P>", "")
           .Replace("\r\n", "").Replace("\n", "")
           .Replace("<BR>", "\n")
-          .Replace("&amp;nbsp;", " ");
+          .Replace("&nbsp;", " ");
     </div>
 
     我增加了一个配置选项：`RemoveBr`，用来表示是否去除代码中的`<br>`标签。
 
-    当我们把代码直接拷贝到live writer后，live writer为了正确显示其格式，会把换行符`\n`变为`<BR>`，同时把多于一个的空格换成`&amp;nbsp;`。如果我们直接在它们外面包上`<pre><code>`，显然是不行的，因为google-code-prettify需要的是纯文本格式的代码，里面不能含有html代码。我们需要在代码中，把`<BR>`换成换行符`\n`，把`&amp;nbsp;`换成空格。
+    当我们把代码直接拷贝到live writer后，live writer为了正确显示其格式，会把换行符`\n`变为`<BR>`，同时把多于一个的空格换成`&nbsp;`。如果我们直接在它们外面包上`<pre><code>`，显然是不行的，因为google-code-prettify需要的是纯文本格式的代码，里面不能含有html代码。我们需要在代码中，把`<BR>`换成换行符`\n`，把`&nbsp;`换成空格。
 
     另外，我们得到的`content`字符串（即选中的内容）会莫名多出一些换行符，必须先把它们去掉，不然最后生成的代码，格式是乱的。
 

@@ -389,7 +389,7 @@ Livereload的官网是[http://livereload.com](http://livereload.com)，它支持
                     min: opts.min || 0, 
                     max: opts.max || 100, 
                     step: opts.step || 10, 
-                    value: attrs.ngModel &amp;&amp; scope.$eval(attrs.ngModel) || 50, 
+                    value: attrs.ngModel && scope.$eval(attrs.ngModel) || 50, 
                     slide: function (event, ui) { 
                         if (ngModel) { 
                             scope.$apply(function () { 

@@ -14,7 +14,7 @@ Web开发真是日新月异，不断有新东西出来，js时代快到来了。
 
 我曾经想使用play+jquery来做一个todolist，折腾很久都没弄出来。后来发现了backbone，眼前一亮，但还是稍嫌复杂。
 
-最后发现了angularjs，原来可以这么轻松。视频为证：[http://www.youtube.com/watch?v=WuiHuZq_cg4&amp;feature=related](http://www.youtube.com/watch?v=WuiHuZq_cg4&amp;feature=related "http://www.youtube.com/watch?v=WuiHuZq_cg4&amp;feature=related")
+最后发现了angularjs，原来可以这么轻松。视频为证：[http://www.youtube.com/watch?v=WuiHuZq_cg4&feature=related](http://www.youtube.com/watch?v=WuiHuZq_cg4&feature=related "http://www.youtube.com/watch?v=WuiHuZq_cg4&feature=related")
 
 我本来还是舍不得离开熟悉的java平台，前台angularjs，后台java，通过restful api交互，岂不也是很好？
 

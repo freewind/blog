@@ -1,9 +1,8 @@
 ---
 layout: post
-title: scala中Iterator的比较
-tags:
-  - Scala
+tags: Scala
 date: 2012-02-11 21:58:37
+title: scala中Iterator的比较
 ---
 
 这是老猪布置的作业：在scala中，如何比较两个iterator是否相等。
@@ -128,7 +127,7 @@ Scala中的Iterator，可用来依次取下一个数据。比如：
 注：老猪最后给出了一种更加函数式风格的代码，如下：
 
 > def eq_?[T](i1: Iterator[T], i2: Iterator[T]) = !i1.exists{e =>      
->   !i2.hasNext || e != i2.next || (!i1.hasNext &amp;&amp; i2.hasNext)       
+>   !i2.hasNext || e != i2.next || (!i1.hasNext && i2.hasNext)       
 > }
 
 其中没有用while等，代码更加紧凑流畅。
@@ -136,11 +135,11 @@ Scala中的Iterator，可用来依次取下一个数据。比如：
 另外发现sameElements的实现，与我的代码比较相似，只是看起来更加清楚简洁一些：
 
 > def sameElements(that: Iterator[_]): Boolean = {    
->   while (hasNext &amp;&amp; that.hasNext)       
+>   while (hasNext && that.hasNext)       
 >     if (next != that.next)       
 >       return false       
 >   
->   !hasNext &amp;&amp; !that.hasNext       
+>   !hasNext && !that.hasNext       
 > }       
 > 
 >  
@@ -156,7 +155,7 @@ Scala中的Iterator，可用来依次取下一个数据。比如：
 1. 使用zip
 
 > `def compare(it1:Iterator[String], it2:Iterator[String]) = {       
->   it1.zip(it2).forall(x => x._1 == x._2) &amp;&amp;         
+>   it1.zip(it2).forall(x => x._1 == x._2) &&         
 >   (it1.length == it2.length)         
 > }`
 
@@ -164,7 +163,7 @@ Scala中的Iterator，可用来依次取下一个数据。比如：
 
 > def compare(it1:Iterator[String], it2:Iterator[String]) : Boolean = {
 >       (it1 hasNext, it2 hasNext) match{
->         case (true, true) => (it1.next == it2.next) &amp;&amp; compare(it1, it2)
+>         case (true, true) => (it1.next == it2.next) && compare(it1, it2)
 >         case (false, false) => true
 >         case _ => false
 >       }

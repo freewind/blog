@@ -54,7 +54,7 @@ TODO
 
  [![image](http://freewind.me/wp-content/uploads/2011/12/image_thumb6.png "image")](http://freewind.me/wp-content/uploads/2011/12/image6.png)
 
-8. Drag &amp; Drop
+8. Drag & Drop
 
 [![image](http://freewind.me/wp-content/uploads/2011/12/image_thumb7.png "image")](http://freewind.me/wp-content/uploads/2011/12/image7.png)
 

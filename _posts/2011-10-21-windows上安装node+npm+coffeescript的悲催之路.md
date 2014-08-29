@@ -8,7 +8,7 @@ date: 2011-10-21 21:06:31
 
 在linux上，安装它们都相当容易，步骤如下：
 
-*   下载node(v0.4.12)的源代码，以标准方式安装(./configure &amp; make &amp; make install)
+*   下载node(v0.4.12)的源代码，以标准方式安装(./configure & make & make install)
 *   npm更简单：curl [http://npmjs.org/install.sh](http://npmjs.org/install.sh) | sh
 *   coffeescript：npm install -g coffee-script
 

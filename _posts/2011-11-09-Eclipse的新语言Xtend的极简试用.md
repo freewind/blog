@@ -10,7 +10,7 @@ date: 2011-11-09 22:12:54
 
 网址在：[http://www.eclipse.org/Xtext/xtend/](http://www.eclipse.org/Xtext/xtend/)
 
-BUG提交地址：[https://bugs.eclipse.org/bugs/enter_bug.cgi?product=TMF&amp;component=Xtext&amp;version=2.1.0&amp;short_desc=%5BXtend%5D](https://bugs.eclipse.org/bugs/enter_bug.cgi?product=TMF&amp;component=Xtext&amp;version=2.1.0&amp;short_desc=%5BXtend%5D)
+BUG提交地址：[https://bugs.eclipse.org/bugs/enter_bug.cgi?product=TMF&component=Xtext&version=2.1.0&short_desc=%5BXtend%5D](https://bugs.eclipse.org/bugs/enter_bug.cgi?product=TMF&component=Xtext&version=2.1.0&short_desc=%5BXtend%5D)
 
 安装时需要通过Eclpise的Market，直接搜索xtend就能找到。
 

@@ -89,7 +89,7 @@ obj match {
 在Java中，应该写成这样：
 
 ```
-if(obj instanceof String &amp;&amp; ((String)obj).startsWith("command:")) {
+if(obj instanceof String && ((String)obj).startsWith("command:")) {
     String s = (String)obj;
     System.out.println("s.toUpperCase());
 }

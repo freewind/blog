@@ -47,7 +47,7 @@ lift里面东西很多，这次只接触到snippet，所以只总结这一点。
 >   <table class="**<font color="#ff0000">lift:ForumSnippet.forumlist</font>** maintable">
 > 
 >     <tr class="t-cat_header">     
->       <td colspan="5" class="forumcat"><a href="{cat_url}" name="{cat_anchor}" rel="nofollow">&amp;raquo;</a> <span name="cat_name">{cat_name}</span></td>      
+>       <td colspan="5" class="forumcat"><a href="{cat_url}" name="{cat_anchor}" rel="nofollow">&raquo;</a> <span name="cat_name">{cat_name}</span></td>      
 >     </tr>      
 >     <tr>      
 >       <th class="icon"></th>      
@@ -121,7 +121,7 @@ templates-hidden/default.html内容如下：
 > object ForumSnippet {     
 >   def forumlist: CssSel =      
 >     "*****" **<font color="#800080">#></font>** (for (cat <- cats) yield {      
->       "**<font color="#ff8040">.t-cat_header</font>**" #> ("@cat_name" #> cat.name) &amp;      
+>       "**<font color="#ff8040">.t-cat_header</font>**" #> ("@cat_name" #> cat.name) &      
 >       "**<font color="#ff8000">.t-forum</font>**" #> ( for {      
 >           f <- cat.forums      
 >           lastTopic <- topics.lookup(f.last_topic_id)      
@@ -131,13 +131,13 @@ templates-hidden/default.html内容如下：
 >         val lastPoster = members.lookup(lastPost.poster_id).get      
 >         val lastTopicTitle = (if(lastTopic.count_replies>1) "Re: " else "") + lastTopic.topic_title 
 > 
->         "**<font color="#ff8000">.forumname *</font>**" #> f.name &amp;      
+>         "**<font color="#ff8000">.forumname *</font>**" #> f.name &      
 > 
->         ".forumdescr *" #> f.descr &amp;     
->         ".total_topics" #> f.topics &amp;      
->         ".total_posts" #> f.posts &amp;      
->         ".latest_post *" #> ("@latest_post" #> lastTopicTitle) &amp;      
->         ".by_author *" #> ("@by_author" #> {lastPoster.name}) &amp;      
+>         ".forumdescr *" #> f.descr &     
+>         ".total_topics" #> f.topics &      
+>         ".total_posts" #> f.posts &      
+>         ".latest_post *" #> ("@latest_post" #> lastTopicTitle) &      
+>         ".by_author *" #> ("@by_author" #> {lastPoster.name}) &      
 >         ".on_date *" #> ("@on_date" #> new SimpleDateFormat().format(lastPost.post_time)) 
 > 
 >       })     
@@ -156,7 +156,7 @@ templates-hidden/default.html内容如下：
 
 这句代码表示将".forumdescr"下的所有内容替换为f.descr。
 
-每行最后的`&amp;`，表示将多个操作连接起来。
+每行最后的`&`，表示将多个操作连接起来。
 
 **如何替换属性？**
 

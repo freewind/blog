@@ -198,7 +198,7 @@ Model就像是javabean，它对应的是数据。View对应的是页面上的某
 >         </ul>      
 >     </div>      
 >     <div class="content">      
->         <h3>这是标题 &amp;gt; 好啊</h3>      
+>         <h3>这是标题 &gt; 好啊</h3>      
 >         <ul class="chats">      
 >             <li class="chat">这是一条</li>      
 >             <li class="chat">这是一条</li>      

@@ -32,7 +32,7 @@ date: 2011-10-28 21:11:30
 
 编译安装，过程漫长 
 
-> make &amp;&amp; make install
+> make && make install
 
 自动安装到了/usr/local/pgsql下。 
 

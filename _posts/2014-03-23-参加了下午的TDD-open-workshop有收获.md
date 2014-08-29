@@ -417,7 +417,7 @@ date: 2014-03-23 00:56:54
             l.add(randomNumberGenerator.generate());
         }
         for (int i = 0; i < l.size(); i++) {
-            for (int j = 0; j < l.size() &amp;&amp; i != j; j++) {
+            for (int j = 0; j < l.size() && i != j; j++) {
                 assertThat(l.get(i)).isNotEqualTo(l.get(j));
             }
         }

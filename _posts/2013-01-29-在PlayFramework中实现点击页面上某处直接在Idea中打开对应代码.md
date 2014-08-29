@@ -18,7 +18,7 @@ date: 2013-01-29 18:25:09
 
 在Idea中有一个RemoteCall插件，可以让我们访问一个url时，Idea能根据传入的信息打开相应的文件。这是很关键的一个插件。
 
-*   [http://plugins.jetbrains.net/plugin?pr=webide&amp;pluginId=6027](http://plugins.jetbrains.net/plugin?pr=webide&amp;pluginId=6027)
+*   [http://plugins.jetbrains.net/plugin?pr=webide&pluginId=6027](http://plugins.jetbrains.net/plugin?pr=webide&pluginId=6027)
 *   github上源代码：[https://github.com/Zolotov/RemoteCall](https://github.com/Zolotov/RemoteCall)
 
 如果你使用其它的编辑器，可能不需要这样的插件，因为有的编辑器支持打开特定的url，只要构造一个符合的url即可。另外，Firefox也可以通过设置，当点击某种类型的url时，调用外部编辑器打开。
