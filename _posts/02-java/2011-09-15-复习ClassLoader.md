@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 238
 alias: go-over-classloader
 tags: Java
 date: 2011-09-15 15:38:53

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 336
 alias: install-nginx-on-linux
 tags: Linux
 date: 2011-09-22 00:13:11

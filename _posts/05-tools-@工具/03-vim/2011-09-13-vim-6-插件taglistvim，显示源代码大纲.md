@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 57
 alias: vim-6-taglist-plugin-to-show-outline
 tags: IDE
 date: 2011-09-13 00:07:49

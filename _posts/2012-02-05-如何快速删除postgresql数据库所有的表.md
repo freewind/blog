@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 726
 alias: how-to-delete-all-tables-fast-in-postgresql
 tags: More ...
 date: 2012-02-05 16:42:33

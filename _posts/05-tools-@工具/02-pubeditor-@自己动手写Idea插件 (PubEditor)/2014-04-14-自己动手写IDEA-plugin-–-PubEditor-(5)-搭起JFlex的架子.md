@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2584
 alias: write-idea-plugin-yourself-pubeditor-5-jflex
 tags: Scala
 date: 2014-04-14 22:55:10

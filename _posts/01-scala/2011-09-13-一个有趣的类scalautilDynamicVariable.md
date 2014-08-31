@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 170
 alias: an-interesting-class-scala-util-dynamicvariable
 tags: Scala
 date: 2011-09-13 21:41:00

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 548
 alias: install-usebb-on-windows
 tags: Scala
 date: 2011-11-05 21:45:37

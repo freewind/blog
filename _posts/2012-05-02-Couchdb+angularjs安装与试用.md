@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 846
 alias: try-couchdb-angularjs
 tags: JavaScript
 date: 2012-05-02 01:40:10

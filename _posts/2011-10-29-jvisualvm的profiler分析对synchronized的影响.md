@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 534
 alias: jvisualvm-profiler-impacts-synchronized
 tags: Java
 date: 2011-10-29 12:50:15

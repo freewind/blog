@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 178
 alias: succesfully-applied-sbt-jrebel-and-jetty-is-needed-restart
 tags: Scala
 date: 2011-09-13 21:59:54

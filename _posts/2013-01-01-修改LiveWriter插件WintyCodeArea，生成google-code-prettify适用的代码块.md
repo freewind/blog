@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1367
 alias: modify-wintycodearea-plugin-of-livewrite-to-insert-code-block
 tags: Windows
 date: 2013-01-01 20:30:32

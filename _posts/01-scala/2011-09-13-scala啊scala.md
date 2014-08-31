@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 107
 alias: scala-scala-scala
 tags: Scala
 date: 2011-09-13 01:57:25

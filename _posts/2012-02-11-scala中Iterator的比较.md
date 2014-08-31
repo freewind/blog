@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 728
 alias: how-to-compare-iterator-in-scala
 tags: Scala
 date: 2012-02-11 21:58:37

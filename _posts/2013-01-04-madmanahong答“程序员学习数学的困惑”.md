@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1652
 alias: the-answer-of-puzzles-of-programmers-learning-math-from-madmanahong
 tags: Math
 date: 2013-01-04 21:48:53

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1267
 alias: play2-1-4-session-and-flash-scopes
 tags: Java
 date: 2013-01-01 16:51:21

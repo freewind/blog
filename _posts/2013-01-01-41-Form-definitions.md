@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1273
 alias: angularjs-4.1-form-definitions
 title: 4.1 Form definitions
 tags: Java

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 784
 alias: jump-to-javascript-world-1
 title: Jump to Javascript world (1)
 tags: JavaScript

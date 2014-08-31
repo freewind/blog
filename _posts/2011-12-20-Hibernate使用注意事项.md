@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 612
 alias: notice-when-using-hibernate
 tags: Java
 date: 2011-12-20 00:45:48

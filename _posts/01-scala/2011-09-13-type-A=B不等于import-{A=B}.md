@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 183
 alias: why-type-a-b-is-not-the-same-to-import-a-b
 tags: Scala
 date: 2011-09-13 22:18:00

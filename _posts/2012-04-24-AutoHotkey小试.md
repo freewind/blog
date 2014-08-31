@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 783
 alias: try-autohotkey
 title: AutoHotkey小试
 tags: More ...

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 16
 alias: use-javassist-to-modify-class-dynamic
 tags: Java
 date: 2011-09-12 23:37:00

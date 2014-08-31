@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1038
 alias: android-asynctask-new-instance-errors
 tags: Android
 date: 2012-10-31 20:18:33

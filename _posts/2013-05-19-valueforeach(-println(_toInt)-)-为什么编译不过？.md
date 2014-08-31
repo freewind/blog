@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2124
 alias: why-value-foreach-println-toint-cannot-be-compiled
 tags: Scala
 date: 2013-05-19 21:28:52

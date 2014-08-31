@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1202
 alias: use-scala-to-dev-android-with-eclipse
 tags: Android Scala
 date: 2013-01-01 11:31:08

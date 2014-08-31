@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2554
 alias: write-idea-plugin-yourself-pubeditor-2-use-scala-to-write-hello-world
 tags: Dart
 date: 2014-04-06 23:34:36

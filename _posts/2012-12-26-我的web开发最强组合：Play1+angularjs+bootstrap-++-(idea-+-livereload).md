@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1167
 alias: my-most-powerful-tools-for-web-dev-play1-angularjs-bootstrap-idea-livereload
 title: 我的web开发最强组合：Play1+angularjs+bootstrap ++ (idea + livereload)
 tags: JavaScript PlayFramework1

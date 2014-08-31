@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 96
 alias: beankeeper-simple-orm
 tags: Java
 date: 2011-09-13 01:46:00

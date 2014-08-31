@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2123
 alias: use-kotlin-to-rewrite-angularjs-todomvc
 tags: 其它语言
 date: 2013-05-19 00:55:09

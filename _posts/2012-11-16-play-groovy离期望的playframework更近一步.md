@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1108
 alias: play-groovy-makes-playframework-closes-to-my-expectation
 tags: PlayFramework1
 date: 2012-11-16 23:36:35

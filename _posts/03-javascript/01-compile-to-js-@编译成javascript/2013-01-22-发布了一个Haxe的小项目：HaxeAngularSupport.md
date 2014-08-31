@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2016
 alias: my-hax-project-haxe-angular-support
 tags: haxe
 title: 发布了一个Haxe的小项目：HaxeAngularSupport

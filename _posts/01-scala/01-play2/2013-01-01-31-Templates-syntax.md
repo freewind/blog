@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1271
 alias: play2-3-1-templates-syntax
 tags: Java
 date: 2013-01-01 16:53:46

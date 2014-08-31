@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2329
 alias: strange-problem-of-list.map-or-dart
 tags: Dart
 date: 2014-03-07 23:47:04

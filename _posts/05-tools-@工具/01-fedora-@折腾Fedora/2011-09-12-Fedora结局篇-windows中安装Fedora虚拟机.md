@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 14
 alias: install-virtual-box-for-fedora-on-windows
 tags: Linux
 date: 2011-09-12 23:32:58

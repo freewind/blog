@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 63
 alias: vim-8-vim-jde-for-java-dev
 tags: IDE
 date: 2011-09-13 01:04:55

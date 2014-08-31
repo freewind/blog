@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 19
 alias: easy-to-use-html-parser-jsoup
 tags: Java
 date: 2011-09-12 23:42:52

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2044
 alias: click-on-an-element-on-page-will-open-the-code-inside-idea
 tags: PlayFramework1
 date: 2013-01-29 18:25:09

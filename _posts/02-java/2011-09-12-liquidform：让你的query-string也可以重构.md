@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 20
 alias: liquidform-let-your-query-string-refactorable
 tags: Java
 date: 2011-09-12 23:47:00

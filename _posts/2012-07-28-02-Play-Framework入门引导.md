@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 965
 alias: guide-to-play1-play2
 tags: PlayFramework1
 date: 2012-07-28 17:00:29

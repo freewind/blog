@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2732
 alias: scala-workshop-pair-practise
 tags: Scala
 date: 2014-07-07 20:28:07

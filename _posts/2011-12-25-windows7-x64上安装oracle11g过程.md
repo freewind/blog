@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 635
 alias: install-oracle11g-on-windows-x64
 tags: 未分类
 date: 2011-12-25 14:03:41

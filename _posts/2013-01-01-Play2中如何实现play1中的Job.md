@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1286
 alias: how-to-implement-the-job-of-play1-in-play2
 tags: Play 2
 date: 2013-01-01 17:04:55

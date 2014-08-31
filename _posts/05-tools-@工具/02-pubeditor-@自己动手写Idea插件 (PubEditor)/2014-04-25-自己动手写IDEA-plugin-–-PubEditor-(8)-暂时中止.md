@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2601
 alias: write-idea-plugin-yourself-pubeditor-8-pause-dev
 tags: 未分类
 date: 2014-04-25 23:13:06

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 907
 alias: javascript-nodejs-after-half-month
 tags: JavaScript
 date: 2012-05-13 00:48:24

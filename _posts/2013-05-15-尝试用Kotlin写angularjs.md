@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2117
 alias: try-to-use-kotlin-to-write-angularjs
 tags: 其它语言
 date: 2013-05-15 21:07:00

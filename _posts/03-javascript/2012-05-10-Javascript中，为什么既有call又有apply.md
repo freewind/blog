@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 899
 alias: why-there-is-call-and-apply-in-javascript
 date: 2012-05-10 21:47:47
 tags: JavaScript

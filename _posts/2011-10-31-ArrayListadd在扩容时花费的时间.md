@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 538
 alias: the-time-spent-on-expansion-of-arraylist-add
 tags: Java
 date: 2011-10-31 10:51:35

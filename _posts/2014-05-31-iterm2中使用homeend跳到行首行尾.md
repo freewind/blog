@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2649
 alias: use-home-end-in-iterm2
 tags: 未分类
 date: 2014-05-31 21:08:44

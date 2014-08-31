@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 458
 alias: the-performance-diff-between-atomic-and-synchronized-in-multithread-env
 tags: Java
 date: 2011-10-22 22:05:03

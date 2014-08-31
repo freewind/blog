@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 497
 alias: max-speed-of-transfering-data-from-socket-server-and-client-on-one-computer
 tags: Java
 date: 2011-10-26 23:20:04

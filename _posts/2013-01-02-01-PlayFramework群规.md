@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1492
 alias: playframework-group-rule
 tags: PlayFramework1
 date: 2013-01-02 13:53:12

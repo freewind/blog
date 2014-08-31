@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2509
 alias: write-idea-plugin-yourself-pubeditor-3-bind-pub-files-with-pubeditor
 tags: Dart
 date: 2014-04-07 18:31:13

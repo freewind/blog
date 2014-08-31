@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 130
 alias: wordpress-not-support-ie6-any-more
 tags: 未分类
 date: 2011-09-13 02:29:26

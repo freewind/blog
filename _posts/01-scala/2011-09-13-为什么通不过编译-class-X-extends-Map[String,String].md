@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 185
 alias: why-class-x-extends-map-string-string-cannot-be-compiled
 tags: Scala
 date: 2011-09-13 22:21:00

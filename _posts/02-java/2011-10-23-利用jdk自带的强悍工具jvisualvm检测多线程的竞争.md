@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 479
 alias: use-jdk-builtin-jvisualvm-to-check-multithread-competition
 tags: Java
 date: 2011-10-23 12:55:01

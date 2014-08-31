@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 18
 alias: use-lambdaj-to-use-lambda-in-java
 tags: Java
 date: 2011-09-12 23:41:04

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2014
 alias: use-haxejs-to-write-javascript-in-typesafe-manner
 tags: JavaScript
 date: 2013-01-21 23:27:42

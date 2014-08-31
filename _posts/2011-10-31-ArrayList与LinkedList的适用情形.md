@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 536
 alias: when-to-use-arraylist-and-linkedlist
 tags: 未分类
 date: 2011-10-31 01:31:26

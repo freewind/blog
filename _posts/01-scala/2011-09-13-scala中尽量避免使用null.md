@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 180
 alias: avoid-null-in-scala
 tags: Scala
 date: 2011-09-13 22:01:16

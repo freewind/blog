@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1491
 alias: javascript-group-rule
 tags: JavaScript
 date: 2013-01-02 13:51:10

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 60
 alias: vim-7-check-spelling-engspchk
 tags: IDE
 date: 2011-09-13 00:22:57

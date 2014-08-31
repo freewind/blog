@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2595
 alias: write-idea-plugin-yourself-pubeditor-6-simplify-yaml-syntax
 tags: 未分类
 date: 2014-04-22 22:05:27

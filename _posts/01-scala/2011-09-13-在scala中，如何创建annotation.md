@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 189
 alias: how-to-create-annotation-in-scala
 tags: Scala
 date: 2011-09-13 22:27:00

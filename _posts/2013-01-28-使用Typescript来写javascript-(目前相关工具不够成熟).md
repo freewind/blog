@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2034
 alias: use-typescript-to-write-javascript
 tags: JavaScript
 date: 2013-01-28 14:07:37

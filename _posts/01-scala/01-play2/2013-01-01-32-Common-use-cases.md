@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1272
 alias: play2-3-2-common-use-cases
 tags: Java
 date: 2013-01-01 16:54:30

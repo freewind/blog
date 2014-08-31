@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1138
 alias: the-jsonbuilder-of-groovy-is-not-groovy-enough
 tags: 其它语言
 date: 2012-12-21 16:36:31

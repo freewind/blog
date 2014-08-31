@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2721
 alias: scala-workshop-2-scala-resources
 tags: scala-hot-workshop
 date: 2014-06-14 23:38:52

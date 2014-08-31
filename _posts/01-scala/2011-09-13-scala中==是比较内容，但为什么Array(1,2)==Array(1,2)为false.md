@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 201
 alias: why-array-1-2-array-1-2-is-false
 tags: Scala
 date: 2011-09-13 22:41:04

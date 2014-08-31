@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2311
 alias: use-simplest-gradle-code-to-solve-dependencies-of-java-project
 tags: Java
 date: 2014-01-25 16:41:51

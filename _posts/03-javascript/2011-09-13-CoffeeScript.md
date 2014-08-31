@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 75
 alias: try-coffeescript
 tags: JavaScript
 date: 2011-09-13 01:21:59

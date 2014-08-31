@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2271
 alias: notes-of-book-clean-code
 tags: 读书
 date: 2014-01-19 00:05:59

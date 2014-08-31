@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2689
 alias: scala-workshop-1-try-scala-code-with-scalaconsole
 tags: scala-hot-workshop
 date: 2014-06-14 11:32:36

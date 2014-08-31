@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2737
 alias: why-type-of-nil-is-list-nothing-not-list-any 
 tags: scala-hot-workshop
 date: 2014-07-23 21:50:24

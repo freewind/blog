@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1274
 alias: play2-01-actions-controllers-results
 tags: Scala
 date: 2013-01-01 16:56:59

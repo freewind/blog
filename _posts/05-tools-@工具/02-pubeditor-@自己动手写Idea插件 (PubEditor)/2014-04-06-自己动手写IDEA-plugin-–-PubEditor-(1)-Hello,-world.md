@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2503
 alias: write-idea-plugin-yourself-pubeditor-1-hello-world
 tags: Dart
 date: 2014-04-06 23:06:06

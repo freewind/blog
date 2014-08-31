@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2597
 alias: write-idea-plugin-yourself-pubeditor-7-highlight
 tags: 未分类
 date: 2014-04-23 14:19:35

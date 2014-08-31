@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 95
 alias: activeobjects-an-orm-worth-noting
 tags: Java
 date: 2011-09-13 01:45:23

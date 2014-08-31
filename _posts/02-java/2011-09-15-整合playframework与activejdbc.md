@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 243
 alias: integrate-playframework1-and-activejdbc
 tags: Java PlayFramework1
 date: 2011-09-15 23:03:15

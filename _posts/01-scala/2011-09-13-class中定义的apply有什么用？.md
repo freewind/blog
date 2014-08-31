@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 196
 alias: scala-apply-in-classes
 tags: Scala
 date: 2011-09-13 22:35:30

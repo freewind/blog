@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 210
 alias: notes-of-book-understand-javascript-completely
 tags: JavaScript
 date: 2011-09-14 01:34:06

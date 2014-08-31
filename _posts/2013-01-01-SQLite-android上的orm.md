@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1198
 alias: android-orm-for-sqlite
 tags: Android
 date: 2013-01-01 11:22:50

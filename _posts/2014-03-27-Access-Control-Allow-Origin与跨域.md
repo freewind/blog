@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2456
 alias: access-control-allow-origin-and-cross-domain
 tags: 未分类
 date: 2014-03-27 20:24:31

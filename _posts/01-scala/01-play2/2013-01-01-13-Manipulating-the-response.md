@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1266
 alias: play2-1-3-manipulating-the-response
 tags: Java
 date: 2013-01-01 16:50:42

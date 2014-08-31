@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2747
 alias: front-end-training
 tags: Scala
 date: 2014-08-18 07:56:00

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 793
 alias: try-nodejs-cloud9
 title: Node.js与cloud9小试
 tags: JavaScript

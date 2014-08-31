@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2022
 alias: haxejs-is-not-proper-to-use-with-angularjs
 tags: haxe
 date: 2013-01-27 00:02:27

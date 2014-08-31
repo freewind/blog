@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1278
 alias: play2-04-session-and-flash
 tags: Scala
 date: 2013-01-01 16:59:41

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2704
 alias: scala-workshop-2-opinions-from-beginners 
 tags: scala-hot-workshop
 date: 2014-06-14 20:54:27

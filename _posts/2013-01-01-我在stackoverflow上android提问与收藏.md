@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1212
 alias: my-android-questions-on-stackoverflow
 title: 我在stackoverflow上android提问与收藏
 tags: Android

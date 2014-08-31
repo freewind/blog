@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 977
 alias: android-good-tool-android-x86-vmlite
 tags: Android
 date: 2012-10-18 22:47:02

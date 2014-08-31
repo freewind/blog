@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1733
 alias: solve-the-problem-that-idea-show-strange-square-instead-of-chinese-character-on-windows
 tags: IDE
 date: 2013-01-06 11:29:54

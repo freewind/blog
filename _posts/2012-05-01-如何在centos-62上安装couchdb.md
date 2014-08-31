@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 831
 alias: how-to-install-couchdb-on-centos-6.2
 tags: Linux
 date: 2012-05-01 20:58:29

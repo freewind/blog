@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2090
 alias: invoke-eclipse-jdt-to-compile-java-source-code
 tags: Java
 date: 2013-03-31 20:06:36

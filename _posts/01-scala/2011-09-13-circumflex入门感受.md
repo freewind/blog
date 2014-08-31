@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 181
 alias: try-circumflex
 tags: Scala
 date: 2011-09-13 22:03:58

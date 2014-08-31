@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 430
 alias: cannot-connect-to-github-due-to-incorrect-system-time
 tags: 未分类
 date: 2011-09-28 07:59:38

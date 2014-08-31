@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 848
 alias: try-couchdb-kanso
 tags: JavaScript
 date: 2012-05-04 18:36:18

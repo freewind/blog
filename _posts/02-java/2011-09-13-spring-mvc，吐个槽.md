@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 108
 alias: spring-mvc-is-not-so-good
 tags: Java
 date: 2011-09-13 01:57:59

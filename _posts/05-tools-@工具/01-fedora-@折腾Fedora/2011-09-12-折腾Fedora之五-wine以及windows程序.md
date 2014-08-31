@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 10
 alias: fedora-5-wine-and-windows-programs
 tags: Linux
 date: 2011-09-12 23:31:00

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2111
 alias: change-mac-option-key-to-provide-more-keyshorts-for-idea
 tags: Mac
 date: 2013-05-09 21:11:14

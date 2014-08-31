@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 104
 alias: haml-rails-new-view-template-engine
 tags: 未分类
 date: 2011-09-13 01:54:00

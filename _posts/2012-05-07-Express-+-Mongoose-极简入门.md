@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 891
 alias: guide-express-mongoose
 tags: JavaScript
 date: 2012-05-07 21:38:09

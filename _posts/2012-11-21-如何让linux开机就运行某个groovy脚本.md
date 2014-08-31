@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1114
 alias: let-linux-run-a-groovy-shell-when-start-up
 tags: Linux
 date: 2012-11-21 20:37:50

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 173
 alias: how-to-close-resource-with-using-in-scala
 tags: Scala
 date: 2011-09-13 21:48:00

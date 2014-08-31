@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 767
 alias: use-python-to-write-a-tool-to-upload-data-5
 tags: Python
 date: 2012-02-20 22:59:07

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 116
 alias: use-play-and-wait-for-kotlin
 date: 2011-09-13 02:03:22
 title: 继续用play，等待Kotlin

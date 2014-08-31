@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 571
 alias: try-xtend-of-eclipse
 title: Eclipse的新语言Xtend的极简试用
 tags: Java

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2427
 alias: xian-tdd-open-workshop
 tags: 未分类
 date: 2014-03-23 00:56:54

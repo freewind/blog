@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1216
 alias: angularjs-tutorial-cn-1
 tags: JavaScript
 date: 2013-01-01 11:59:52

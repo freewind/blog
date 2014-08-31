@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2580
 alias: write-idea-plugin-yourself-pubeditor-4-pubspec-syntax
 tags: Dart
 date: 2014-04-10 22:55:21

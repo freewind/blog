@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1037
 alias: android-broken-png-image
 tags: Android
 date: 2012-10-30 20:15:28

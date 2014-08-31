@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2065
 alias: how-to-integration-livereload-in-playframework1
 tags: PlayFramework1
 date: 2013-02-03 18:18:42

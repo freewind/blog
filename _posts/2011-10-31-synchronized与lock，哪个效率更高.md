@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 542
 alias: which-has-better-performance-synchronized-and-lock
 tags: 未分类
 date: 2011-10-31 21:26:02

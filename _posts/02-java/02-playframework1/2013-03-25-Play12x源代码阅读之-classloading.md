@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2088
 alias: source-reading-play1-classloading
 tags: PlayFramework1
 date: 2013-03-25 14:56:40

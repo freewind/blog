@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2717
 alias: scala-workshop-2-why-learn-scala-and-difficulties
 tags: scala-hot-workshop
 date: 2014-06-14 23:34:06

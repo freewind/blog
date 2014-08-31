@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 113
 alias: the-performance-of-hibernate
 tags: Java
 date: 2011-09-13 02:01:00

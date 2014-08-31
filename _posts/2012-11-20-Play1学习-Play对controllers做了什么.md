@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1110
 alias: what-has-play1-done-to-controllers
 tags: PlayFramework1
 date: 2012-11-20 15:44:07

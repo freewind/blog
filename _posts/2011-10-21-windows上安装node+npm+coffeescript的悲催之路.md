@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 452
 alias: install-node-npm-coffeescript-on-windows
 tags: JavaScript
 date: 2011-10-21 21:06:31

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1095
 alias: android-9-patch
 tags: Android
 date: 2012-11-02 12:57:02

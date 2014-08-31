@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1099
 alias: skills-to-define-helper-in-play1
 tags: PlayFramework1
 date: 2012-11-07 13:07:10

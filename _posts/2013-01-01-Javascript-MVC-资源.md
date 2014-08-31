@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1342
 alias: javascript-mvc-resources
 tags: JavaScript
 date: 2013-01-01 17:27:52
