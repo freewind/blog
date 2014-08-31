@@ -562,3 +562,21 @@ angular.module('myApp', []).config(function($interpolateProvider){
 上面的操作，都在这个项目中： <https://github.com/freewind/grunt-bower-angular-demo>
 
 另外，关于requirejs/angularjs的结合使用，可以参看这个比较好的样板项目： <https://github.com/tnajdek/angular-requirejs-seed>
+
+## 一些评论
+
+### guxiangguo
+
+可以使用sbt-web，提供了很多支持前端处理的plugin。 
+
+### laoweiyeah
+
+why not yeoman?
+
+#### 我
+
+刚看了一下yeoman，似乎它的最大特色是模板功能吧？我们是在一个已有的后端项目中添加前端框架，需要小心的控制每一步，以保证不破坏已有功能。
+
+### zackyang
+
+一直不知道, 相对于uglify把js打包成一个文件而言, RequireJs在加载时到底是提升了性能还是降低了性能. 如果不使用uglify压缩, 我们有非常多的module, 分散的js文件可能超过100个.

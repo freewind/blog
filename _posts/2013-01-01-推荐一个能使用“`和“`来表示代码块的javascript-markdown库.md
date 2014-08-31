@@ -29,3 +29,11 @@ Markdown的标准语法中，对于代码块，使用“在每行行首添加4�
 
     var html = marked.parser(marked.lexer(input));
     alert(html);
+
+## 一些评论
+
+### weakish
+
+var html = marked.parser(marked.lexer(input));
+
+好像直接marked(input)就可以

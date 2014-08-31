@@ -110,3 +110,27 @@ Play给出了两种方案：
 	margin: 0em;
 }
 .csharpcode .lnum { color: #606060; }</style>
+
+## 一些评论
+
+### green
+
+顶版主，喜欢这样轻量的代码。play-app-base预定义了一些helper大家喜欢可以直接拿来用。参见：https://github.com/greenlaw110/play-app-base/tree/master/src/com/greenlaw110/utils
+
+补充一下，如果是所有的模版都打算使用这些helper的话，可以定义一个filter：
+
+public class HelperLoader extends Controller {
+@Before static void loadHelpers() {
+renderArgs.put(“h1″, …);
+renderArgs.put(“h2″, …);
+}
+}
+
+然后在其他Controller上用@With(HelperLoader.class)即可。
+
+如果用rythm模版引擎的话可以更简单一些：在app/rythm目录下创建一个文件__addon.src, 放入在模版中需要的helper即可：
+
+com.greenlaw110.utils.S s = com.greenlaw110.utils.S.instance;
+..
+
+不需要在任何地方声明@Before或者@With了

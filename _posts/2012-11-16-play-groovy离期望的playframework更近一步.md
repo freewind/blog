@@ -208,3 +208,12 @@ groovy是一种动态语言，性能要比java差很多。但我觉得这不是�
 参考资料：
 
 1.  groovy 2.x新特性：[http://fr.slideshare.net/glaforge/groovy-20-webinar](http://fr.slideshare.net/glaforge/groovy-20-webinar)
+
+## 一些评论
+
+### steven0lisa
+
+解决了：
+1. 在插件目录下执行mvn package，使groovy脚本编译成class。
+
+2.将target目录下的play-groovy.jar复制到插件的lib目录下，没有目录的话自行新建。
