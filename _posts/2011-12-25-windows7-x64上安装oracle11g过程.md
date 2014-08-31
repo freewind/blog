@@ -1,8 +1,9 @@
 ---
 layout: post
-title: windows7 x64上安装oracle11g过程
+alias: install-oracle11g-on-windows-x64
 tags: 未分类
 date: 2011-12-25 14:03:41
+title: windows7 x64上安装oracle11g过程
 ---
 
 为了在windows 7 x64上安装oracle，折腾了两天，下载了几次文件，都提示各种错误，如操作系统不支持等。最后终于成功，特记录下来。

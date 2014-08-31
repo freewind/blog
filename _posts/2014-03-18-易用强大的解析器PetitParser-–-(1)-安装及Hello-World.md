@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 易用强大的解析器PetitParser – (1) 安装及Hello World
+alias: good-dart-parser-petitparser-1-install-hello-world
 tags: Dart
 date: 2014-03-18 19:38:47
+title: 易用强大的解析器PetitParser – (1) 安装及Hello World
 ---
 
 [PetitParser](http://github.com/renggli/PetitParserDart)是一个强大、易用、灵活的解析工具，使用Dart写成。

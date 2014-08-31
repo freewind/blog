@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "type A=B不等于import {A=>B}"
+alias: why-type-a-b-is-not-the-same-to-import-a-b
 tags: Scala
 date: 2011-09-13 22:18:00
+title: type A=B不等于import {A=>B}
 ---
 
 今天被一个问题折磨了很久，最后才想明白。

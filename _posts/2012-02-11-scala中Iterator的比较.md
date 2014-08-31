@@ -1,5 +1,6 @@
 ---
 layout: post
+alias: how-to-compare-iterator-in-scala
 tags: Scala
 date: 2012-02-11 21:58:37
 title: scala中Iterator的比较

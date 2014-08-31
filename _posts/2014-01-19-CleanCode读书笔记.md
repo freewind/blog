@@ -1,8 +1,9 @@
 ---
 layout: post
-title: CleanCode读书笔记
+alias: notes-of-book-clean-code
 tags: 读书
 date: 2014-01-19 00:05:59
+title: CleanCode读书笔记
 ---
 
 正在看《代码整洁之道 Clean code》，本文将持续更新，记录学习中的疑问和重点。

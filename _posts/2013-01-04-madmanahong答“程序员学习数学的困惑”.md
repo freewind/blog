@@ -1,8 +1,9 @@
 ---
 layout: post
-title: madmanahong答“程序员学习数学的困惑”
+alias: the-answer-of-puzzles-of-programmers-learning-math-from-madmanahong
 tags: Math
 date: 2013-01-04 21:48:53
+title: madmanahong答“程序员学习数学的困惑”
 ---
 
 在CSDN里看到一个老帖子，有[程序员问学习数学的困惑](http://bbs.csdn.net/topics/190141850)，问题如下：

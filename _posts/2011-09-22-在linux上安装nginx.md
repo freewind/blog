@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 在linux上安装nginx
+alias: install-nginx-on-linux
 tags: Linux
 date: 2011-09-22 00:13:11
+title: 在linux上安装nginx
 ---
 
 nginx是一个高性能的web server，它还有一个非常好用的功能叫反向代理。考虑到这种情况：我在一台服务器上，要用tomcat跑java程序，还要运行php程序，80端口只有一个，怎么办给谁好呢？使用nginx就可以方便地解决这个问题：让nginx监听80，其它程序各自监听自己的端口，然后在nginx内部配置反向代理，指向它们即可。对于用户的访问，我们可以在nginx通过判断域名或者请求的内容，进行不同的转发，让各请求达到正确的目的地。

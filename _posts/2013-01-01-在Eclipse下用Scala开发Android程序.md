@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 在Eclipse下用Scala开发Android程序
+alias: use-scala-to-dev-android-with-eclipse
 tags: Android Scala
 date: 2013-01-01 11:31:08
+title: 在Eclipse下用Scala开发Android程序
 ---
 
 (此文是唐古拉山写的)

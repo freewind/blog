@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "自己动手写IDEA plugin – PubEditor (1) Hello, world"
+alias: write-idea-plugin-yourself-pubeditor-1-hello-world
 tags: Dart
 date: 2014-04-06 23:06:06
+title: 自己动手写IDEA plugin – PubEditor (1) Hello, world
 ---
 
 我发现在实现编辑器功能时，比较容易用到编译原理方面的东西，比如高亮、格式化、代码提示、重构等，所以我打算通过开发一些编辑器插件来锻练。而IDEA是我们用的最多，也是我很喜欢的一个编辑器，所以就有了“自己动手写IDEA plugin”系列。

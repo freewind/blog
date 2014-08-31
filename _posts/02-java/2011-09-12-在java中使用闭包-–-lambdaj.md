@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 在java中使用闭包 – lambdaj
+alias: use-lambdaj-to-use-lambda-in-java
 tags: Java
 date: 2011-09-12 23:41:04
+title: 在java中使用闭包 – lambdaj
 ---
 
 在闭包如此流行的时代，java却迟迟不能支持闭包，不能不说是一件让人失望郁闷的事情。Java7也不支持，Java8也许吧，但不知道那是多久之后的事情（或者只支持lambda?）

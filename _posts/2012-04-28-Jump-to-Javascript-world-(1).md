@@ -1,5 +1,6 @@
 ---
 layout: post
+alias: jump-to-javascript-world-1
 title: Jump to Javascript world (1)
 tags: JavaScript
 date: 2012-04-28 17:15:51

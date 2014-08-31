@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 自己动手写IDEA plugin – PubEditor (5) 搭起JFlex的架子
+alias: write-idea-plugin-yourself-pubeditor-5-jflex
 tags: Scala
 date: 2014-04-14 22:55:10
+title: 自己动手写IDEA plugin – PubEditor (5) 搭起JFlex的架子
 ---
 
 在IDEA中，使用JFlex来写词法分析器最方便，因为IDEA提供了一个修改后的jflex，内置了对它的支持。

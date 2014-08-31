@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 快速理解RequireJs
+alias: understand-requirejs-quickly
 tags: 未分类
 date: 2014-07-29 00:49:48
+title: 快速理解RequireJs
 ---
 
 RequireJs已经流行很久了，我们在项目中也打算使用它。它提供了以下功能：

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Javascript群规
+alias: javascript-group-rule
 tags: JavaScript
 date: 2013-01-02 13:51:10
+title: Javascript群规
 ---
 
 此群规用于以下QQ群：

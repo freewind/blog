@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Couchdb+angularjs安装与试用
+alias: try-couchdb-angularjs
 tags: JavaScript
 date: 2012-05-02 01:40:10
+title: Couchdb+angularjs安装与试用
 ---
 
 对于我正在寻找的基于js的快速开发方案，我今天尝试了一下couchdb+angularjs。

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 利用jvisualvm检测程序死锁
+alias: use-jvisualvm-to-find-deadlocks
 tags: Java
 date: 2011-10-23 13:25:18
+title: 利用jvisualvm检测程序死锁
 ---
 
 刚才在群里介绍了JVisualVM的功能，sungod问：&#8221;它能检测到线程死锁吗&#8221;

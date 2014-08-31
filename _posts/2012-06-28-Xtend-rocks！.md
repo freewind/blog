@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Xtend rocks！
+alias: xtend-rocks
 tags: xtend
 date: 2012-06-28 23:01:18
+title: Xtend rocks！
 ---
 
 最近在做一个网站时大量使用了xtend，感觉非常好。今年5月推出的xtend 2.3，提供了很多很好（也很基础）的功能，比如定义property、把对property的引用转化为对getter/setter的引用等，再加上它已有的“扩展方法”和“闭包”，用起来就很舒服了。

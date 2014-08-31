@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 自己动手写IDEA plugin – PubEditor (6) 实现简化的yaml语法规则
+alias: write-idea-plugin-yourself-pubeditor-6-simplify-yaml-syntax
 tags: 未分类
 date: 2014-04-22 22:05:27
+title: 自己动手写IDEA plugin – PubEditor (6) 实现简化的yaml语法规则
 ---
 
 YAML是一种看起来很易读、格式简单的语法格式，但实际上，它的[语言规范](www.yaml.org/spec/1.2/spec.html)相当复杂，甚至连读一遍文档都是非常痛苦的事情。同时在IDEA上也没有找到可用的YAML插件，这让我很头痛，看起来一个很简单的任务突然变得复杂到无法实现。

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 自己动手写IDEA plugin – PubEditor (2) Scala改写Hello world
+alias: write-idea-plugin-yourself-pubeditor-2-use-scala-to-write-hello-world
 tags: Dart
 date: 2014-04-06 23:34:36
+title: 自己动手写IDEA plugin – PubEditor (2) Scala改写Hello world
 ---
 
 ## 本篇目标

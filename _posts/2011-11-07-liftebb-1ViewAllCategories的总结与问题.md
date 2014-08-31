@@ -1,8 +1,9 @@
 ---
 layout: post
-title: lift.ebb 1.ViewAllCategories的总结与问题
+alias: lift-ebb-viewallcategories-summaries-and-problems
 tags: 未分类
 date: 2011-11-07 17:39:30
+title: lift.ebb 1.ViewAllCategories的总结与问题
 ---
 
 Ebb的第一个use case，是view all categories，即查看所有的论坛组。先看看usebb的首页是什么样的：

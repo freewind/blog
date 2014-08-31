@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 系统时间错误，导致连不上github.com
+alias: cannot-connect-to-github-due-to-incorrect-system-time
 tags: 未分类
 date: 2011-09-28 07:59:38
+title: 系统时间错误，导致连不上github.com
 ---
 
 今天发现自己怎么都打不开[https://github.com](https://github.com)，翻墙也不行，错误信息如下：

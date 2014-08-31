@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Play2中如何实现play1中的Job?
+alias: how-to-implement-the-job-of-play1-in-play2
 tags: Play 2
 date: 2013-01-01 17:04:55
+title: Play2中如何实现play1中的Job?
 ---
 
 在play1中，我们可以这样定义一些Job，让它们在后台执行：

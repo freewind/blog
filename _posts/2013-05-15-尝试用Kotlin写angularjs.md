@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 尝试用Kotlin写angularjs
+alias: try-to-use-kotlin-to-write-angularjs
 tags: 其它语言
 date: 2013-05-15 21:07:00
+title: 尝试用Kotlin写angularjs
 ---
 
 Kotlin在主页上的介绍是这样的：

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 自己动手写IDEA plugin – PubEditor (4) pubspec.yaml文件语法
+alias: write-idea-plugin-yourself-pubeditor-4-pubspec-syntax
 tags: Dart
 date: 2014-04-10 22:55:21
+title: 自己动手写IDEA plugin – PubEditor (4) pubspec.yaml文件语法
 ---
 
 pubspec.yaml在本质上是一个YAML文件，所以它的语法遵守YAML的规定。但同时它的内容又比较简单，因为它规定了哪些配置项是有效的，其它的都会被自动忽略。

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Express + Mongoose 极简入门
+alias: guide-express-mongoose
 tags: JavaScript
 date: 2012-05-07 21:38:09
+title: Express + Mongoose 极简入门
 ---
 
 今天尝试使用express + mongoose，构建了一个简单的Hello world，实现以下功能：

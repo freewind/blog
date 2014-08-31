@@ -1,8 +1,9 @@
 ---
 layout: post
-title: class中定义的apply有什么用？
+alias: scala-apply-in-classes
 tags: Scala
 date: 2011-09-13 22:35:30
+title: class中定义的apply有什么用？
 ---
 
 我们知道，在object中定义apply方法后，我们可以把()操作，转化为apply函数，如：

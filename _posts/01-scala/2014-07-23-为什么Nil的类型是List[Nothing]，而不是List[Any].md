@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "为什么Nil的类型是List[Nothing]，而不是List[Any]"
+alias: why-type-of-nil-is-list-nothing-not-list-any 
 tags: scala-hot-workshop
 date: 2014-07-23 21:50:24
+title: 为什么Nil的类型是List[Nothing]，而不是List[Any]
 ---
 
 今天在做scala workshop讲到Nil的类型时，杜娟提了一个很好的问题：为什么Nil的类型是List[Nothing]，而不是List[Any]

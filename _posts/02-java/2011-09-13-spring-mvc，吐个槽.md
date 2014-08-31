@@ -1,8 +1,9 @@
 ---
 layout: post
-title: spring mvc，吐个槽
+alias: spring-mvc-is-not-so-good
 tags: Java
 date: 2011-09-13 01:57:59
+title: spring mvc，吐个槽
 ---
 
 昨天做的这个项目是一个spring mvc下的controller的实现。代码写好后，该写demo了，是一个简单的spring mvc的web程序。因为mvc的结构都差不多，而且我几年前也用过一段时间的spring，所以想想这应该不难，到网上找个例子，把配置文件配好就差不多了。 

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Scala热情workshop: 结对实践课马上要开始了，你来吗？"
+alias: scala-workshop-pair-practise
 tags: Scala
 date: 2014-07-07 20:28:07
+title: Scala热情workshop: 结对实践课马上要开始了，你来吗？
 ---
 
 西安办公室的<<Scala热情workshop>>已经开始三周了，经历了感性介绍、基础概念串讲、在线习题讲解之后，将于本周正式进入结对实践。有些同学可能对scala也感兴趣，但由于种种原因没有参加完前面的课，现在想参加的话还来得及吗？

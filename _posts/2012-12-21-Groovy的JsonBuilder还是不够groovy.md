@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Groovy的JsonBuilder还是不够groovy
+alias: the-jsonbuilder-of-groovy-is-not-groovy-enough
 tags: 其它语言
 date: 2012-12-21 16:36:31
+title: Groovy的JsonBuilder还是不够groovy
 ---
 
 之前特别想把groovy的支持集成到play中，最主要的原因是看中了它的JsonBuilder。看下面这段代码：

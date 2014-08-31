@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 使用mocha给mongoose写单元测试
+alias: use-mocha-to-write-unit-tests-for-mongoose
 tags: JavaScript
 date: 2012-05-12 16:21:54
+title: 使用mocha给mongoose写单元测试
 ---
 
 使用javascript写程序，我认为第一要务就是单元测试。所以当我把mongoose的简单例子跑通后，第一件事就是学着给它写单元测试。

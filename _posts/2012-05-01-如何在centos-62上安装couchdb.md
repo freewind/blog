@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 如何在centos 6.2上安装couchdb?
+alias: how-to-install-couchdb-on-centos-6.2
 tags: Linux
 date: 2012-05-01 20:58:29
+title: 如何在centos 6.2上安装couchdb?
 ---
 
 Couchdb: [http://couchdb.apache.org/](http://couchdb.apache.org/)

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 用最简单的gradle代码，解决java项目中的jar依赖之苦
+alias: use-simplest-gradle-code-to-solve-dependencies-of-java-project
 tags: Java
 date: 2014-01-25 16:41:51
+title: 用最简单的gradle代码，解决java项目中的jar依赖之苦
 ---
 
 有时候我们会随手建立一些小的java项目，写点代码，尝试点什么功能。如果使用到什么第三方库，把它们导入起来总觉得是一件麻烦事：

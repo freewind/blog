@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Android之残缺的神器：android-x86 + vmlite
+alias: android-good-tool-android-x86-vmlite
 tags: Android
 date: 2012-10-18 22:47:02
+title: Android之残缺的神器：android-x86 + vmlite
 ---
 
 Android应用的开发让人苦不堪言，于是找到了一些神器，残缺的神器。之所以残缺，是因为它们还不够完美，只能在大多数情况下有用。

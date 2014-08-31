@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Play1.2.x源代码阅读之 enhancers
+alias: source-reading-play1-enhancers
 tags: PlayFramework1
 date: 2013-03-25 16:35:37
+title: Play1.2.x源代码阅读之 enhancers
 ---
 
 Play中的代码增强是play的魔力之源。Play自己控制java源代码的编译与载入，所以有机会在载入到jvm之前，调用各种enhancer对字节码进行增强，从而获得超强的功能。

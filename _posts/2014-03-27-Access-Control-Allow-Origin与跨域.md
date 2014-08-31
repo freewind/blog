@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Access-Control-Allow-Origin与跨域
+alias: access-control-allow-origin-and-cross-domain
 tags: 未分类
 date: 2014-03-27 20:24:31
+title: Access-Control-Allow-Origin与跨域
 ---
 
 今天与萌萌一起修bug，遇到一个跨域的问题。我们两个都对它有一些不太清楚，一起搞清楚后记录下来。

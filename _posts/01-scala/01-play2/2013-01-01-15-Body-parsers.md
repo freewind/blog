@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 1.5 Body parsers
+alias: play2-1-5-body-parsers
 tags: Java
 date: 2013-01-01 16:52:13
+title: 1.5 Body parsers
 ---
 
 (本文译者是子青)

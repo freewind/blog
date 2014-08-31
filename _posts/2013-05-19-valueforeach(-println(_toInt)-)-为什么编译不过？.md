@@ -1,8 +1,9 @@
 ---
 layout: post
-title: value.foreach( println(_.toInt) ) 为什么编译不过？
+alias: why-value-foreach-println-toint-cannot-be-compiled
 tags: Scala
 date: 2013-05-19 21:28:52
+title: value.foreach( println(_.toInt) ) 为什么编译不过？
 ---
 
 这其实是一个困扰我许久的问题，看起来十分简单。

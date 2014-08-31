@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 使用Typescript来写javascript (目前相关工具不够成熟)
+alias: use-typescript-to-write-javascript
 tags: JavaScript
 date: 2013-01-28 14:07:37
+title: 使用Typescript来写javascript (目前相关工具不够成熟)
 ---
 
 <table border="1" cellspacing="0" cellpadding="2" width="800">

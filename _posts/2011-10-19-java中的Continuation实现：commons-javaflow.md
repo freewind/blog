@@ -1,8 +1,9 @@
 ---
 layout: post
-title: java中的Continuation实现：commons-javaflow
+alias: java-continuation-commons-javaflow
 tags: Java
 date: 2011-10-19 16:21:07
+title: java中的Continuation实现：commons-javaflow
 ---
 
 在看play的libs.F时，发现它使用了一个叫commons-javaflow的库，来实现continuation，即将某一个程序的运行暂停，将现场保护起来，等晚点再读回来接着运行。

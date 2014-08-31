@@ -1,8 +1,9 @@
 ---
 layout: post
-title: scala啊scala
+alias: scala-scala-scala
 tags: Scala
 date: 2011-09-13 01:57:25
+title: scala啊scala
 ---
 
 我的scala群里越来越冷清了，这两天没有一个人说话。另一个scala群里，也是偶尔一两人。想到三个月前的时候，那时还是相当的热闹。群里的爱国者天天搞scala，唐古拉山也在研究，我也兴致勃勃地想写一个scala的mvc框架出来。然而现在，爱国者搞nodejs去了，唐在观望，我也因为受不了修改重启的折磨，又转到java下了。还有闪电侠，曾经也打算看看scala，现在则彻底转向python了。现在应该就只有一个Nil还在坚持热爱着scala吧。 

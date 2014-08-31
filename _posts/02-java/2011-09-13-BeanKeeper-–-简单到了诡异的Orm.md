@@ -1,8 +1,9 @@
 ---
 layout: post
-title: BeanKeeper – 简单到了诡异的Orm
+alias: beankeeper-simple-orm
 tags: Java
 date: 2011-09-13 01:46:00
+title: BeanKeeper – 简单到了诡异的Orm
 ---
 
 [http://beankeeper.netmind.hu/](http://beankeeper.netmind.hu/)

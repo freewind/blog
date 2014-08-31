@@ -1,8 +1,9 @@
 ---
 layout: post
-title: circumflex入门感受
+alias: try-circumflex
 tags: Scala
 date: 2011-09-13 22:03:58
+title: circumflex入门感受
 ---
 
 使用circumflex大约一周，通过边写代码边写测试的方式，到今天终于把它的orm,mvc等基本功能跑通。感觉如下：

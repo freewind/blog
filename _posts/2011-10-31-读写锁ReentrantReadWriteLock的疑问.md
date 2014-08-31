@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 读写锁ReentrantReadWriteLock的疑问
+alias: question-about-reentrantreadwriteLock
 tags: Java
 date: 2011-10-31 22:12:28
+title: 读写锁ReentrantReadWriteLock的疑问
 ---
 
 Jdk5中的concurrent包中有一个ReadWriteLock接口以及它的实现（ReentrantReadWriteLock）。通过这个名字，以及它提供的两个方法：

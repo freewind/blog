@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 利用jdk自带的强悍工具jvisualvm检测多线程的竞争
+alias: use-jdk-builtin-jvisualvm-to-check-multithread-competition
 tags: Java
 date: 2011-10-23 12:55:01
+title: 利用jdk自带的强悍工具jvisualvm检测多线程的竞争
 ---
 
 我有一个程序，里面有大量的synchronized关键字。我怀疑它们导致的多线程竞争影响了程序的性能。但不知道如何去检测，总不能只凭自己的猜测就去修改它们，万一改到最后发现不是它们的问题，岂不浪费了。

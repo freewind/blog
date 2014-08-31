@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 一个有趣的类scala.util.DynamicVariable
+alias: an-interesting-class-scala-util-dynamicvariable
 tags: Scala
 date: 2011-09-13 21:41:00
+title: 一个有趣的类scala.util.DynamicVariable
 ---
 
 该文章以前发表在scala群（132569382）的论坛里，现在拿出来放在博客里。

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Android步步惊心 之 破碎的渐变色图片(png格式)
+alias: android-broken-png-image
 tags: Android
 date: 2012-10-30 20:15:28
+title: Android步步惊心 之 破碎的渐变色图片(png格式)
 ---
 
 最初遇到此问题时，我以为是我那500元的廉价Android手机屏幕有问题，显示的颜色种类不够，导致一张渐变色的png图片，变成了条状：

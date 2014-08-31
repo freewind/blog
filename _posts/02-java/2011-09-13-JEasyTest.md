@@ -1,8 +1,9 @@
 ---
 layout: post
-title: JEasyTest
+alias: try-jeasytest
 tags: Java
 date: 2011-09-13 01:41:19
+title: JEasyTest
 ---
 
 曾经，所有的mock库都有这样的缺陷：不能mock静态方法，不能mock final方法，不能mock new出来的对象。所以，你的代码中，总是有一些地方是无法测试的，测试覆盖率总是无法达到100%。

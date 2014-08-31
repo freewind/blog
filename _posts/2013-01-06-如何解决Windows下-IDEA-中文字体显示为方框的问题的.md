@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 如何解决Windows下 IDEA 中文字体显示为方框的问题的
+alias: solve-the-problem-that-idea-show-strange-square-instead-of-chinese-character-on-windows
 tags: IDE
 date: 2013-01-06 11:29:54
+title: 如何解决Windows下 IDEA 中文字体显示为方框的问题的
 ---
 
 ## 老高问

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 调用eclipse的JDT编译java源代码
+alias: invoke-eclipse-jdt-to-compile-java-source-code
 tags: Java
 date: 2013-03-31 20:06:36
+title: 调用eclipse的JDT编译java源代码
 ---
 
 

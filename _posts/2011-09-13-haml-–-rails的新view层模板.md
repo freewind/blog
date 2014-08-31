@@ -1,8 +1,9 @@
 ---
 layout: post
-title: haml – rails的新view层模板
+alias: haml-rails-new-view-template-engine
 tags: 未分类
 date: 2011-09-13 01:54:00
+title: haml – rails的新view层模板
 ---
 
 [http://haml-lang.com/](http://haml-lang.com/)

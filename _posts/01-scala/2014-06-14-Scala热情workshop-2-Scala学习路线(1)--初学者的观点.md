@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Scala热情workshop: 2. Scala学习路线(1)  初学者的观点"
+alias: scala-workshop-2-opinions-from-beginners 
 tags: scala-hot-workshop
 date: 2014-06-14 20:54:27
+title: Scala热情workshop: 2. Scala学习路线(1)  初学者的观点
 ---
 
 这是一篇为公司内部”scala热情workshop”活动准备的文章，面向Scala初学者，目的在于帮助大家能尽早就建立起对Scala的整体认识，少走弯路。当然由于水平有限，有些地方可能不准确，不过如果能促进大家多思考多求证，也算达到了目的。

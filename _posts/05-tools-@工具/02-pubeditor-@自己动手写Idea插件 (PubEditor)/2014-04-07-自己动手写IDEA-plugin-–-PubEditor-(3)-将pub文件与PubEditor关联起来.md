@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 自己动手写IDEA plugin – PubEditor (3) 将pub文件与PubEditor关联起来
+alias: write-idea-plugin-yourself-pubeditor-3-bind-pub-files-with-pubeditor
 tags: Dart
 date: 2014-04-07 18:31:13
+title: 自己动手写IDEA plugin – PubEditor (3) 将pub文件与PubEditor关联起来
 ---
 
 Dart使用Pub进行依赖管理。我们需要在项目目录下创建一个名为`pubspec.yaml`的文件，供Pub使用。

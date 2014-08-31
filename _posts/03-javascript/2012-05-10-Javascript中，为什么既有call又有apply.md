@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Javascript中，为什么既有call又有apply
-tags: JavaScript
+alias: why-there-is-call-and-apply-in-javascript
 date: 2012-05-10 21:47:47
+tags: JavaScript
+title: Javascript中，为什么既有call又有apply
 ---
 
 Javascript中，每个函数都有这两个方法，`call`和`apply`，它们之间的区别很小：call中参数是直接写的，而apply中要放在一个数组（或跟数组很像但不同数组的对象）里。

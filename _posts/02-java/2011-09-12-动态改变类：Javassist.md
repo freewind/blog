@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 动态改变类：Javassist
+alias: use-javassist-to-modify-class-dynamic
 tags: Java
 date: 2011-09-12 23:37:00
+title: 动态改变类：Javassist
 ---
 
 这个是从playframework里看到的，作者使用了这个Javassist的库，对代码进行了动态增加，实现了很多非常便捷的功能。

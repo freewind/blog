@@ -1,8 +1,9 @@
 ---
 layout: post
-title: backbone.js
+alias: backbonejs
 tags: JavaScript
 date: 2011-10-20 18:17:17
+title: backbone.js
 ---
 
 ![](http://freewind.me/wp-content/uploads/2011/10/zrclip_001p20091490.png)

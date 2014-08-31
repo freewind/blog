@@ -1,5 +1,6 @@
 ---
 layout: post
+alias: my-android-questions-on-stackoverflow
 title: 我在stackoverflow上android提问与收藏
 tags: Android
 date: 2013-01-01 11:42:44

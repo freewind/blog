@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Dart中关于List.map的一个奇怪问题
+alias: strange-problem-of-list.map-or-dart
 tags: Dart
 date: 2014-03-07 23:47:04
+title: Dart中关于List.map的一个奇怪问题
 ---
 
 在写Dart时遇到了一个奇怪的问题，为了复现问题，把相关代码简化成下面的例子：

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 02. Play Framework入门引导
+alias: guide-to-play1-play2
 tags: PlayFramework1
 date: 2012-07-28 17:00:29
+title: Play Framework(1/2)入门引导
 ---
 
 为了方便群中的Play初学者们，写了一篇入门引导，以帮助初学者尽快了解Play。本文之前发在另一个网站，因为觉得有些不便，还是转到博客上。

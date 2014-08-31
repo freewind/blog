@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Play1.2.x源代码阅读之 classloading
+alias: source-reading-play1-classloading
 tags: PlayFramework1
 date: 2013-03-25 14:56:40
+title: Play1.2.x源代码阅读之 classloading
 ---
 
 ## play.classloading.ApplicationClasses

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: windowsxp上的System.currentTimeMillis和System.nanoTime
+alias: system-currenttimemillis-nanotime-on-windows
 tags: Java
 date: 2011-10-22 20:00:42
+title: windowsxp上的System.currentTimeMillis和System.nanoTime
 ---
 
 今天在看以前代码时，突然想起一个问题：在windows xp上，使用System.currentTimeMillis来得到当前时间毫秒值，但是它的精度只有15ms到16ms，而不是1ms。

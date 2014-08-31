@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 在scala中，如何创建annotation
+alias: how-to-create-annotation-in-scala
 tags: Scala
 date: 2011-09-13 22:27:00
+title: 在scala中，如何创建annotation
 ---
 
 在开发scalaeye的过程中，我想定义一些annotation，让用户以注解方式自定义route。所以，要先创建annotation。

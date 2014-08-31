@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 连WordPress都不支持IE6了
+alias: wordpress-not-support-ie6-any-more
 tags: 未分类
 date: 2011-09-13 02:29:26
+title: 连WordPress都不支持IE6了
 ---
 
 今天开了独立博客，下载了最新的wordpress3.2.1，安装后，发现在IE6下面目全非！进入后台，也看到了一个红底的提示，说我使用的浏览器太旧了，不安全，建议我更换到最新的浏览器。

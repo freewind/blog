@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Js UI库 modernizr
+alias: js-ui-modernizr
 tags: JavaScript
 date: 2011-09-13 01:13:33
+title: Js UI库 modernizr
 ---
 
 网址：[http://www.modernizr.com/](http://www.modernizr.com/)

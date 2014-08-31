@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 在scala中实现using自动关闭资源
+alias: how-to-close-resource-with-using-in-scala
 tags: Scala
 date: 2011-09-13 21:48:00
+title: 在scala中实现using自动关闭资源
 ---
 
 这是在scalatra中看到的一段代码，觉得非常好。它定义了一个using方法，可以这样使用：

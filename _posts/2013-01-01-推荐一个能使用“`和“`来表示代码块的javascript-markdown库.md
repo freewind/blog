@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "推荐一个能使用“`和“`来表示代码块的javascript markdown库"
+alias: javascript-markdown-lib-github-style
 tags: JavaScript
 date: 2013-01-01 17:23:03
+title: 推荐一个能解析github风格代码块的javascript markdown库
 ---
 
 Markdown的标准语法中，对于代码块，使用“在每行行首添加4个空格”的方式来表示。

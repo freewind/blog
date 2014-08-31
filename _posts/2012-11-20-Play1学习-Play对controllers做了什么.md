@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Play1学习: Play对controllers做了什么"
+alias: what-has-play1-done-to-controllers
 tags: PlayFramework1
 date: 2012-11-20 15:44:07
+title: Play1学习: Play对controllers做了什么
 ---
 
 开始学习play框架，本篇作为一个引子。

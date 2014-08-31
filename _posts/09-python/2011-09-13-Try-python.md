@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Try python
+alias: try-python
 tags: 未分类
 date: 2011-09-13 01:29:37
+title: Try python
 ---
 
 当我写下这个标题时，只有一个感觉：真杯具。

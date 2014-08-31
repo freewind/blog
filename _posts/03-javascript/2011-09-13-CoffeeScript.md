@@ -1,8 +1,9 @@
 ---
 layout: post
-title: CoffeeScript
+alias: try-coffeescript
 tags: JavaScript
 date: 2011-09-13 01:21:59
+title: CoffeeScript
 ---
 
 CoffeeScript is a little language that compiles into JavaScript.

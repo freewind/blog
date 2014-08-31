@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 通过修改键盘布局使用mac的option键，为idea设置方便的快捷键
+alias: change-mac-option-key-to-provide-more-keyshorts-for-idea
 tags: Mac
 date: 2013-05-09 21:11:14
+title: 通过修改键盘布局使用mac的option键，为idea设置方便的快捷键
 ---
 
 Mac上的辅助键有4个：control, option(alt), command, shift，比windows上多一个。（注意windows上的ctrl键的大部分功能，在苹果上是command）

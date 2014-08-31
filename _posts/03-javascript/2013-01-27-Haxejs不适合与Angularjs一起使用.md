@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Haxejs不适合与Angularjs一起使用
+alias: haxejs-is-not-proper-to-use-with-angularjs
 tags: haxe
 date: 2013-01-27 00:02:27
+title: Haxejs不适合与Angularjs一起使用
 ---
 
 前些天成功地将Haxejs与Angularjs结合起来使用，并把之前用javascript写的几个angularjs的controller改成了haxejs，非常振奋。因为可以在一种typesafe的环境中写代码，是一件让人安心的事情。有以下几点让人感觉特别好：

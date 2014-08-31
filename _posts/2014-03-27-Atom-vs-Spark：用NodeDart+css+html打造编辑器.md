@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Atom vs Spark：用Node/Dart+css+html打造编辑器
+alias: atom-spark
 tags: Dart
 date: 2014-03-27 19:57:35
+title: Atom vs Spark：用Node/Dart+css+html打造编辑器
 ---
 
 ## Atom

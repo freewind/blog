@@ -1,5 +1,6 @@
 ---
 layout: post
+alias: try-autohotkey
 title: AutoHotkey小试
 tags: More ...
 date: 2012-04-24 23:07:23

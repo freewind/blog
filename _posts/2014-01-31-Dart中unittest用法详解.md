@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Dart中unittest用法详解
+alias: guide-of-unittest-in-dart
 tags: Dart
 date: 2014-01-31 23:36:53
+title: Dart中unittest用法详解
 ---
 
 这半年的项目经验告诉我：要想稳打稳扎的学习一门语言，首先应该学习它的测试框架，然后以测试为基础，逐步学习更多的语言细节、每三方库。

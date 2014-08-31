@@ -1,8 +1,9 @@
 ---
 layout: post
-title: UseBB在windows下的安装
+alias: install-usebb-on-windows
 tags: Scala
 date: 2011-11-05 21:45:37
+title: UseBB在windows下的安装
 ---
 
 我接受了林教主的委托，现在开始尝试使用liftweb+squeryl+mysql来实现一个scala版的usebb。教主要求其做的与原版usebb一模一样，重点考察squerl的使用，填上技术上的坑。

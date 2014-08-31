@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Grunt + Bower + Requirejs + Angular
+alias: grunt-bower-requirejs-angular
 tags: 未分类
 date: 2014-07-27 22:08:46
+title: Grunt + Bower + Requirejs + Angular
 ---
 
 现在web开发的趋势是前后端分离。前端采用某些js框架，后端采用某些语言提供restful API，两者以json格式进行数据交互。

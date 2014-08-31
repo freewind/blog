@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 在同一台电脑上运行的socket server和client之间传数据，最大速度为多少？
+alias: max-speed-of-transfering-data-from-socket-server-and-client-on-one-computer
 tags: Java
 date: 2011-10-26 23:20:04
+title: 在同一台电脑上运行的socket server和client之间传数据，最大速度为多少？
 ---
 
 我对于Java的socket性能，其实一直都没有一个数值上的概念。比如，写一个最简单的socket server和client，它们什么也不做，就是server不断向client发数据，client收到后就丢弃，只计数算速度。

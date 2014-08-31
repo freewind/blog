@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Javascript MVC 资源
+alias: javascript-mvc-resources
 tags: JavaScript
 date: 2013-01-01 17:27:52
+title: Javascript MVC 资源
 ---
 
 ### 网站与资料

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 自己动手写IDEA plugin – PubEditor (8) 暂时中止
+alias: write-idea-plugin-yourself-pubeditor-8-pause-dev
 tags: 未分类
 date: 2014-04-25 23:13:06
+title: 自己动手写IDEA plugin – PubEditor (8) 暂时中止
 ---
 
 这个系列到这里就暂时中止了。

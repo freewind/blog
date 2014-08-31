@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "SQLite: android上的orm"
+alias: android-orm-for-sqlite
 tags: Android
 date: 2013-01-01 11:22:50
+title: SQLite: android上的orm
 ---
 
 Android内置了sqlite作为数据库，但没有提供jdbc。它提供了一些类来执行sql的增删改，但对于查，却是提供了一个query方法，而不能直接通过sql查询（需验证）。

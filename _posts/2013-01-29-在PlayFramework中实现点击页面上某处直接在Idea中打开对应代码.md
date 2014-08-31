@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 在PlayFramework中实现点击页面上某处直接在Idea中打开对应代码
+alias: click-on-an-element-on-page-will-open-the-code-inside-idea
 tags: PlayFramework1
 date: 2013-01-29 18:25:09
+title: 在PlayFramework中实现点击页面上某处直接在Idea中打开对应代码
 ---
 
 当项目中文件多了以后，定位文件很不方便，特别是在一个长长的HTML中找到某个按钮、链接，能把眼睛看瞎。今天我有一个想法，能不能在页面上点击某个元素后，直接在编辑器中打开相应代码吗？这样的话，我们可以在浏览页面的同时，发现问题随时编辑，大大提高开发效率。

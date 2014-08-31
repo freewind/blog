@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 如何快速删除postgresql数据库所有的表
+alias: how-to-delete-all-tables-fast-in-postgresql
 tags: More ...
 date: 2012-02-05 16:42:33
+title: 如何快速删除postgresql数据库所有的表
 ---
 
 在postgesql中建立一个函数：

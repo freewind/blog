@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Couchdb+kanso试用
+alias: try-couchdb-kanso
 tags: JavaScript
 date: 2012-05-04 18:36:18
+title: Couchdb+kanso试用
 ---
 
 Couchdb中有一个强大的特性，可以把html/css/js等直接嵌入到couchdb中，将couchdb变成webserver+database。Kanso号称couchdb的npm，它可以帮我们做这些事，并且一些主要功能都比较成熟了，相比couchapp更胜一筹。

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 如何让linux开机就运行某个groovy脚本
+alias: let-linux-run-a-groovy-shell-when-start-up
 tags: Linux
 date: 2012-11-21 20:37:50
+title: 如何让linux开机就运行某个groovy脚本
 ---
 
 看起来这是一个比较简单的问题，但我这么多年硬是不会。今天校友网又挂了，老师又给我留言，让我及时解决。

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 我为什么选择haxejs，而不是dart/typescript
+alias: why-i-choose-haxejs-not-dart-typescript
 tags: haxe
 date: 2013-01-23 00:00:25
+title: 我为什么选择haxejs，而不是dart/typescript
 ---
 
 我在js群里向大家介绍haxejs时，有同学问它与dart/typescript相比，有什么好处，为什么不用dart/typescript？

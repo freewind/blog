@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "01. Actions, Controllers and Results"
+alias: play2-01-actions-controllers-results
 tags: Scala
 date: 2013-01-01 16:56:59
+title: 01. Actions, Controllers and Results
 ---
 
 (本文译者是爱国者)

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 继续用play，等待Kotlin
-tags: 未分类
+alias: use-play-and-wait-for-kotlin
 date: 2011-09-13 02:03:22
+title: 继续用play，等待Kotlin
 ---
 
 作为一个一心想做个什么网站的屡败屡战屡战屡败游走于各语言框架之间脚踏N只船反复尝试但一直没找到满意的web框架和orm方案的杯具的我来说，继续用Java版的Play+Ebean，再考虑Japid当View，也许是目前最好的选择了。虽然还有着各种不满意，但放低标准端正心态，生活才可以更美的。 

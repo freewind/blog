@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Android界面制作中最重要最强大的武器: 9-patch"
+alias: android-9-patch
 tags: Android
 date: 2012-11-02 12:57:02
+title: Android界面制作中最重要最强大的武器: 9-patch
 ---
 
 这段时间做Android项目，其中感觉最头疼的一点就是界面的制作。面对设计师发过来的效果图，想要做出与之完全相符的效果，真是头疼万分。

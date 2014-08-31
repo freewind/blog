@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 04. Session的Flash使用
+alias: play2-04-session-and-flash
 tags: Scala
 date: 2013-01-01 16:59:41
+title: 04. Session的Flash使用
 ---
 
 (本文译者是爱国者)

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Hibernate使用注意事项
+alias: notice-when-using-hibernate
 tags: Java
 date: 2011-12-20 00:45:48
+title: Hibernate使用注意事项
 ---
 
 因为公司项目需要，无奈还是使用上了Hibernate。我一向认为Hibernate是一个高难度的的框架，原理复杂、问题多多，稍不注意就被卡住，所以一向避而远之。但是因为公司的项目要同时支持Oracle和SqlServer，除了jdbc,与mybatis，能担此重任的也只有hibernate了，最后还是用上了它。当前的版本是3.6.x。

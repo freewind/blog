@@ -1,8 +1,9 @@
 ---
 layout: post
-title: windows下安装使用coffeescript
+alias: coffeescript-on-windows
 tags: JavaScript
 date: 2011-10-20 23:58:44
+title: windows下安装使用coffeescript
 ---
 
 coffeescript是javascript的一种变种语言，它设计了各种好用的语法糖，让我们在写javascript代码时，会更加清晰简洁，带函数式语言的体验。

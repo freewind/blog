@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 使用Python实现“信息更新上传工具”(5) — Python+PySide打包成绿色版
+alias: use-python-to-write-a-tool-to-upload-data-5
 tags: Python
 date: 2012-02-20 22:59:07
-alias: 5
+title: 使用Python实现“信息更新上传工具”(5) — Python+PySide打包成绿色版
 ---
 
 使用PySide写了一个简单的GUI程序，可以在安装了python和QT的环境中正常运行，那么，能否把它打包成绿色版，在没有安装python和qt的环境中运行呢？如果可以，文件一共有多少呢？

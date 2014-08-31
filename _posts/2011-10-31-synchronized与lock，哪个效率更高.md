@@ -1,8 +1,9 @@
 ---
 layout: post
-title: synchronized与lock，哪个效率更高
+alias: which-has-better-performance-synchronized-and-lock
 tags: 未分类
 date: 2011-10-31 21:26:02
+title: synchronized与lock，哪个效率更高
 ---
 
 Java在一开始就提供了synchronized关键字，用于多线程之间的同步。它使用简便，不会出现拿锁之后不归还的情况，可以避免一些编程错误。

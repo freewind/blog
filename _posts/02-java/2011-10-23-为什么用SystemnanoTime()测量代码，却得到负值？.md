@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 为什么用System.nanoTime()测量代码，却得到负值？
+alias: why-get-a-negative-value-to-use-system-nanotime
 tags: Java
 date: 2011-10-23 20:50:33
+title: 为什么用System.nanoTime()测量代码，却得到负值？
 ---
 
 从之前的几篇日志中，我知道应该使用System.nanoTime()来测量代码的运行时间，会比较准确。但是我在使用过程中发现，有时候居然得到了负值，怎么回事？

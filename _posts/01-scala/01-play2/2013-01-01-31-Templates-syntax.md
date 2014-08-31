@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 3.1 Templates syntax
+alias: play2-3-1-templates-syntax
 tags: Java
 date: 2013-01-01 16:53:46
+title: 3.1 Templates syntax
 ---
 
 (本文译者是辉)

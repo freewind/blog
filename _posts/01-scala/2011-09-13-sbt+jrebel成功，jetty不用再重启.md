@@ -1,8 +1,9 @@
 ---
 layout: post
-title: sbt+jrebel成功，jetty不用再重启
+alias: succesfully-applied-sbt-jrebel-and-jetty-is-needed-restart
 tags: Scala
 date: 2011-09-13 21:59:54
+title: sbt+jrebel成功，jetty不用再重启
 ---
 
 首先打消各位scala开发者的疑虑：jrebel对scala是免费的！大家只需要去申请一个licence即可（注意，如果gmail收不到，可试其它邮箱）：

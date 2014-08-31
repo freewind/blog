@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Robolectric例子跑通
+alias: run-the-robolectric-examples
 tags: Android
 date: 2013-01-01 11:24:19
+title: Robolectric例子跑通
 ---
 
 Robolectric: [http://pivotal.github.com/robolectric/](http://pivotal.github.com/robolectric/)

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 好用的HTML解析器 jsoup
+alias: easy-to-use-html-parser-jsoup
 tags: Java
 date: 2011-09-12 23:42:52
+title: 好用的HTML解析器 jsoup
 ---
 
 曾经用过HTML Parser这个东西来解析html文档，感觉就是看起来强大，用起来超繁琐，还用了一堆如visitor模式，真是继承了java的“优良”传统，让人心里堵。所以遇到需要解析修改html的任务，都觉得是一件挺艰巨的任务。

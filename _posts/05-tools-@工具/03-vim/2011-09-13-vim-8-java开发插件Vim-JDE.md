@@ -1,8 +1,9 @@
 ---
 layout: post
-title: vim 8. java开发插件Vim JDE
+alias: vim-8-vim-jde-for-java-dev
 tags: IDE
 date: 2011-09-13 01:04:55
+title: vim 8. java开发插件Vim JDE
 ---
 
 这是个中国人开发的插件，不错：）

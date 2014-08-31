@@ -1,8 +1,9 @@
 ---
 layout: post
-title: ArrayList与LinkedList的适用情形
+alias: when-to-use-arraylist-and-linkedlist
 tags: 未分类
 date: 2011-10-31 01:31:26
+title: ArrayList与LinkedList的适用情形
 ---
 
 ArrayList是我们用的最多的List类，但它有一个同胞兄弟叫LinkedList，我们有时候需要考虑到底应该使用哪个。

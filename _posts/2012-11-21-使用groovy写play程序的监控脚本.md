@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 使用groovy写play程序的监控脚本
+alias: use-groovy-to-write-a-shell-to-monitor-play-website
 tags: 其它语言
 date: 2012-11-21 20:49:27
+title: 使用groovy写play程序的监控脚本
 ---
 
 之前做过的一个网站又挂了，老师留言让我及时修复。一查看原来访问量过大，OutOfMemoryError了。于是想写一个脚本自动监测网站运行情况，不能访问时自动重启，这样我就省事了。

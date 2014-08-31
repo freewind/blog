@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 1.4 Session and Flash scopes
+alias: play2-1-4-session-and-flash-scopes
 tags: Java
 date: 2013-01-01 16:51:21
+title: 1.4 Session and Flash scopes
 ---
 
 (本文译者是子青)

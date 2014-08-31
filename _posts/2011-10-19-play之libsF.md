@@ -1,8 +1,9 @@
 ---
 layout: post
-title: play之libs.F
+alias: play-libs-f
 tags: PlayFramework1
 date: 2011-10-19 13:18:39
+title: play之libs.F
 ---
 
 我是在看play自带的聊天室程序`samples-and-tests/chat`时，发现了这个类`libs.F`。

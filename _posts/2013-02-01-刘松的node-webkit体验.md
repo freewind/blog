@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 刘松的node-webkit体验
+alias: the-node-webkit-expirement-from-liusong
 tags: JavaScript
 date: 2013-02-01 11:19:47
+title: 刘松的node-webkit体验
 ---
 
 （以下为Javascript热情交流群中刘松关于node-webkit的聊天记录。）

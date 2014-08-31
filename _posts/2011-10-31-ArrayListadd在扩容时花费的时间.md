@@ -1,8 +1,9 @@
 ---
 layout: post
-title: ArrayList.add在扩容时花费的时间
+alias: the-time-spent-on-expansion-of-arraylist-add
 tags: Java
 date: 2011-10-31 10:51:35
+title: ArrayList.add在扩容时花费的时间
 ---
 
 ArrayList内部由一个数组来持有数据，其长度固定。当add的数据超过了当前数组长度，ArrayList会生成一个长度为原有1.5倍的新数组，把旧数据拷贝过去。该操作发生的可能性比较小，但它花费的时间较多。

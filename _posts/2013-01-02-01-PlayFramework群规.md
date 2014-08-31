@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 01. PlayFramework群规
+alias: playframework-group-rule
 tags: PlayFramework1
 date: 2013-01-02 13:53:12
+title: 01. PlayFramework群规
 ---
 
 此群规用于以下QQ群：

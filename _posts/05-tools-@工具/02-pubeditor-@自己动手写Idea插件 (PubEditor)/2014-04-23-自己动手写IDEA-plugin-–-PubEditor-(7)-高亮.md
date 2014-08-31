@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 自己动手写IDEA plugin – PubEditor (7) 高亮
+alias: write-idea-plugin-yourself-pubeditor-7-highlight
 tags: 未分类
 date: 2014-04-23 14:19:35
+title: 自己动手写IDEA plugin – PubEditor (7) 高亮
 ---
 
 做了这么多准备工作，激动人心的时候终于要一个个到来了。首先上场的是语法高亮，这个是比较简单的。

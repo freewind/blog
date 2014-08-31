@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 参加了下午的TDD open workshop有收获
+alias: xian-tdd-open-workshop
 tags: 未分类
 date: 2014-03-23 00:56:54
+title: 参加了下午的TDD open workshop有收获
 ---
 
 今天下午在西安办公室举行了面向大众的一个open workshop活动，主要是让参与者体验结对编程与TDD。我加入公司快一年了，还从没有机会参加过这样的活动，所以便过来。今天来的人不多，只有七八个人，跟宣传有点仓促有关，其中有一些学生，有一些在周围上班的人，还有一些培训机构的老师。

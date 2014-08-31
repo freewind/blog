@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Android步步惊心 之 asyncTask.class.newInstance()报错（修正版）
+alias: android-asynctask-new-instance-errors
 tags: Android
 date: 2012-10-31 20:18:33
+title: Android步步惊心 之 asyncTask.class.newInstance()报错（修正版）
 ---
 
 自建了一个AsyncTask，内容不是重点，示例如下：

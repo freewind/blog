@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 整合playframework与activejdbc
+alias: integrate-playframework1-and-activejdbc
 tags: Java PlayFramework1
 date: 2011-09-15 23:03:15
+title: 整合playframework与activejdbc
 ---
 
 Play是一个高效的java web开发框架，而activejdbc是一个看起来很不错的activerecord模式的持久层，但是它们两个不能放在一起用。因为Play启动后，直接读取java源代码，然后编译、增强，都是由Play自己的classloader载入的。而activejdbc要求先用maven或ant手动增加.class文件，然后再部署。

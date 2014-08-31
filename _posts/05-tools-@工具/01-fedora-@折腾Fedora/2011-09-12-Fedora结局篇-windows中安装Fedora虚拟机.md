@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Fedora结局篇 windows中安装Fedora虚拟机
+alias: install-virtual-box-for-fedora-on-windows
 tags: Linux
 date: 2011-09-12 23:32:58
+title: Fedora结局篇 windows中安装Fedora虚拟机
 ---
 
 经过这几天的试用，对Fedora有了一个比较直观的了解。与windows相比，两者各有优势与不足。

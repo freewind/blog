@@ -1,8 +1,9 @@
 ---
 layout: post
-title: vim 7. 英文拼写检查插件Engspchk
+alias: vim-7-check-spelling-engspchk
 tags: IDE
 date: 2011-09-13 00:22:57
+title: vim 7. 英文拼写检查插件Engspchk
 ---
 
 像我这样英语马马虎虎的，写出来的英文注释中经常会有一些拼写错误，使用这个[Engspchk](http://www.vim.org/scripts/script.php?script_id=195)可以帮助我们检查。

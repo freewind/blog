@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 09. Comet sockets
+alias: play2-09-comet-sockets
 tags: Scala
 date: 2013-01-01 17:02:32
+title: 09. Comet sockets
 ---
 
 (本文译者是爱国者)

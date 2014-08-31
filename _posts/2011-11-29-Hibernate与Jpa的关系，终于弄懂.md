@@ -1,5 +1,6 @@
 ---
 layout: post
+alias: the-relationship-between-hibernate-and-jpa
 title: Hibernate与Jpa的关系，终于弄懂
 tags: Java
 date: 2011-11-29 15:46:14

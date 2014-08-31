@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Varnish重写url与backend的关系
+alias: relationship-between-rewrite-url-and-backend-of-varnish
 tags: 未分类
 date: 2014-03-23 20:29:41
+title: Varnish重写url与backend的关系
 ---
 
 Varnish是一个开源的反向代理服务器，具有页面缓存功能，也可以用来做负载均衡，据说它的性能比较好。我们的项目中也使用了它。

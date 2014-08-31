@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 终于把Programming Languages课学完了
+alias: finished-the-programming-languages-course-on-coursera
 tags: Programming Languages
 date: 2013-12-05 23:41:32
+title: 终于把Programming Languages课学完了
 ---
 
 今天提交了Programming Languages课程的期末考试，得了86分，虽然不太理想，但总算把这门课学完了。回想起过去的十周时间，收获很多，最开心的是终于坚持了学完了，没有半途而废。

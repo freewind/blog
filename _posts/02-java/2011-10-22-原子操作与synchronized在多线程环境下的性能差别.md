@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 原子操作与synchronized在多线程环境下的性能差别
+alias: the-performance-diff-between-atomic-and-synchronized-in-multithread-env
 tags: Java
 date: 2011-10-22 22:05:03
+title: 原子操作与synchronized在多线程环境下的性能差别
 ---
 
 从另一篇两者在单线程环境下的测试可以看出，就算没有竞争，synchronized也比原子操作慢。地址如下：[http://freewind.me/blog/20111022/457.html](http://freewind.me/blog/20111022/457.html)

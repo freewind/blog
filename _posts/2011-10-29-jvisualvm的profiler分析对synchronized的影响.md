@@ -1,8 +1,9 @@
 ---
 layout: post
-title: jvisualvm的profiler分析对synchronized的影响
+alias: jvisualvm-profiler-impacts-synchronized
 tags: Java
 date: 2011-10-29 12:50:15
+title: jvisualvm的profiler分析对synchronized的影响
 ---
 
 昨天运行MDF程序时，使用jsivualvm进行分析。开始发现各线程未出现阻塞状态，但当点击了Profiler项的CPU性能分析之后，线程出现了明显且持续的阻塞。

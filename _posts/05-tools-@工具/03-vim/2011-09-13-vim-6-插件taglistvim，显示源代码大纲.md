@@ -1,8 +1,9 @@
 ---
 layout: post
-title: vim 6. 插件taglist.vim，显示源代码大纲
+alias: vim-6-taglist-plugin-to-show-outline
 tags: IDE
 date: 2011-09-13 00:07:49
+title: vim 6. 插件taglist.vim，显示源代码大纲
 ---
 
 所谓大纲，就是把一个源代码文件（比如java,c,c++,c#,php等等）中的类名、函数名、字段名等等提取出来显示，可以让我们快速对整个文件的结构有一个概览。

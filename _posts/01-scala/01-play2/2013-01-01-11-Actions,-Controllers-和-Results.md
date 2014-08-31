@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "1.1 Actions, Controllers 和 Results"
+alias: play2-1-1-actions-controllers-results
 tags: Java
 date: 2013-01-01 16:57:11
+title: 1.1 Actions, Controllers 和 Results
 ---
 
 (本文译者是子青)

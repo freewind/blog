@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 修改LiveWriter插件WintyCodeArea，生成google-code-prettify适用的代码块
+alias: modify-wintycodearea-plugin-of-livewrite-to-insert-code-block
 tags: Windows
 date: 2013-01-01 20:30:32
+title: 修改LiveWriter插件WintyCodeArea，生成google-code-prettify适用的代码块
 ---
 
 ## 开源就是好！

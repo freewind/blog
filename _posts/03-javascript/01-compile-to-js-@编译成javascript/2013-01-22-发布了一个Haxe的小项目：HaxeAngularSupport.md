@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 发布了一个Haxe的小项目：HaxeAngularSupport
+alias: my-hax-project-haxe-angular-support
 tags: haxe
+title: 发布了一个Haxe的小项目：HaxeAngularSupport
 date: 2013-01-22 21:35:58
 ---
 

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "为什么通不过编译 class X extends Map[String,String]"
+alias: why-class-x-extends-map-string-string-cannot-be-compiled
 tags: Scala
 date: 2011-09-13 22:21:00
+title: 为什么通不过编译 class X extends Map[String,String]
 ---
 
 我想定义一个类，继承自HashMap，并增加一些额外方法，用于保存一些配置数据。我开始写成：

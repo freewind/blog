@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 折腾Fedora之五 wine以及windows程序
+alias: fedora-5-wine-and-windows-programs
 tags: Linux
 date: 2011-09-12 23:31:00
+title: 折腾Fedora之五 wine以及windows程序
 ---
 
 在Fedora中，使用QQ是一件相当麻烦的事情。腾讯在09年出了一个满是bug的linux版QQ之后，就再也不管了。我费尽力气把它安装成功之后，再也不想运行它，宁愿使用webqq或air版的QQ。

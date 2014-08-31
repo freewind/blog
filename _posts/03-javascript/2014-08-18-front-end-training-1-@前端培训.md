@@ -1,4 +1,10 @@
-# 前端培训(1)
+---
+layout: post
+alias: front-end-training
+tags: Scala
+date: 2014-08-18 07:56:00
+title: 前端培训(1)
+---
 
 npm + grunt + bower
 

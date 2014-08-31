@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "scala中==是比较内容，但为什么Array(1,2)==Array(1,2)为false"
+alias: why-array-1-2-array-1-2-is-false
 tags: Scala
 date: 2011-09-13 22:41:04
+title: scala中==是比较内容，但为什么Array(1,2)==Array(1,2)为false
 ---
 
 在scala中，==就相当于java中的equals，基于内容比较。

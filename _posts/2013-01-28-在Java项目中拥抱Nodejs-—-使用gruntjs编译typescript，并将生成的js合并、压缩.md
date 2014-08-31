@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 在Java项目中拥抱Nodejs — 使用gruntjs编译typescript，并将生成的js合并、压缩
+alias: use-nodejs-in-java-project-use-grauntjs-to-compile-typescript-package-compress-js
 tags: JavaScript
 date: 2013-01-28 00:18:11
+title: 在Java项目中拥抱Nodejs — 使用gruntjs编译typescript，并将生成的js合并、压缩
 ---
 
 作为一个Java程序员，做的是Java项目，为什么需要了解Nodejs，并且还要拥抱它？

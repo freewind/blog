@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 在linux上安装postgresql详解
+alias: install-postgresql-on-windows
 tags: Linux
 date: 2011-10-28 21:11:30
+title: 在linux上安装postgresql详解
 ---
 
 **下载及安装**

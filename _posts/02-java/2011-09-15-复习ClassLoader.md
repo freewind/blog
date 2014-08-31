@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 复习ClassLoader
+alias: go-over-classloader
 tags: Java
 date: 2011-09-15 15:38:53
+title: 复习ClassLoader
 ---
 
 这两天在尝试把activejdbc集成到play中。因为两者都需要对类进行增强，有冲突，所以不能直接使用。经过一晚上的反复尝试，终于能让activejdbc在play上跑起来了。但是，很快发现，一旦model类被修改，play重新载入后会报错。

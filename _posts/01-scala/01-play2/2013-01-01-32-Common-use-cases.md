@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 3.2 Common use cases
+alias: play2-3-2-common-use-cases
 tags: Java
 date: 2013-01-01 16:54:30
+title: 3.2 Common use cases
 ---
 
 (本文译者是辉)

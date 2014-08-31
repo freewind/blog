@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 使用haxejs进行typesafe的javascript开发
+alias: use-haxejs-to-write-javascript-in-typesafe-manner
 tags: JavaScript
 date: 2013-01-21 23:27:42
+title: 使用haxejs进行typesafe的javascript开发
 ---
 
 我使用angularjs写网页，当逻辑复杂的时候，需要写很多js代码。我对js一直比较怕，因为有这几个问题困扰着我：

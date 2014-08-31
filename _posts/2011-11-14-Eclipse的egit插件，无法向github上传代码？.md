@@ -1,5 +1,6 @@
 ---
 layout: post
+alias: cannot-push-code-to-github-with-egit-of-eclipse
 title: Eclipse的egit插件，无法向github上传代码？
 tags: 未分类
 date: 2011-11-14 22:13:19

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Javascript UI–qooxdoo
+alias: javascript-ui-qooxdoo
 tags: 未分类
 date: 2011-12-14 21:47:42
+title: Javascript UI–qooxdoo
 ---
 
 一、网址

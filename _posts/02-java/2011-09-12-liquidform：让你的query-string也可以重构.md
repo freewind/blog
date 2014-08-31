@@ -1,8 +1,9 @@
 ---
 layout: post
-title: liquidform：让你的query string也可以重构
+alias: liquidform-let-your-query-string-refactorable
 tags: Java
 date: 2011-09-12 23:47:00
+title: liquidform：让你的query string也可以重构
 ---
 
 今天在google code上看到了一个有趣的项目：liquidform。

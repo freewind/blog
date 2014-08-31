@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 1.3 Manipulating the response
+alias: play2-1-3-manipulating-the-response
 tags: Java
 date: 2013-01-01 16:50:42
+title: 1.3 Manipulating the response
 ---
 
 (本文译者是子青)

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 读“悟透JavaScript”
+alias: notes-of-book-understand-javascript-completely
 tags: JavaScript
 date: 2011-09-14 01:34:06
+title: 读“悟透JavaScript”
 ---
 
 学习JavaScript已经成为我无法逃避的问题。我发现，一个网站的开发时间，前端比后端用的还多，主要是因为组件不易复用、跨浏览器问题。解决这一问题的方法是，可以采用一些JavaScript UI库，如Jquery-UI, YUI, Ext-js, Qooxdoo, SmartClient, Ukijs等等。其中Ukijs我尤其推荐。

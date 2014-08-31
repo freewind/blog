@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Scala workshop – Collections(1) – List
+alias: scala-workshop-collections-1-list
 tags: scala-hot-workshop
 date: 2014-07-23 17:45:36
+title: Scala workshop – Collections(1) – List
 ---
 
 * * *

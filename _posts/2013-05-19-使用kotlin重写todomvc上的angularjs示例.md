@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 使用kotlin重写todomvc上的angularjs示例
+alias: use-kotlin-to-rewrite-angularjs-todomvc
 tags: 其它语言
 date: 2013-05-19 00:55:09
+title: 使用kotlin重写todomvc上的angularjs示例
 ---
 
 经过几天的努力，终于成功把todomvc上的angularjs示例，由原生javascript代码，改成了Kotlin代码-即用Kotlin来写代码，然后把它编译成js代码。整个过程比较流畅，有一些地方值得记录下来。

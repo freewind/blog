@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 如何在playframework中集成livereload
+alias: how-to-integration-livereload-in-playframework1
 tags: PlayFramework1
 date: 2013-02-03 18:18:42
+title: 如何在playframework中集成livereload
 ---
 
 Livereload是一个非常贴心的功能，可以让我们修改项目中的文件时，浏览器自动刷新取得新代码，省了手动切换刷新。在[我的web开发最强组合：Play1+angularjs+bootstrap ++ (idea + livereload)](http://freewind.me/blog/20121226/1167.html)一文中，有gif动画来演示效果。然而稍嫌麻烦的是，我们需要安装python/easy_install/python-livereload等工具，并且每次使用时都得开一个shell，定位到工作目录，输入`livereload`命令才行。

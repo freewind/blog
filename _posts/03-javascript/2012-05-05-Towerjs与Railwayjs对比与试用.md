@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Towerjs与Railwayjs对比与试用
+alias: towerjs-railwayjs-comparasion
 tags: JavaScript
 date: 2012-05-05 23:56:02
+title: Towerjs与Railwayjs对比与试用
 ---
 
 在js后端框架中，towerjs与railwayjs是两个仿ror的全栈框架。两者在github上的关注度很相似，都在800左右，不相上下。

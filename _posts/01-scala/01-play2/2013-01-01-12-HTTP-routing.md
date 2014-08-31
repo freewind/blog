@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 1.2 HTTP routing
+alias: play2-1-3-http-routing
 tags: Java
 date: 2013-01-01 16:50:04
+title: 1.2 HTTP routing
 ---
 
 (本文译者是子青)

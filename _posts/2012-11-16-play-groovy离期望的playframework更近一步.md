@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "play-groovy:离期望的playframework更近一步"
+alias: play-groovy-makes-playframework-closes-to-my-expectation
 tags: PlayFramework1
 date: 2012-11-16 23:36:35
+title: play-groovy:离期望的playframework更近一步
 ---
 
 这里所说的playframework是指play1，而不是play2。另外，本文中不考虑scala。

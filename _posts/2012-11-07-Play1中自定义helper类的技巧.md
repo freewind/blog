@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Play1中自定义helper类的技巧
+alias: skills-to-define-helper-in-play1
 tags: PlayFramework1
 date: 2012-11-07 13:07:10
+title: Play1中自定义helper类的技巧
 ---
 
 大家都知道，Play1的模板使用了groovy作为模板语言，并且不允许在模板中直接创建方法。这个限制非常不方便，因为我们经常需要在在页面中创建一些临时使用的工具方法。

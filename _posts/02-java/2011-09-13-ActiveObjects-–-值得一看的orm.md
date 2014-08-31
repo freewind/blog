@@ -1,8 +1,9 @@
 ---
 layout: post
-title: ActiveObjects – 值得一看的orm
+alias: activeobjects-an-orm-worth-noting
 tags: Java
 date: 2011-09-13 01:45:23
+title: ActiveObjects – 值得一看的orm
 ---
 
 [http://www.javalobby.org/articles/activeobjects](http://www.javalobby.org/articles/activeobjects)

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Javascript资源
+alias: javascript-resources
 tags: JavaScript
 date: 2013-01-01 17:27:16
+title: Javascript资源
 ---
 
 ### 优秀库

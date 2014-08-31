@@ -1,8 +1,9 @@
 ---
 layout: post
-title: JavaScript/NodeJs半月总结
+alias: javascript-nodejs-after-half-month
 tags: JavaScript
 date: 2012-05-13 00:48:24
+title: JavaScript/NodeJs半月总结
 ---
 
 刚看了一下群记录，从4月27日到今天，我转向Js已经有半个月了，特在此做一个小结。

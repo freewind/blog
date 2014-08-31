@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Hibernate，谈性能
+alias: the-performance-of-hibernate
 tags: Java
 date: 2011-09-13 02:01:00
+title: Hibernate，谈性能
 ---
 
 我对Hibernate一直是相当抵触的，主要原因有三：设计复杂，调试困难，性能优化麻烦。前两点之前已经说过多次，这次再谈谈第三点。

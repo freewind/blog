@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 如何一步步把dart的web-ui框架的示例程序todomvc编译成可在普通浏览器上浏览的网站
+alias: how-to-compile-the-web-ui-framework-of-dart-to-a-normal-website
 tags: 其它语言
 date: 2013-05-31 00:16:12
+title: 如何一步步把dart的web-ui框架的示例程序todomvc编译成可在普通浏览器上浏览的网站
 ---
 
 Dart的web-ui框架看起来似乎比较成熟了，看了一下它的示例代码，觉得很清晰，web-component的方式比较新颖，再加上可以用dart来写，隐隐有超越angularjs之势，所以想把它的示例跑起来，看看浏览器兼容性及生成代码大小有没有什么问题，是否可以用它来写点什么东西。

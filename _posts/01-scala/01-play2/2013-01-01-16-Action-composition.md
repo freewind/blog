@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 1.6 Action composition
+alias: play2-1-6-action-composition
 tags: Java
 date: 2013-01-01 16:52:49
+title: 1.6 Action composition
 ---
 
 (本文译者是子青)
