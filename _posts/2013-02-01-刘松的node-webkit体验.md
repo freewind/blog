@@ -31,11 +31,11 @@ node-webkit做nodejs和浏览器进程的共存处理，不需要开发者关心
 
 show一下我刚玩的东西
 
-[![image](http://freewind.me/wp-content/uploads/2013/02/image_thumb.png "image")](http://freewind.me/wp-content/uploads/2013/02/image.png)
+[![image](http://freewind.me/wp-content/uploads/2013/02/image.png "image")](http://freewind.me/wp-content/uploads/2013/02/image.png)
 
-[![image](http://freewind.me/wp-content/uploads/2013/02/image_thumb1.png "image")](http://freewind.me/wp-content/uploads/2013/02/image1.png)
+[![image](http://freewind.me/wp-content/uploads/2013/02/image1.png "image")](http://freewind.me/wp-content/uploads/2013/02/image1.png)
 
-[![image](http://freewind.me/wp-content/uploads/2013/02/image_thumb2.png "image")](http://freewind.me/wp-content/uploads/2013/02/image2.png)
+[![image](http://freewind.me/wp-content/uploads/2013/02/image2.png "image")](http://freewind.me/wp-content/uploads/2013/02/image2.png)
 
 node-webkit结合angularjs、sqlite3
 

@@ -46,25 +46,25 @@ date: 2012-12-26 20:57:26
 </tr>
 <tr>
 <td valign="top" width="234">模板标签的提示与补全</td>
-<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2012/12/image_thumb8.png "image")](http://freewind.me/wp-content/uploads/2012/12/image8.png)</td>
+<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2012/12/image8.png "image")](http://freewind.me/wp-content/uploads/2012/12/image8.png)</td>
 </tr>
 <tr>
 <td valign="top" width="234">href属性中，可提示controller及action</td>
-<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2012/12/image_thumb9.png "image")](http://freewind.me/wp-content/uploads/2012/12/image9.png)</td>
+<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2012/12/image9.png "image")](http://freewind.me/wp-content/uploads/2012/12/image9.png)</td>
 </tr>
 <tr>
 <td valign="top" width="234">routes文件中的提示</td>
-<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2012/12/image_thumb10.png "image")](http://freewind.me/wp-content/uploads/2012/12/image10.png)</td>
+<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2012/12/image10.png "image")](http://freewind.me/wp-content/uploads/2012/12/image10.png)</td>
 </tr>
 <tr>
 <td valign="top" width="234">html中play标签的高亮和格式化</td>
-<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2012/12/image_thumb11.png "image")](http://freewind.me/wp-content/uploads/2012/12/image11.png)</td>
+<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2012/12/image11.png "image")](http://freewind.me/wp-content/uploads/2012/12/image11.png)</td>
 </tr>
 <tr>
 <td valign="top" width="234">从action中快速跳转到view</td>
-<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2012/12/image_thumb12.png "image")](http://freewind.me/wp-content/uploads/2012/12/image12.png)           
+<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2012/12/image12.png "image")](http://freewind.me/wp-content/uploads/2012/12/image12.png)           
 点击红框后自动打开：           
-[![image](http://freewind.me/wp-content/uploads/2012/12/image_thumb13.png "image")](http://freewind.me/wp-content/uploads/2012/12/image13.png)</td>
+[![image](http://freewind.me/wp-content/uploads/2012/12/image13.png "image")](http://freewind.me/wp-content/uploads/2012/12/image13.png)</td>
 </tr>
 <tr>
 <td valign="top" width="234">**Play2支持**</td>
@@ -72,7 +72,7 @@ date: 2012-12-26 20:57:26
 </tr>
 <tr>
 <td valign="top" width="234">对于play2中scala模板的支持应该是很多人想要的</td>
-<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2013/01/image21_thumb.png "image")](http://freewind.me/wp-content/uploads/2013/01/image211.png)</td>
+<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2013/01/image211.png "image")](http://freewind.me/wp-content/uploads/2013/01/image211.png)</td>
 </tr>
 <tr>
 <td valign="top" width="234">**Angularjs支持**</td>
@@ -80,7 +80,7 @@ date: 2012-12-26 20:57:26
 </tr>
 <tr>
 <td valign="top" width="234">html属性提示</td>
-<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2012/12/image_thumb15.png "image")](http://freewind.me/wp-content/uploads/2012/12/image15.png)</td>
+<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2012/12/image15.png "image")](http://freewind.me/wp-content/uploads/2012/12/image15.png)</td>
 </tr>
 <tr>
 <td valign="top" width="234">**Bootstrap支持**</td>
@@ -88,7 +88,7 @@ date: 2012-12-26 20:57:26
 </tr>
 <tr>
 <td valign="top" width="234">class提示</td>
-<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2012/12/image_thumb16.png "image")](http://freewind.me/wp-content/uploads/2012/12/image16.png)</td>
+<td valign="top" width="546">[![image](http://freewind.me/wp-content/uploads/2012/12/image16.png "image")](http://freewind.me/wp-content/uploads/2012/12/image16.png)</td>
 </tr>
 <tr>
 <td valign="top" width="234">**Javascript支持**</td>
@@ -127,7 +127,7 @@ Livereload的官网是[http://livereload.com](http://livereload.com)，它支持
 
     来段gif演示一下（注意每次刷新都是我按了ctrl+s后自动触发的）:
 
-    [![xxx](http://freewind.me/wp-content/uploads/2012/12/xxx_thumb.gif "xxx")](http://freewind.me/wp-content/uploads/2012/12/xxx.gif)
+    [![image](http://freewind.me/wp-content/uploads/2012/12/xxx.gif "image")](http://freewind.me/wp-content/uploads/2012/12/xxx.gif)
 
     ## 三、Why play, and why play1
 
@@ -159,7 +159,7 @@ Livereload的官网是[http://livereload.com](http://livereload.com)，它支持
 
     Angularjs的另一个杀手级特性，就是把流程控制、事件绑定等代码，直接写在html标签上。这其实就是前面所说的directive的使用方式。先看一段代码：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/12/image_thumb17.png "image")](http://freewind.me/wp-content/uploads/2012/12/image17.png)
+    [![image](http://freewind.me/wp-content/uploads/2012/12/image17.png "image")](http://freewind.me/wp-content/uploads/2012/12/image17.png)
 
     在这段html代码中，你可以看到那些位于html标签上由蓝色背影标出来的内容，都是angularjs提供的directive。有的是绑定事件（如ng-click,ng-submit），有的是控制流程（如ng-repeat）。这种方式我非常喜欢，简单直接，可读性又很好。当然有人不喜欢这种方式，认为html就应该干干净净，应该把这些东西分享到javascript中，就像下面这样：
 
@@ -360,7 +360,7 @@ Livereload的官网是[http://livereload.com](http://livereload.com)，它支持
 
     基本的思路就是，创建一个directive，把调用jquery插件的代码放在它里面。这里以jqueryui的slider为例：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/12/image_thumb18.png "image")](http://freewind.me/wp-content/uploads/2012/12/image18.png)
+    [![image](http://freewind.me/wp-content/uploads/2012/12/image18.png "image")](http://freewind.me/wp-content/uploads/2012/12/image18.png)
 
     样子如上，其示例在：[http://jqueryui.com/slider/](http://jqueryui.com/slider/)
 

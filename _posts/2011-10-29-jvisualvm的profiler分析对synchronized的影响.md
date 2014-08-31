@@ -38,7 +38,7 @@ title: jvisualvm的profiler分析对synchronized的影响
 
 jvisualvm在开启了Profiler之后的线程图如下：
 
-[![image](http://freewind.me/wp-content/uploads/2011/10/image_thumb10.png "image")](http://freewind.me/wp-content/uploads/2011/10/image10.png) 
+[![image](http://freewind.me/wp-content/uploads/2011/10/image10.png "image")](http://freewind.me/wp-content/uploads/2011/10/image10.png) 
 
 此处的Thread-7和Thread-6就是工作线程，可以看出，全为绿色，表示正常运行。
 
@@ -67,11 +67,11 @@ jvisualvm在开启了Profiler之后的线程图如下：
 
 没开Profiler时的线程状态：
 
-[![image](http://freewind.me/wp-content/uploads/2011/10/image_thumb11.png "image")](http://freewind.me/wp-content/uploads/2011/10/image11.png) 
+[![image](http://freewind.me/wp-content/uploads/2011/10/image11.png "image")](http://freewind.me/wp-content/uploads/2011/10/image11.png) 
 
 三、**有synchronized的多线程程序，开Profiler**
 
-[![image](http://freewind.me/wp-content/uploads/2011/10/image_thumb12.png "image")](http://freewind.me/wp-content/uploads/2011/10/image12.png)
+[![image](http://freewind.me/wp-content/uploads/2011/10/image12.png "image")](http://freewind.me/wp-content/uploads/2011/10/image12.png)
 
 与二对比，可以看到仍然有阻塞现象，但并无“加剧”表现。
 
@@ -79,13 +79,13 @@ jvisualvm在开启了Profiler之后的线程图如下：
 
 **四、拿MDF程序测试，不开Profiler**
 
-[![image](http://freewind.me/wp-content/uploads/2011/10/image_thumb13.png "image")](http://freewind.me/wp-content/uploads/2011/10/image13.png) 
+[![image](http://freewind.me/wp-content/uploads/2011/10/image13.png "image")](http://freewind.me/wp-content/uploads/2011/10/image13.png) 
 
 可以看到完全没有阻塞。
 
 **五、开Profiler**
 
-[![image](http://freewind.me/wp-content/uploads/2011/10/image_thumb14.png "image")](http://freewind.me/wp-content/uploads/2011/10/image14.png) 
+[![image](http://freewind.me/wp-content/uploads/2011/10/image14.png "image")](http://freewind.me/wp-content/uploads/2011/10/image14.png) 
 
 可以看到，的确有阻塞现象发生。说明jvivualvm的确可加剧阻塞的产生。而在第二步第三步的测试中，都出现了阻塞，可能是因为代码写得比较容易产生阻塞，所以在平时状态下也会出现。
 

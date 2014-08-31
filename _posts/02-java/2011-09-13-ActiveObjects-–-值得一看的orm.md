@@ -15,7 +15,7 @@ title: ActiveObjects – 值得一看的orm
 
 可以说这篇文章看完后，基本上就知道ActiveObjects怎么用了。与Hibernate等相比，真的是相当的简单，半小时内应该就可以掌握。我下载了它的包看了一下，里面的包和类都比较少，很简洁。有空的时候，一定要好好研究一下。<span id="more-95"></span>
 
-[![1](http://freewind.me/wp-content/uploads/2011/09/1_thumb6.jpg "1")](http://freewind.me/wp-content/uploads/2011/09/16.jpg)
+[![image](http://freewind.me/wp-content/uploads/2011/09/16.jpg "image")](http://freewind.me/wp-content/uploads/2011/09/16.jpg)
 
 项目地址：
 

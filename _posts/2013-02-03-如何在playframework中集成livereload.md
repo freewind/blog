@@ -86,6 +86,6 @@ Livereload是一个非常贴心的功能，可以让我们修改项目中的文�
 
 ## 效果
 
-[![play-livereload](http://freewind.me/wp-content/uploads/2013/02/play-livereload_thumb.gif "play-livereload")](http://freewind.me/wp-content/uploads/2013/02/play-livereload.gif)
+[![image](http://freewind.me/wp-content/uploads/2013/02/play-livereload.gif "image")](http://freewind.me/wp-content/uploads/2013/02/play-livereload.gif)
 
 观看时注意“新建”按钮上文字的变化。当我修改了html中的“新建”的内容并保存后后，右上方浏览器中的“新建”会自动变化。

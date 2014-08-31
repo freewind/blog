@@ -24,16 +24,16 @@ date: 2011-11-14 22:13:19
 <span id="more-578"></span>
 <p>原来，通过ssh向github提交时，需要配置密钥文件，但这个选项却没有放在egit中，而是在"_**Window > Preferences > Network Connections > SSH2"**这个偏僻的角落里。_
 
-[![image](http://freewind.me/wp-content/uploads/2011/11/image_thumb10.png "image")](http://freewind.me/wp-content/uploads/2011/11/image10.png) 
+[![image](http://freewind.me/wp-content/uploads/2011/11/image10.png "image")](http://freewind.me/wp-content/uploads/2011/11/image10.png) 
 
 关键在于这个ssh2 home，之前的值是另一个目录，里面没有密钥文件。
 
 看看那个目录里有什么？
 
-[![image](http://freewind.me/wp-content/uploads/2011/11/image_thumb11.png "image")](http://freewind.me/wp-content/uploads/2011/11/image11.png) 
+[![image](http://freewind.me/wp-content/uploads/2011/11/image11.png "image")](http://freewind.me/wp-content/uploads/2011/11/image11.png) 
 
 关键就在于id_rsa这个文件，这是私钥。在Key Management中，将它导入：
 
-[![image](http://freewind.me/wp-content/uploads/2011/11/image_thumb12.png "image")](http://freewind.me/wp-content/uploads/2011/11/image12.png) 
+[![image](http://freewind.me/wp-content/uploads/2011/11/image12.png "image")](http://freewind.me/wp-content/uploads/2011/11/image12.png) 
 
 然后再试试提交，成功。

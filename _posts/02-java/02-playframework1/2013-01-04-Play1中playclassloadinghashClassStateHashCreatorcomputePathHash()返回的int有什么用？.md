@@ -114,7 +114,7 @@ title: Play1中play.classloading.hash.ClassStateHashCreator.computePathHash()返
 
     一个对象在没有发生变化的时候，返回的hash code总是相同的。不同的对象有不同的hashCode实现，比如String.hashCode()用到了以下的算法：
 
-    [![image](http://freewind.me/wp-content/uploads/2013/01/image_thumb71.png "image")](http://freewind.me/wp-content/uploads/2013/01/image71.png)
+    [![image](http://freewind.me/wp-content/uploads/2013/01/image71.png "image")](http://freewind.me/wp-content/uploads/2013/01/image71.png)
 
     好的算法可以使不同的字符串得到的hashcode尽可能不同，当然也有可能，比如以下两个字符串得到的hashcode都是1279794159:
 

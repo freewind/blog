@@ -9,7 +9,7 @@ title: AngularJs Tutorial 中文版(1)
 
 学习AngularJS的一个好办法，就是在这份简明教程的帮助下，动手实现一个简单的AngularJS web程序。该程序以分类方式来显示一些Andorid设备，你可以筛选出感兴趣的设备，并查看某个设备的详细资料。
 
-[![image](http://freewind.me/wp-content/uploads/2013/01/image_thumb.png "image")](http://freewind.me/wp-content/uploads/2013/01/image.png)
+[![image](http://freewind.me/wp-content/uploads/2013/01/image.png "image")](http://freewind.me/wp-content/uploads/2013/01/image.png)
 
  
 

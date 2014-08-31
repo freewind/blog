@@ -239,7 +239,7 @@ title: Towerjs与Railwayjs对比与试用
 
 官网首页截图，典型的Bootstrap风格：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb7.png "image")](http://freewind.me/wp-content/uploads/2012/05/image7.png) 
+[![image](http://freewind.me/wp-content/uploads/2012/05/image7.png "image")](http://freewind.me/wp-content/uploads/2012/05/image7.png) 
 
 Railswayjs的试用非常顺利，在win7 x64下也能顺利安装。
 
@@ -262,29 +262,29 @@ Railswayjs的试用非常顺利，在win7 x64下也能顺利安装。
 
     打开浏览器，访问[http://127.0.0.1:8888/posts](http://127.0.0.1:8888/posts)，页面如下：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb8.png "image")](http://freewind.me/wp-content/uploads/2012/05/image8.png) 
+    [![image](http://freewind.me/wp-content/uploads/2012/05/image8.png "image")](http://freewind.me/wp-content/uploads/2012/05/image8.png) 
 
     创建一个Post:
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb9.png "image")](http://freewind.me/wp-content/uploads/2012/05/image9.png) 
+    [![image](http://freewind.me/wp-content/uploads/2012/05/image9.png "image")](http://freewind.me/wp-content/uploads/2012/05/image9.png) 
 
      
 
     创建后，回到列表页：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb10.png "image")](http://freewind.me/wp-content/uploads/2012/05/image10.png) 
+    [![image](http://freewind.me/wp-content/uploads/2012/05/image10.png "image")](http://freewind.me/wp-content/uploads/2012/05/image10.png) 
 
     查看其中一个：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb11.png "image")](http://freewind.me/wp-content/uploads/2012/05/image11.png) 
+    [![image](http://freewind.me/wp-content/uploads/2012/05/image11.png "image")](http://freewind.me/wp-content/uploads/2012/05/image11.png) 
 
     删除：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb12.png "image")](http://freewind.me/wp-content/uploads/2012/05/image12.png) 
+    [![image](http://freewind.me/wp-content/uploads/2012/05/image12.png "image")](http://freewind.me/wp-content/uploads/2012/05/image12.png) 
 
     在访问过程中，控制台会显示出请求信息：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb13.png "image")](http://freewind.me/wp-content/uploads/2012/05/image13.png) 
+    [![image](http://freewind.me/wp-content/uploads/2012/05/image13.png "image")](http://freewind.me/wp-content/uploads/2012/05/image13.png) 
 
     总之，页面精美，操作流畅，考虑周到，赞一个。
 
@@ -296,7 +296,7 @@ Railswayjs的试用非常顺利，在win7 x64下也能顺利安装。
 
     首页截图，看起来也比较素雅：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb14.png "image")](http://freewind.me/wp-content/uploads/2012/05/image14.png) 
+    [![image](http://freewind.me/wp-content/uploads/2012/05/image14.png "image")](http://freewind.me/wp-content/uploads/2012/05/image14.png) 
 
     Towerjs的试用过程比较坎坷。首先在windows下安装，有一些依赖的模块安装不上，可能还不支持windows。只好打开虚拟机，启动centos6.x，开始安装。
 
@@ -347,17 +347,17 @@ Railswayjs的试用非常顺利，在win7 x64下也能顺利安装。
 
     在浏览器中访问：[http://localhost:3000](http://localhost:3000)，出现如下页面：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb15.png "image")](http://freewind.me/wp-content/uploads/2012/05/image15.png) 
+    [![image](http://freewind.me/wp-content/uploads/2012/05/image15.png "image")](http://freewind.me/wp-content/uploads/2012/05/image15.png) 
 
     什么情况？怎么这么丑？！
 
     打开firebug:
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb16.png "image")](http://freewind.me/wp-content/uploads/2012/05/image16.png)
+    [![image](http://freewind.me/wp-content/uploads/2012/05/image16.png "image")](http://freewind.me/wp-content/uploads/2012/05/image16.png)
 
     居然有这么多文件找不到？打开资源浏览器，发现对应的less文件存在：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb17.png "image")](http://freewind.me/wp-content/uploads/2012/05/image17.png)
+    [![image](http://freewind.me/wp-content/uploads/2012/05/image17.png "image")](http://freewind.me/wp-content/uploads/2012/05/image17.png)
 
     看来需要手动把它们转为.css。
 
@@ -369,17 +369,17 @@ Railswayjs的试用非常顺利，在win7 x64下也能顺利安装。
 
 奇怪，看一下任务列表：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb18.png "image")](http://freewind.me/wp-content/uploads/2012/05/image18.png)
+[![image](http://freewind.me/wp-content/uploads/2012/05/image18.png "image")](http://freewind.me/wp-content/uploads/2012/05/image18.png)
 
 哪有编译任务？！实在进行不下去了。
 
 试下添加User:
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb19.png "image")](http://freewind.me/wp-content/uploads/2012/05/image19.png) 
+[![image](http://freewind.me/wp-content/uploads/2012/05/image19.png "image")](http://freewind.me/wp-content/uploads/2012/05/image19.png) 
 
 中文显示正常：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb20.png "image")](http://freewind.me/wp-content/uploads/2012/05/image20.png) 
+[![image](http://freewind.me/wp-content/uploads/2012/05/image20.png "image")](http://freewind.me/wp-content/uploads/2012/05/image20.png) 
 
 试用到此结束，不能不说有些失望。安装过程复杂，也不能提供开箱即用的数据库，文档与实际命令有差异，无法编译资源文件，导致最终页面相当丑。
 

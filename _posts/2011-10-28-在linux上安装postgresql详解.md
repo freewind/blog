@@ -74,7 +74,7 @@ posgresql为安全考虑，不允许以root用户运行，必须为它建立对�
 
 将出现如下图：
 
-[![image](http://freewind.me/wp-content/uploads/2011/10/image_thumb.png "image")](http://freewind.me/wp-content/uploads/2011/10/image.png) 
+[![image](http://freewind.me/wp-content/uploads/2011/10/image.png "image")](http://freewind.me/wp-content/uploads/2011/10/image.png) 
 
 启动postgresql
 
@@ -104,7 +104,7 @@ posgresql为安全考虑，不允许以root用户运行，必须为它建立对�
 
 操作数据库
 
-[![image](http://freewind.me/wp-content/uploads/2011/10/image_thumb1.png "image")](http://freewind.me/wp-content/uploads/2011/10/image1.png) 
+[![image](http://freewind.me/wp-content/uploads/2011/10/image1.png "image")](http://freewind.me/wp-content/uploads/2011/10/image1.png) 
 
 说明现在的数据库可以正常运行。 
 
@@ -114,15 +114,15 @@ postgresql因为安全方面的考虑，默认情况下只接受本机的连接�
 
 修改data/postgresql.conf，增加： 
 
-[![image](http://freewind.me/wp-content/uploads/2011/10/image_thumb2.png "image")](http://freewind.me/wp-content/uploads/2011/10/image2.png) 
+[![image](http://freewind.me/wp-content/uploads/2011/10/image2.png "image")](http://freewind.me/wp-content/uploads/2011/10/image2.png) 
 
 修改监听端口： 
 
-[![image](http://freewind.me/wp-content/uploads/2011/10/image_thumb3.png "image")](http://freewind.me/wp-content/uploads/2011/10/image3.png) 
+[![image](http://freewind.me/wp-content/uploads/2011/10/image3.png "image")](http://freewind.me/wp-content/uploads/2011/10/image3.png) 
 
 修改data/pg_hba.conf，增加md5那一行： 
 
-[![image](http://freewind.me/wp-content/uploads/2011/10/image_thumb4.png "image")](http://freewind.me/wp-content/uploads/2011/10/image4.png) 
+[![image](http://freewind.me/wp-content/uploads/2011/10/image4.png "image")](http://freewind.me/wp-content/uploads/2011/10/image4.png) 
 
 然后重启posgtres。 
 
@@ -134,7 +134,7 @@ postgresql因为安全方面的考虑，默认情况下只接受本机的连接�
 
 默认情况下，postgresql数据库中的超级用户postgres密码为空，导致无法远程登录。我们必须先给它设个密码： 
 
-[![image](http://freewind.me/wp-content/uploads/2011/10/image_thumb5.png "image")](http://freewind.me/wp-content/uploads/2011/10/image5.png) 
+[![image](http://freewind.me/wp-content/uploads/2011/10/image5.png "image")](http://freewind.me/wp-content/uploads/2011/10/image5.png) 
 
 这样，postgres的密码也是postgres了。 
 
@@ -146,11 +146,11 @@ postgresql因为安全方面的考虑，默认情况下只接受本机的连接�
 
 下载后解压，运行其中的pgAdmin III程序，如图： 
 
-[![image](http://freewind.me/wp-content/uploads/2011/10/image_thumb6.png "image")](http://freewind.me/wp-content/uploads/2011/10/image6.png) 
+[![image](http://freewind.me/wp-content/uploads/2011/10/image6.png "image")](http://freewind.me/wp-content/uploads/2011/10/image6.png) 
 
 确定后，如果没错误，就会连上。 
 
-[![image](http://freewind.me/wp-content/uploads/2011/10/image_thumb7.png "image")](http://freewind.me/wp-content/uploads/2011/10/image7.png) 
+[![image](http://freewind.me/wp-content/uploads/2011/10/image7.png "image")](http://freewind.me/wp-content/uploads/2011/10/image7.png) 
 
 把postgres服务设为自动启动   
 进入postgresql的源代码解压目录 

@@ -29,35 +29,35 @@ Angularjs的google group的确是一个好地方，再一次感谢这些热心�
 
 先看一下最终效果，再讲安装中遇到的问题及一些要点：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb.png "image")](http://freewind.me/wp-content/uploads/2012/05/image.png)
+[![image](http://freewind.me/wp-content/uploads/2012/05/image.png "image")](http://freewind.me/wp-content/uploads/2012/05/image.png)
 
 我也不知道naire这个词是什么意思，但估计这是一个“病人问卷调查”程序。首页显示一些调查问卷的名字，我们可以点击一个答题。这里点第一个：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb1.png "image")](http://freewind.me/wp-content/uploads/2012/05/image1.png)
+[![image](http://freewind.me/wp-content/uploads/2012/05/image1.png "image")](http://freewind.me/wp-content/uploads/2012/05/image1.png)
 
 点右边的Start开始，要先写资料及时间：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb2.png "image")](http://freewind.me/wp-content/uploads/2012/05/image2.png)
+[![image](http://freewind.me/wp-content/uploads/2012/05/image2.png "image")](http://freewind.me/wp-content/uploads/2012/05/image2.png)
 
 注意第一个空，有下划线表示可以填写（并且只能输入数字），中间还有横线隔开。这里用到了angularjs中的自定义directive组件的功能。下面是选择日期，看样子应该是jquery-ui的日期控件。
 
 填好后，右边出现Next按钮，点击它，开始答题：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb3.png "image")](http://freewind.me/wp-content/uploads/2012/05/image3.png)
+[![image](http://freewind.me/wp-content/uploads/2012/05/image3.png "image")](http://freewind.me/wp-content/uploads/2012/05/image3.png)
 
 对于每个问题，它下方都会有几个答案供选。直接点击其中一个，出现Next，进入下一题：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb4.png "image")](http://freewind.me/wp-content/uploads/2012/05/image4.png)
+[![image](http://freewind.me/wp-content/uploads/2012/05/image4.png "image")](http://freewind.me/wp-content/uploads/2012/05/image4.png)
 
 全部答完后，出现汇总页，可查看并修改答案：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb5.png "image")](http://freewind.me/wp-content/uploads/2012/05/image5.png)
+[![image](http://freewind.me/wp-content/uploads/2012/05/image5.png "image")](http://freewind.me/wp-content/uploads/2012/05/image5.png)
 
 注意此处，第一行的数据，与后面几个明显不同。如果是使用传统数据库，它们应该在不同的表中，而couchdb中是怎么处理的呢？（下回分解）
 
 确认无误后，点击右上角的submit，提交过去：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image_thumb6.png "image")](http://freewind.me/wp-content/uploads/2012/05/image6.png)
+[![image](http://freewind.me/wp-content/uploads/2012/05/image6.png "image")](http://freewind.me/wp-content/uploads/2012/05/image6.png)
 
 再点左边的按钮，回到了首页。
 

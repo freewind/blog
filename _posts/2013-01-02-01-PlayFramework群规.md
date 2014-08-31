@@ -41,7 +41,7 @@ title: 01. PlayFramework群规
 
 答：通常10号字还是比较清楚的，但如果你习惯了大字体，可以右键点击发言区，如下图调整显示比例。
 
-[![image_thumb_thumb_thumb](http://freewind.me/wp-content/uploads/2012/10/image_thumb_thumb_thumb_thumb.png "image_thumb_thumb_thumb")](http://freewind.me/wp-content/uploads/2012/10/image_thumb_thumb_thumb1.png)
+[![image](http://freewind.me/wp-content/uploads/2012/10/image_thumb_thumb_thumb1.png "image")](http://freewind.me/wp-content/uploads/2012/10/image_thumb_thumb_thumb1.png)
 
 ##### 问：我想让自己的字体与众不同，这样好分清哪句话是谁说的
 
@@ -55,7 +55,7 @@ title: 01. PlayFramework群规
 
 贴代码时容易夹带一些表情符号，按下面方式设置：
 
-[![image](http://freewind.me/wp-content/uploads/2012/10/image_thumb4.png "image")](http://freewind.me/wp-content/uploads/2012/10/image3.png)
+[![image](http://freewind.me/wp-content/uploads/2012/10/image3.png "image")](http://freewind.me/wp-content/uploads/2012/10/image3.png)
 
 把“使用表情快捷键”前面的勾去掉。
 

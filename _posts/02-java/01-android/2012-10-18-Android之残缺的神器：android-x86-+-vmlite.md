@@ -31,7 +31,7 @@ Vmlite提供的修改版地址：[http://www.vmlite.com/index.php?option=com_con
 
 先截一张图，这是在Virutal-Box中安装好之后的效果，里面是Android 2.3.x，屏幕分辨率设为480&#215;800：
 
-[![image](http://freewind.me/wp-content/uploads/2012/10/image_thumb.png "image")](http://freewind.me/wp-content/uploads/2012/10/image.png)
+[![image](http://freewind.me/wp-content/uploads/2012/10/image.png "image")](http://freewind.me/wp-content/uploads/2012/10/image.png)
 
 安装过程对于熟手来说不难，先装好Virtual-Box，再建一个虚拟机，再导入那两个镜像文件即可。对于新手可能还有些难度，可参照vmlite地址中的步骤。等我慢点再写一个完整的安装教程出来。
 

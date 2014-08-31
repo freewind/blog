@@ -49,11 +49,11 @@ title: 修改LiveWriter插件WintyCodeArea，生成google-code-prettify适用的
 
     源代码项目中没有包含live writer的dll，我们必须先安装好live writer，然后将它目录下的WindowsLive.Writer.Api.dll引入到项目中。该dll就是让人们写live writer插件用的，里面提供了一些类可供使用。
 
-    [![image](http://freewind.me/wp-content/uploads/2013/01/image_thumb29.png "image")](http://freewind.me/wp-content/uploads/2013/01/image29.png)
+    [![image](http://freewind.me/wp-content/uploads/2013/01/image29.png "image")](http://freewind.me/wp-content/uploads/2013/01/image29.png)
 
     在浏览页，选择live writer中的WindowsLive.Writer.Api.dll，确定即可，此时如图：
 
-    [![image](http://freewind.me/wp-content/uploads/2013/01/image_thumb30.png "image")](http://freewind.me/wp-content/uploads/2013/01/image30.png)
+    [![image](http://freewind.me/wp-content/uploads/2013/01/image30.png "image")](http://freewind.me/wp-content/uploads/2013/01/image30.png)
 
     添加之后，按F6，重新生成一下解决方案。
 
@@ -63,43 +63,43 @@ title: 修改LiveWriter插件WintyCodeArea，生成google-code-prettify适用的
 
     出来如下的对话框，点“活动解决方案平台”，选“新建...”
 
-    [![image](http://freewind.me/wp-content/uploads/2013/01/image_thumb31.png "image")](http://freewind.me/wp-content/uploads/2013/01/image31.png)
+    [![image](http://freewind.me/wp-content/uploads/2013/01/image31.png "image")](http://freewind.me/wp-content/uploads/2013/01/image31.png)
 
     弹出如下的对话框，选择x86:
 
-    [![image](http://freewind.me/wp-content/uploads/2013/01/image_thumb32.png "image")](http://freewind.me/wp-content/uploads/2013/01/image32.png)
+    [![image](http://freewind.me/wp-content/uploads/2013/01/image32.png "image")](http://freewind.me/wp-content/uploads/2013/01/image32.png)
 
     确定后，回到前面的页面，确定这里是x86:
 
-    [![image](http://freewind.me/wp-content/uploads/2013/01/image_thumb33.png "image")](http://freewind.me/wp-content/uploads/2013/01/image33.png)
+    [![image](http://freewind.me/wp-content/uploads/2013/01/image33.png "image")](http://freewind.me/wp-content/uploads/2013/01/image33.png)
 
     然后再重新生成解决方案，如果没有提示代码错误，表明环境和代码都正确。
 
     此时可能会出现这样的一个错误：
 
-    [![image](http://freewind.me/wp-content/uploads/2013/01/image_thumb34.png "image")](http://freewind.me/wp-content/uploads/2013/01/image34.png)
+    [![image](http://freewind.me/wp-content/uploads/2013/01/image34.png "image")](http://freewind.me/wp-content/uploads/2013/01/image34.png)
 
     这是说把生成的WintyCodeArea.dll拷贝到Live writer的Plugins目录下出错。如果出了这个错，可以手动把WintyCodeArea.dll拷贝过去。
 
     这个WintyCodeArea.dll就是这个项目生成的库文件，直接把它放在Live writer的Plugins目录下，再重新打开Live writer即可。如果没有错误，你可以在其插件列表中看到WintyCodeArea这个插件名：
 
-    [![image](http://freewind.me/wp-content/uploads/2013/01/image_thumb35.png "image")](http://freewind.me/wp-content/uploads/2013/01/image35.png)
+    [![image](http://freewind.me/wp-content/uploads/2013/01/image35.png "image")](http://freewind.me/wp-content/uploads/2013/01/image35.png)
 
     ## 配置WintyCodeArea
 
     确定如下：
 
-    [![image](http://freewind.me/wp-content/uploads/2013/01/image_thumb36.png "image")](http://freewind.me/wp-content/uploads/2013/01/image36.png)
+    [![image](http://freewind.me/wp-content/uploads/2013/01/image36.png "image")](http://freewind.me/wp-content/uploads/2013/01/image36.png)
 
     ## 将插件添加到“快速访问工具栏”
 
     因为live writer不支持自定义快捷键，我也没有找到在插件中设置快捷键的办法，每次使用时都需要切换工具面板，十分不便。所以把加到“快速访问工具栏”中，使用方便一些。
 
-    [![image](http://freewind.me/wp-content/uploads/2013/01/image_thumb37.png "image")](http://freewind.me/wp-content/uploads/2013/01/image37.png)
+    [![image](http://freewind.me/wp-content/uploads/2013/01/image37.png "image")](http://freewind.me/wp-content/uploads/2013/01/image37.png)
 
     以后使用时，只需要点这里就行了。
 
-    [![image](http://freewind.me/wp-content/uploads/2013/01/image_thumb38.png "image")](http://freewind.me/wp-content/uploads/2013/01/image38.png)
+    [![image](http://freewind.me/wp-content/uploads/2013/01/image38.png "image")](http://freewind.me/wp-content/uploads/2013/01/image38.png)
 
     这样live writer这块就搞定了。
 
@@ -182,4 +182,4 @@ title: 修改LiveWriter插件WintyCodeArea，生成google-code-prettify适用的
 
 这样，代码就可以显示出这样的效果：
 
-[![image](http://freewind.me/wp-content/uploads/2013/01/image_thumb39.png "image")](http://freewind.me/wp-content/uploads/2013/01/image39.png)
+[![image](http://freewind.me/wp-content/uploads/2013/01/image39.png "image")](http://freewind.me/wp-content/uploads/2013/01/image39.png)
