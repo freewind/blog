@@ -30,7 +30,7 @@ Dart使用Pub进行依赖管理。我们需要在项目目录下创建一个名�
 
 我使用一个[在线版photoshop](http://www.uupoop.com/)，生成了下面这个图标:
 
-![pub](http://freewind.me/wp-content/uploads/2014/04/pub.png)
+![pub](/user_images/2509-0.png)
 
 取名为`pub_file.png`
 
@@ -84,13 +84,13 @@ Dart使用Pub进行依赖管理。我们需要在项目目录下创建一个名�
 
     其中的`getDescription`，会在关联某种文件时，显示在列表中：
 
-    ![QQ20140407-27](http://freewind.me/wp-content/uploads/2014/04/QQ20140407-27.png)
+    ![QQ20140407-27](/user_images/2509-1.png)
 
     而`getDefaultExtension`是说默认把哪种后缀名的文件与该插件关联起来。由于我们需要对`pubspec.yaml`这个完整的文件名，而不是某个后缀名进行关联，所以我只好把它留空。
 
     `getIcon`会让我们提供一个自定义的图标供使用：
 
-    ![QQ20140407-28](http://freewind.me/wp-content/uploads/2014/04/QQ20140407-28.png)
+    ![QQ20140407-28](/user_images/2509-2.png)
 
     而`getName`我也不知道有什么用，可能是用来标识这种类型的文件，就叫`Pub`吧。
 
@@ -130,7 +130,7 @@ Dart使用Pub进行依赖管理。我们需要在项目目录下创建一个名�
 
     运行效果如下图。当我创建了一个`pubspec.yaml`文件时，IDEA立刻识别出来，并显示了我们自定义的图标。而创建了其它的文件，如`abc.yaml`，则关联上了其它的编辑器：
 
-    ![QQ20140407-29](http://freewind.me/wp-content/uploads/2014/04/QQ20140407-29.png)
+    ![QQ20140407-29](/user_images/2509-3.png)
 
     ## 源代码
 

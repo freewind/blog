@@ -20,7 +20,7 @@ libs.F虽然是一个类，但play其实是把它当成&#8221;包&#8221;在用�
  <span id="more-438"></span>
 <p>基本结构如下：
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_002n15289a52.png)
+![](/user_images/438-0.png)
 
 虽然定义了不少类，但是如果你对scala有所了解的话，可以看出它实际上模拟了scala中的一些概念。
 

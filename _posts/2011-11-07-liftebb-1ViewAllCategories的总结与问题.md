@@ -9,11 +9,11 @@ title: lift.ebb 1.ViewAllCategories的总结与问题
 
 Ebb的第一个use case，是view all categories，即查看所有的论坛组。先看看usebb的首页是什么样的：
 
-[![image](http://freewind.me/wp-content/uploads/2011/11/image1.png "image")](http://freewind.me/wp-content/uploads/2011/11/image1.png) 
+[![image](/user_images/561-1.png "image")](/user_images/561-1.png) 
 
 再看我现在做成的样子：
 
-[![image](http://freewind.me/wp-content/uploads/2011/11/image2.png "image")](http://freewind.me/wp-content/uploads/2011/11/image2.png) 
+[![image](/user_images/561-3.png "image")](/user_images/561-3.png) 
 
 虽然样子有点丑，但是好歹数据已经从数据库里取出来了。最关键的是，对lift的恐惧感大大减小，隐约开始理解它的运行方式了。
 
@@ -84,11 +84,11 @@ lift里面东西很多，这次只接触到snippet，所以只总结这一点。
 
 首先直接用浏览器打开这个文件，看是什么样子：
 
-[![image](http://freewind.me/wp-content/uploads/2011/11/image3.png "image")](http://freewind.me/wp-content/uploads/2011/11/image3.png) 
+[![image](/user_images/561-5.png "image")](/user_images/561-5.png) 
 
 可见的确是一个很像“模板”的html页面。为什么经过lift渲染之后，会变成这样呢？
 
-[![image](http://freewind.me/wp-content/uploads/2011/11/image4.png "image")](http://freewind.me/wp-content/uploads/2011/11/image4.png) 
+[![image](/user_images/561-7.png "image")](/user_images/561-7.png) 
 
 关键就在于代码中那两处红色的class。
 
@@ -113,7 +113,7 @@ templates-hidden/default.html内容如下：
 
 查看index.html最终生成的html源代码，里面的确用到了default.html中的代码：
 
-[![image](http://freewind.me/wp-content/uploads/2011/11/image5.png "image")](http://freewind.me/wp-content/uploads/2011/11/image5.png) 
+[![image](/user_images/561-9.png "image")](/user_images/561-9.png) 
 
 ２、**<font color="#ff0000">lift:ForumSnippet.forumlist</font>** 
 

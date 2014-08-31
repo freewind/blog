@@ -63,7 +63,7 @@ title: 在PlayFramework中实现点击页面上某处直接在Idea中打开对�
 
     它将会在页面中显示为一个button：
 
-    [![image](http://freewind.me/wp-content/uploads/2013/01/image167.png "image")](http://freewind.me/wp-content/uploads/2013/01/image167.png)
+    [![image](/user_images/2044-1.png "image")](/user_images/2044-1.png)
 
     点击后，则会自动在Idea中打开相应文件，并定位到相应的#{debug /}处。
 
@@ -104,7 +104,7 @@ title: 在PlayFramework中实现点击页面上某处直接在Idea中打开对�
 
 ## 效果
 
-[![image](http://freewind.me/wp-content/uploads/2013/01/live-locating.gif "image")](http://freewind.me/wp-content/uploads/2013/01/live-locating.gif)
+[![image](/user_images/2044-3.gif "image")](/user_images/2044-3.gif)
 
 ## 其它编辑器及其它框架中怎么做
 

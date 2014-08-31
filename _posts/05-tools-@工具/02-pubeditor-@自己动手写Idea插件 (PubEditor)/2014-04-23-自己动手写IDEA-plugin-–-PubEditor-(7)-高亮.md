@@ -11,7 +11,7 @@ title: 自己动手写IDEA plugin – PubEditor (7) 高亮
 
 ## 效果图
 
-![](http://freewind.me/wp-content/uploads/2014/04/QQ20140423-1.png)
+![](/user_images/2597-0.png)
 
 ## Highlighter
 

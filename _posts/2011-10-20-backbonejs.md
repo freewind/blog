@@ -7,7 +7,7 @@ date: 2011-10-20 18:17:17
 title: backbone.js
 ---
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_001p20091490.png)
+![](/user_images/446-0.png)
 
 backbone.js是一个javascript库。当我们需要在页面中写大量的javascript代码来处理页面逻辑时，backbone非常有用，因为它的设计目的就是把javascript代码分解为不同的层来让代码更加清晰。
 
@@ -337,7 +337,7 @@ Model就像是javabean，它对应的是数据。View对应的是页面上的某
 > 我看到你的main.html，里面很干净       
 > 只有html和css
 > 
-> ![](http://freewind.me/wp-content/uploads/2011/10/zrclip_002p6ade9a67.png)
+> ![](/user_images/446-1.png)
 > 
 > 刘松(42279444) 12:14:37      
 > 它也提供了事件抽象。       

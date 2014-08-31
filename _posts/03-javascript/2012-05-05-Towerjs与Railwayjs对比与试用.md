@@ -239,7 +239,7 @@ title: Towerjs与Railwayjs对比与试用
 
 官网首页截图，典型的Bootstrap风格：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image7.png "image")](http://freewind.me/wp-content/uploads/2012/05/image7.png) 
+[![image](/user_images/878-1.png "image")](/user_images/878-1.png) 
 
 Railswayjs的试用非常顺利，在win7 x64下也能顺利安装。
 
@@ -262,29 +262,29 @@ Railswayjs的试用非常顺利，在win7 x64下也能顺利安装。
 
     打开浏览器，访问[http://127.0.0.1:8888/posts](http://127.0.0.1:8888/posts)，页面如下：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image8.png "image")](http://freewind.me/wp-content/uploads/2012/05/image8.png) 
+    [![image](/user_images/878-3.png "image")](/user_images/878-3.png) 
 
     创建一个Post:
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image9.png "image")](http://freewind.me/wp-content/uploads/2012/05/image9.png) 
+    [![image](/user_images/878-5.png "image")](/user_images/878-5.png) 
 
      
 
     创建后，回到列表页：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image10.png "image")](http://freewind.me/wp-content/uploads/2012/05/image10.png) 
+    [![image](/user_images/878-7.png "image")](/user_images/878-7.png) 
 
     查看其中一个：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image11.png "image")](http://freewind.me/wp-content/uploads/2012/05/image11.png) 
+    [![image](/user_images/878-9.png "image")](/user_images/878-9.png) 
 
     删除：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image12.png "image")](http://freewind.me/wp-content/uploads/2012/05/image12.png) 
+    [![image](/user_images/878-11.png "image")](/user_images/878-11.png) 
 
     在访问过程中，控制台会显示出请求信息：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image13.png "image")](http://freewind.me/wp-content/uploads/2012/05/image13.png) 
+    [![image](/user_images/878-13.png "image")](/user_images/878-13.png) 
 
     总之，页面精美，操作流畅，考虑周到，赞一个。
 
@@ -296,7 +296,7 @@ Railswayjs的试用非常顺利，在win7 x64下也能顺利安装。
 
     首页截图，看起来也比较素雅：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image14.png "image")](http://freewind.me/wp-content/uploads/2012/05/image14.png) 
+    [![image](/user_images/878-15.png "image")](/user_images/878-15.png) 
 
     Towerjs的试用过程比较坎坷。首先在windows下安装，有一些依赖的模块安装不上，可能还不支持windows。只好打开虚拟机，启动centos6.x，开始安装。
 
@@ -347,17 +347,17 @@ Railswayjs的试用非常顺利，在win7 x64下也能顺利安装。
 
     在浏览器中访问：[http://localhost:3000](http://localhost:3000)，出现如下页面：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image15.png "image")](http://freewind.me/wp-content/uploads/2012/05/image15.png) 
+    [![image](/user_images/878-17.png "image")](/user_images/878-17.png) 
 
     什么情况？怎么这么丑？！
 
     打开firebug:
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image16.png "image")](http://freewind.me/wp-content/uploads/2012/05/image16.png)
+    [![image](/user_images/878-19.png "image")](/user_images/878-19.png)
 
     居然有这么多文件找不到？打开资源浏览器，发现对应的less文件存在：
 
-    [![image](http://freewind.me/wp-content/uploads/2012/05/image17.png "image")](http://freewind.me/wp-content/uploads/2012/05/image17.png)
+    [![image](/user_images/878-21.png "image")](/user_images/878-21.png)
 
     看来需要手动把它们转为.css。
 
@@ -369,17 +369,17 @@ Railswayjs的试用非常顺利，在win7 x64下也能顺利安装。
 
 奇怪，看一下任务列表：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image18.png "image")](http://freewind.me/wp-content/uploads/2012/05/image18.png)
+[![image](/user_images/878-23.png "image")](/user_images/878-23.png)
 
 哪有编译任务？！实在进行不下去了。
 
 试下添加User:
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image19.png "image")](http://freewind.me/wp-content/uploads/2012/05/image19.png) 
+[![image](/user_images/878-25.png "image")](/user_images/878-25.png) 
 
 中文显示正常：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image20.png "image")](http://freewind.me/wp-content/uploads/2012/05/image20.png) 
+[![image](/user_images/878-27.png "image")](/user_images/878-27.png) 
 
 试用到此结束，不能不说有些失望。安装过程复杂，也不能提供开箱即用的数据库，文档与实际命令有差异，无法编译资源文件，导致最终页面相当丑。
 

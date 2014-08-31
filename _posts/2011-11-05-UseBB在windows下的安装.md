@@ -37,4 +37,4 @@ title: UseBB在windows下的安装
 
 截个图，如下：
 
-[![image](http://freewind.me/wp-content/uploads/2011/11/image.png "image")](http://freewind.me/wp-content/uploads/2011/11/image.png)
+[![image](/user_images/548-1.png "image")](/user_images/548-1.png)

@@ -9,15 +9,15 @@ title: Android步步惊心 之 破碎的渐变色图片(png格式)
 
 最初遇到此问题时，我以为是我那500元的廉价Android手机屏幕有问题，显示的颜色种类不够，导致一张渐变色的png图片，变成了条状：
 
-[![image](http://freewind.me/wp-content/uploads/2012/10/image4.png "image")](http://freewind.me/wp-content/uploads/2012/10/image4.png)
+[![image](/user_images/1037-1.png "image")](/user_images/1037-1.png)
 
 一边暗自诅咒“便宜没好货”，一边打开了手机上的浏览器连到电脑上，查看该图片，没想到一切正常：
 
-[![image](http://freewind.me/wp-content/uploads/2012/10/image5.png "image")](http://freewind.me/wp-content/uploads/2012/10/image5.png)
+[![image](/user_images/1037-3.png "image")](/user_images/1037-3.png)
 
 原始图片是什么样子呢？如下：
 
-[![image](http://freewind.me/wp-content/uploads/2012/10/image6.png "image")](http://freewind.me/wp-content/uploads/2012/10/image6.png)
+[![image](/user_images/1037-5.png "image")](/user_images/1037-5.png)
 
 注意看最右边的颜色要比左边深一点，平滑的渐变色。
 
@@ -39,7 +39,7 @@ title: Android步步惊心 之 破碎的渐变色图片(png格式)
 
 于是，干脆直接把整张图片直接设为99%，简单粗暴。反正人眼也是看不出那1%的透明度的。
 
-[![image](http://freewind.me/wp-content/uploads/2012/10/image7.png "image")](http://freewind.me/wp-content/uploads/2012/10/image7.png)
+[![image](/user_images/1037-7.png "image")](/user_images/1037-7.png)
 
 连正常显示一张图片的功能都能做得如此跌宕起伏，android，真有你的！
 

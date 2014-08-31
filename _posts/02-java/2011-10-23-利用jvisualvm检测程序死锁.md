@@ -74,13 +74,13 @@ public class DeadLock {
 
 现在打开jvisualvm，如下图：
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_019p18edecfd.png)
+![](/user_images/482-0.png)
 
 可以看到，Thread1与2两个都处于&#8221;监视&#8221;状态。
 
 点一下&#8221;线程Dump&#8221;按钮，找到Thread1与2的信息，如下：
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_020n66fb9b3b.png)
+![](/user_images/482-1.png)
 
 从中可以得知，两者都处于&#8221;Blocked&#8221;状态，并且知道阻塞在哪一行代码上。
 

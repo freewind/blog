@@ -16,7 +16,7 @@ title: 连WordPress都不支持IE6了
 
 答：打开[http://ie6countdown.com](http://ie6countdown.com)，可以看到世界地图上，“红色”的中国
 
-[![image](http://freewind.me/wp-content/uploads/2011/09/image.png "image")](http://freewind.me/wp-content/uploads/2011/09/image.png) 
+[![image](/user_images/130-1.png "image")](/user_images/130-1.png) 
 
 中国以30.5%的最高比例，压倒性的优势，稳居世界第一！中国的程序员苦啊，特别是前端工程师。
 

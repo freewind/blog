@@ -57,41 +57,41 @@ title: Android界面制作中最重要最强大的武器: 9-patch
 
 9-patch又叫9-slice，下面以例子讲解一下。首先看一个圆色按钮：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image.png "image")](http://freewind.me/wp-content/uploads/2012/11/image.png)
+[![image](/user_images/1095-1.png "image")](/user_images/1095-1.png)
 
 如果把它整个当作一个按钮的背景，则在缩放的过程中，会变形，很难看：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image1.png "image")](http://freewind.me/wp-content/uploads/2012/11/image1.png)
+[![image](/user_images/1095-3.png "image")](/user_images/1095-3.png)
 
 仔细观察图片，发现变形难看的地方，主要是四个角。如果能在缩放过程中，保持4个角不变，应该会得到比较好的效果。可把它看作由下面三行三列组成：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image2.png "image")](http://freewind.me/wp-content/uploads/2012/11/image2.png)
+[![image](/user_images/1095-5.png "image")](/user_images/1095-5.png)
 
 这样在变形时，如果保持4角不变，会产生以下效果：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image3.png "image")](http://freewind.me/wp-content/uploads/2012/11/image3.png)
+[![image](/user_images/1095-7.png "image")](/user_images/1095-7.png)
 
 相比前面的，效果要好很多吧。
 
 不光是简单的按钮，其它很多效果也可以使用9-patch实现。比如下面这个效果（只看边框）：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image4.png "image")](http://freewind.me/wp-content/uploads/2012/11/image4.png)
+[![image](/user_images/1095-9.png "image")](/user_images/1095-9.png)
 
 它可以用两个9-pacth图片实现，分别为：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image5.png "image")](http://freewind.me/wp-content/uploads/2012/11/image5.png)[![image](http://freewind.me/wp-content/uploads/2012/11/image6.png "image")](http://freewind.me/wp-content/uploads/2012/11/image6.png)
+[![image](/user_images/1095-11.png "image")](/user_images/1095-11.png)[![image](/user_images/1095-13.png "image")](/user_images/1095-13.png)
 
 图片最外面的两条黑线先不管，后面会讲解。仔细看右图，发现上面有一条蓝线，正是前面图中间的分隔线。
 
 再看这里：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image7.png "image")](http://freewind.me/wp-content/uploads/2012/11/image7.png)
+[![image](/user_images/1095-15.png "image")](/user_images/1095-15.png)
 
 这种很炫的图片，又有渐变，上面还有带阴影的分隔，照样一个9-patch图片搞定。
 
 还有带阴影的边框：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image8.png "image")](http://freewind.me/wp-content/uploads/2012/11/image8.png)
+[![image](/user_images/1095-17.png "image")](/user_images/1095-17.png)
 
 中间的颜色可忽略，关键是它四周淡淡的阴影。只要使用这个图片，就可以轻松的给各种大小的图片套上一个阴影边框。
 
@@ -99,13 +99,13 @@ title: Android界面制作中最重要最强大的武器: 9-patch
 
 不过也有一些效果不行，看下面这个图：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image9.png "image")](http://freewind.me/wp-content/uploads/2012/11/image9.png)
+[![image](/user_images/1095-19.png "image")](/user_images/1095-19.png)
 
 它无法使用9-patch，因为在竖方向上，它没有办法分成三行。只能横向缩放。
 
 与设计师沟通后，把它变成了这样：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image10.png "image")](http://freewind.me/wp-content/uploads/2012/11/image10.png)
+[![image](/user_images/1095-21.png "image")](/user_images/1095-21.png)
 
 虽然风格变了，没前面的好看，不过这也是效果与开发难度之间平衡的结果。
 
@@ -113,7 +113,7 @@ title: Android界面制作中最重要最强大的武器: 9-patch
 
  
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image11.png "image")](http://freewind.me/wp-content/uploads/2012/11/image11.png)
+[![image](/user_images/1095-23.png "image")](/user_images/1095-23.png)
 
  
 
@@ -121,39 +121,39 @@ title: Android界面制作中最重要最强大的武器: 9-patch
 
 在android中提供了一个专门画9-patch的工具，由swing写成，位于android-sdk/tools/draw9patch.bat。运行后界面如下：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image12.png "image")](http://freewind.me/wp-content/uploads/2012/11/image12.png)
+[![image](/user_images/1095-25.png "image")](/user_images/1095-25.png)
 
 左边是打开的原始图片，右边是实时变形后的预览图，下面是各种选项。
 
 左边的图片，只有四条边是供我们画线的。如果把鼠标移到中间不可编辑的区域，会显示下图：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image13.png "image")](http://freewind.me/wp-content/uploads/2012/11/image13.png)
+[![image](/user_images/1095-27.png "image")](/user_images/1095-27.png)
 
 表示禁止画点。
 
 我们通常要做的，仅仅是在最左边和最上面的一像素宽的区域里，画出一条线，表示可缩放的区域：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image14.png "image")](http://freewind.me/wp-content/uploads/2012/11/image14.png)
+[![image](/user_images/1095-29.png "image")](/user_images/1095-29.png)
 
 看到左与上那两条黑线了吗？画的过程比较痛苦，因为没有快捷键可一下子画好，鼠标歪一下中间就会漏很多点，只能一点点补。所以在制作图片时，要弄的小一点。
 
 想以直观的方式看缩放区域吗？勾选下面的"show patches"，效果如下：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image15.png "image")](http://freewind.me/wp-content/uploads/2012/11/image15.png)
+[![image](/user_images/1095-31.png "image")](/user_images/1095-31.png)
 
 可以看到我上面那条边画得靠左了。从右边的实时预览区域，可看到会有不好看的变形：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image16.png "image")](http://freewind.me/wp-content/uploads/2012/11/image16.png)
+[![image](/user_images/1095-33.png "image")](/user_images/1095-33.png)
 
 这时可按住shift，再用鼠标点去错误的点：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image17.png "image")](http://freewind.me/wp-content/uploads/2012/11/image17.png)
+[![image](/user_images/1095-35.png "image")](/user_images/1095-35.png)
 
 画好后保存，它会以.9.png的格式保存为图片，然后在android中当作普通图片使用即可，android会自动处理缩放时的变形。
 
 在前面的操作过程中，发现画线很不方便，因为经常漏掉一些点，出现像下面这样的图：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image18.png "image")](http://freewind.me/wp-content/uploads/2012/11/image18.png)
+[![image](/user_images/1095-37.png "image")](/user_images/1095-37.png)
 
 这是怎么回事，会不会有问题？android会怎么处理呢？
 
@@ -161,21 +161,21 @@ title: Android界面制作中最重要最强大的武器: 9-patch
 
 看下面这张图片：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image19.png "image")](http://freewind.me/wp-content/uploads/2012/11/image19.png)
+[![image](/user_images/1095-39.png "image")](/user_images/1095-39.png)
 
 如果我希望在缩放的过程中，数学不变，而它们之间的空白会变，怎么办呢？好办，按下面这种方式画出黑线：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image20.png "image")](http://freewind.me/wp-content/uploads/2012/11/image20.png)
+[![image](/user_images/1095-41.png "image")](/user_images/1095-41.png)
 
 再看变形后的效果：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image21.png "image")](http://freewind.me/wp-content/uploads/2012/11/image21.png)[![image](http://freewind.me/wp-content/uploads/2012/11/image22.png "image")](http://freewind.me/wp-content/uploads/2012/11/image22.png)[![image](http://freewind.me/wp-content/uploads/2012/11/image23.png "image")](http://freewind.me/wp-content/uploads/2012/11/image23.png)
+[![image](/user_images/1095-43.png "image")](/user_images/1095-43.png)[![image](/user_images/1095-45.png "image")](/user_images/1095-45.png)[![image](/user_images/1095-47.png "image")](/user_images/1095-47.png)
 
 果然数字没变，而空白变了，厉害！
 
 这个功能对于这种情况很有用：
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image24.png "image")](http://freewind.me/wp-content/uploads/2012/11/image24.png)
+[![image](/user_images/1095-49.png "image")](/user_images/1095-49.png)
 
 如果把这个图片当作整体（包含上面的字），想让它适应多种大小的同时，字保持不变，知道怎么做了吧？
 
@@ -183,7 +183,7 @@ title: Android界面制作中最重要最强大的武器: 9-patch
 
 另外发现除了可以画黑线外，还可以画layout，不过我还不清楚该功能有什么用，需要再研究一下。如果很重要的话，会补上来。
 
-[![image](http://freewind.me/wp-content/uploads/2012/11/image25.png "image")](http://freewind.me/wp-content/uploads/2012/11/image25.png)
+[![image](/user_images/1095-51.png "image")](/user_images/1095-51.png)
 
 补充资料：
 

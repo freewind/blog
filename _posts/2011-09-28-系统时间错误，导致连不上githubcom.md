@@ -9,7 +9,7 @@ title: 系统时间错误，导致连不上github.com
 
 今天发现自己怎么都打不开[https://github.com](https://github.com)，翻墙也不行，错误信息如下：
 
-![](http://freewind.me/wp-content/uploads/2011/09/zrclip_001p75b0d1ef.png)
+![](/user_images/430-0.png)
 
 怎么弄都没弄好，最后仔细地看错误提示：ERR_CERT_DATE_INVALID，再看系统时间是2007年。
 

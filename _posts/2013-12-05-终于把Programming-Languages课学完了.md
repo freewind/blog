@@ -11,7 +11,7 @@ title: 终于把Programming Languages课学完了
 
 Programming Languages是coursera网站上的一门免费公开课：https://www.coursera.org/course/proglang，主讲人是华盛顿大学的Dan Grossman。
 
-![](http://freewind.me/wp-content/uploads/2013/12/img_52a0a1961422b.png)
+![](/user_images/2222-0.png)
 
 这门课通过多种风格不同的编程语言来讲解贯穿于函数式和面向对象语言中的各个概念，比较同一个概念在不同语言中的实现方式，以及类型系统的知识。课程中使用了三种语言作为主要的教学语言，分别是SML(Standard ML)，Racket和Ruby。其中前两种语言对于多数人来说都比较陌生，但它们简洁有特色，用来讲解某些概念非常合适。
 

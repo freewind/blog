@@ -62,7 +62,7 @@ http://confluence.jetbrains.com/display/IDEADEV/PluginDevelopment
 
     Idea中默认自带了`Plugin DevKit`插件，但是没有开启。首先我们需要将它开启:
 
-    [![QQ20140406-16](http://freewind.me/wp-content/uploads/2014/04/QQ20140406-16.png)](http://freewind.me/wp-content/uploads/2014/04/QQ20140406-16.png)
+    [![QQ20140406-16](/user_images/2503-1.png)](/user_images/2503-1.png)
 
     然后激动人心的时刻就要开始了！
 
@@ -70,15 +70,15 @@ http://confluence.jetbrains.com/display/IDEADEV/PluginDevelopment
 
     打开Idea，创建一个新项目，记得要选左右要选&#8221;Intellij Plugin Platform&#8221;类型：
 
-    ![QQ20140406-4](http://freewind.me/wp-content/uploads/2014/04/QQ20140406-4.png)
+    ![QQ20140406-4](/user_images/2503-2.png)
 
     然后输入项目名，我选的是`PubEditor`:
 
-    ![QQ20140406-5](http://freewind.me/wp-content/uploads/2014/04/QQ20140406-5.png)
+    ![QQ20140406-5](/user_images/2503-3.png)
 
     创建完成后，就自动打开项目，注意在`META-INF`下有一个`plugin.xml`文件：
 
-    ![QQ20140406-6](http://freewind.me/wp-content/uploads/2014/04/QQ20140406-6.png)
+    ![QQ20140406-6](/user_images/2503-4.png)
 
     这个plugin.xml文件是一个重要的配置文件，用于向IDEA平台注册我们的提供的功能。如果你开发过eclipse插件，会知道那边也有一个类似的文件。
 
@@ -141,7 +141,7 @@ http://confluence.jetbrains.com/display/IDEADEV/PluginDevelopment
 
     代码部分就结束了，东西不多，过程还是很轻松的。我的项目文件是这样的：
 
-    ![QQ20140406-17](http://freewind.me/wp-content/uploads/2014/04/QQ20140406-17.png)
+    ![QQ20140406-17](/user_images/2503-5.png)
 
     下面是运行效果了。
 
@@ -149,31 +149,31 @@ http://confluence.jetbrains.com/display/IDEADEV/PluginDevelopment
 
     不能直接运行，而要先建立一个配置。打开菜单&#8221;Run&#8221;->&#8221;Configuration&#8221;，点击左上角的&#8221;+&#8221;新建，选择&#8221;Plugin&#8221;，如图：
 
-    ![QQ20140406-18](http://freewind.me/wp-content/uploads/2014/04/QQ20140406-18.png)
+    ![QQ20140406-18](/user_images/2503-6.png)
 
     基本上不用改什么，我就只把名字设成了&#8221;Pub Editor&#8221;，然后点击&#8221;OK&#8221;.
 
     这时右上角运行栏处会变成这样：
 
-    ![QQ20140406-19](http://freewind.me/wp-content/uploads/2014/04/QQ20140406-19.png)
+    ![QQ20140406-19](/user_images/2503-7.png)
 
     点击绿色小三角即可。
 
     它会打开一个新的IDEA。如果你运行的是企业版，可能会提示你输入license等信息，可以选择“继续试用”，进入开始界面：
 
-    ![QQ20140406-20](http://freewind.me/wp-content/uploads/2014/04/QQ20140406-20.png)
+    ![QQ20140406-20](/user_images/2503-8.png)
 
     由于我们添加的菜单只能在进入项目后才能看到，所以我们需要随便创建一个项目。我建的是&#8221;TestPlugin&#8221;，进去后可以看到上面的菜单最右边多了一项&#8221;Pub Editor&#8221;，以及&#8221;Hello world&#8221;:
 
-    ![QQ20140406-22](http://freewind.me/wp-content/uploads/2014/04/QQ20140406-22.png)
+    ![QQ20140406-22](/user_images/2503-9.png)
 
     点击&#8221;Hello world&#8221;后，会弹出对话框，提示我们输入名称：
 
-    ![QQ20140406-23](http://freewind.me/wp-content/uploads/2014/04/QQ20140406-23.png)
+    ![QQ20140406-23](/user_images/2503-10.png)
 
     输入名字后，会弹出一个新的信息框：
 
-    ![QQ20140406-24](http://freewind.me/wp-content/uploads/2014/04/QQ20140406-24.png)
+    ![QQ20140406-24](/user_images/2503-11.png)
 
     ## 源代码
 

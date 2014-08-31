@@ -28,7 +28,7 @@ title: 使用Python实现“信息更新上传工具”(5) — Python+PySide打�
 
 里面的main.exe是我写的main.py转换后的文件，其它的，python27.dll是python库，QtGui4.dll和QtCore4.dll是Qt4里的库，PySide.QtCore.pyd和PySide.QtGui.pyd是PySide的库，还有其它的一些，总之，现在可以在一台普通的winxp上运行了。效果如下图：
 
-[![image](http://freewind.me/wp-content/uploads/2012/02/image12.png "image")](http://freewind.me/wp-content/uploads/2012/02/image12.png)
+[![image](/user_images/767-1.png "image")](/user_images/767-1.png)
 
 虽然功能还比较简单，而且后来还有一个黑色的cmd窗口，但是起码证明这种方式是可行的。而且把它们打成一个zip包之后，大小不到10M，也在可以接受的范围内。
 

@@ -19,11 +19,11 @@ title: 自己动手写IDEA plugin – PubEditor (2) Scala改写Hello world
 
 首先打开项目属性，在&#8221;Facets&#8221;中添加Scala：
 
-![QQ20140406-25](http://freewind.me/wp-content/uploads/2014/04/QQ20140406-25.png)
+![QQ20140406-25](/user_images/2554-0.png)
 
 然后在Modules中选择PubEditor的module，添加上scala-library相应的依赖：
 
-![QQ20140406-26](http://freewind.me/wp-content/uploads/2014/04/QQ20140406-26.png)
+![QQ20140406-26](/user_images/2554-1.png)
 
 如果你对Idea下的scala配置不熟悉，需要多一些时间摸索，我也是连蒙带猜弄好的。
 

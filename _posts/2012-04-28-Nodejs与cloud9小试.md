@@ -23,17 +23,17 @@ cloud9的网址是[http://c9.io](http://c9.io)，对于开源项目免费，可�
 
 上个图看看：
 
-[![image](http://freewind.me/wp-content/uploads/2012/04/image5.png "image")](http://freewind.me/wp-content/uploads/2012/04/image5.png)
+[![image](/user_images/793-1.png "image")](/user_images/793-1.png)
 
 怎么样，像模像样吧？项目管理、语法高亮、debug，甚至还有Deploy可发布到第三方server。使用起来的感觉，跟本地的IDE，几乎没有差别。
 
 点个debug试试：
 
-[![image](http://freewind.me/wp-content/uploads/2012/04/image6.png "image")](http://freewind.me/wp-content/uploads/2012/04/image6.png)
+[![image](/user_images/793-3.png "image")](/user_images/793-3.png)
 
 看到提示信息，Server has started，说明成功启动，访问它提供的链接：[http://testnodejs.freewind.c9.io/](http://testnodejs.freewind.c9.io/ "http://testnodejs.freewind.c9.io/")即可看到如下图：
 
-[![image](http://freewind.me/wp-content/uploads/2012/04/image7.png "image")](http://freewind.me/wp-content/uploads/2012/04/image7.png)
+[![image](/user_images/793-5.png "image")](/user_images/793-5.png)
 
 完美。
 

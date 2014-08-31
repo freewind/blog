@@ -21,32 +21,32 @@ title: 利用jdk自带的强悍工具jvisualvm检测多线程的竞争
 
 在命令行输入jvisualvm。如果jdk安装正确的话(6.x以上版本），就会看到如下的一个窗口：
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_001n2935b9ec.png)
+![](/user_images/479-0.png)
 
 看起来相当简洁，不像是很强大的样子。
 
  <span id="more-479"></span>
 <p>**2。运行一个Java程序IncTestN，jvisualvm会自动找到它**
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_002n2680a4b1.png)
+![](/user_images/479-1.png)
 
 **3.右键点击它，&#8221;打开&#8221;**
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_003p373b90c8.png)
+![](/user_images/479-2.png)
 
 可以看到它有很多标签页，可以让我们监测程序的各种数据。默认没有这么多，我其实安装了一些jvisualvm的插件。
 
 **4。查看jvm参数及系统属性**
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_004p17e53528.png)
+![](/user_images/479-3.png)
 
 **5。查看cpu、内存、类、线程的统计数据**
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_005p4feb0dad.png)
+![](/user_images/479-4.png)
 
 注意，右边第一个还可以查看PermGen。对于scala程序，因为它产生了大量的类定义，所以PermGen有可能会不足，可通过该选项查看PermGen，适当调整：
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_006n7245b5bc.png)
+![](/user_images/479-5.png)
 
 可以看到，对于本程序来说，PermGen还是比较充分的，无须调整。
 
@@ -54,7 +54,7 @@ title: 利用jdk自带的强悍工具jvisualvm检测多线程的竞争
 
 这个是重点，我们需要知道各线程的运行情况，特别是否被synchronized阻塞了。
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_007p4cc06ea6.png)
+![](/user_images/479-6.png)
 
 注意右下角，有四个状态说明，分别是：
 
@@ -71,25 +71,25 @@ title: 利用jdk自带的强悍工具jvisualvm检测多线程的竞争
 
 如果我们需要一些统计数据，比如某个线程总共运行了多少时间，&#8221;运行&#8221;状态有多久（或百分比），休眠、等待、监视有多久，则需要用到&#8221;表&#8221;这一页。
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_008n42883c38.png)
+![](/user_images/479-7.png)
 
 从中可以看到这个悲催的程序，几分所有的时间都用在了synchronized的阻塞上了。只有百分之零点几的时间在运行中，效率可真低啊。
 
 还可以使用图表方式来看这些数据，得到更直观的体验：
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_009p198fb70a.png)
+![](/user_images/479-8.png)
 
 **8。查看各方法的运行时间**
 
 想不想程序中到底是哪些方法一直在运行？可使用&#8221;抽样器&#8221;功能：
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_010p11c2bf09.png)
+![](/user_images/479-9.png)
 
 我们需要先点击上面的&#8221;CPU&#8221;按钮，它才会开始统计，下面的数据会慢慢多起来。从上图可以看出，程序一直在运行SynIncer.inc()方法，它占用了所有方法执行总时间的99.8%。如果我们想提高程序性能，则需要重点优化它，让它运行得更快。
 
 还想知道方法被调用的次数？使用&#8221;Profiler&#8221;页中的功能：
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_011p3128a4fb.png)
+![](/user_images/479-10.png)
 
 它与抽样器很像，但是最后多了一个&#8221;调用次数&#8221;。
 
@@ -97,7 +97,7 @@ title: 利用jdk自带的强悍工具jvisualvm检测多线程的竞争
 
 当出现了内存不足的错误时，想不想知道到底是哪些对象把内存都占用了？这时需要使用&#8221;抽样器&#8221;的&#8221;内存&#8221;检测功能：
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_012n20e97aea.png)
+![](/user_images/479-11.png)
 
 从表中可以看出当前最多的是哪些对象，它们有多少个，用了多少个字节。
 
@@ -105,7 +105,7 @@ title: 利用jdk自带的强悍工具jvisualvm检测多线程的竞争
 
 jvisualvm还在线提供了很多插件，提供了更多的功能。我们可以通过&#8221;工具&#8221;->&#8221;插件&#8221;，找到并安装它们。推荐全装，比如我就安装了全部（当前有16个）：
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_013p2d861c48.png)
+![](/user_images/479-12.png)
 
 安装重启后，再找到某个程序节点，就会发现有更多的标签页可用。
 
@@ -113,7 +113,7 @@ jvisualvm还在线提供了很多插件，提供了更多的功能。我们可�
 
 MBeans可以将程序中的某些信息暴露给外部。有一些库在设计时，就考虑到了这一点。如果我们不满足于前面那些基础信息，可以在这里看看。
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_014p5bef9d4f.png)
+![](/user_images/479-13.png)
 
 由于当前程序没有使用到提供MBeans信息的库，所以看不到什么多少有用的信息。如果你使用了某些数据库连接池（提供了MBeans功能的），可以在这里看到池里的一些信息，还可以通过&#8221;Operations&#8221;标签页，对程序数据进行一些修改。
 
@@ -121,7 +121,7 @@ MBeans可以将程序中的某些信息暴露给外部。有一些库在设计�
 
 垃圾回收是我们不能忽略的一个地方。我们可以通过&#8221;Visual GC&#8221;页，查看到非常详细的垃圾回收情况。
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_016p793f2962.png)
+![](/user_images/479-14.png)
 
 可以说，这个功能提供的信息真是非常地详尽，连两个小Eden的情况也实时地表现出来了。不过要看懂这些数据，还是需要先到网上看看讲解Java垃圾回收的文章，了解其内部原理才行。
 
@@ -129,11 +129,11 @@ MBeans可以将程序中的某些信息暴露给外部。有一些库在设计�
 
 Tracer页提供了更多的监测内容
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_017n542f8a1b.png)
+![](/user_images/479-15.png)
 
 可以看到程序中遍布探针，让我们实时了解到各处的运行情况。先选中感兴趣的内容，然后点击&#8221;Start&#8221;按钮即可。
 
-![](http://freewind.me/wp-content/uploads/2011/10/zrclip_018p359c2754.png)
+![](/user_images/479-16.png)
 
 这一块比较专业，普通开发人员可能都不知道这些数据到底有什么用。但专业人士可能会觉得会很需要它们。
 

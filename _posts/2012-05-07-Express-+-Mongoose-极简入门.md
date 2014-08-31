@@ -61,7 +61,7 @@ title: Express + Mongoose 极简入门
 
 显示如下：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image21.png "image")](http://freewind.me/wp-content/uploads/2012/05/image21.png)
+[![image](/user_images/891-1.png "image")](/user_images/891-1.png)
 
 ## 三、定义Models
 
@@ -138,11 +138,11 @@ title: Express + Mongoose 极简入门
 
 打开浏览器，访问：[http://localhost:3000/init](http://localhost:3000/init)
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image22.png "image")](http://freewind.me/wp-content/uploads/2012/05/image22.png)
+[![image](/user_images/891-3.png "image")](/user_images/891-3.png)
 
 提示数据已经初始化。使用mongodb的控制台，查询结果如下：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image23.png "image")](http://freewind.me/wp-content/uploads/2012/05/image23.png)
+[![image](/user_images/891-5.png "image")](/user_images/891-5.png)
 
 看到数据的确已经插入到mongodb中了。
 
@@ -160,7 +160,7 @@ title: Express + Mongoose 极简入门
 
 打开浏览器，访问[http://localhost:3000/users](http://localhost:3000/users)
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image24.png "image")](http://freewind.me/wp-content/uploads/2012/05/image24.png)
+[![image](/user_images/891-7.png "image")](/user_images/891-7.png)
 
 果然看到json数据过来了。
 
@@ -186,7 +186,7 @@ express-mongoose项目就是为了简化express和mongoose。首先导入它：
 
 重启app.js，再访问：[http://localhost:3000/users](http://localhost:3000/users)，截图如下：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image25.png "image")](http://freewind.me/wp-content/uploads/2012/05/image25.png)
+[![image](/user_images/891-9.png "image")](/user_images/891-9.png)
 
 果然效果一样。
 
@@ -196,7 +196,7 @@ express-mongoose项目就是为了简化express和mongoose。首先导入它：
 
 再访问：
 
-[![image](http://freewind.me/wp-content/uploads/2012/05/image26.png "image")](http://freewind.me/wp-content/uploads/2012/05/image26.png)
+[![image](/user_images/891-11.png "image")](/user_images/891-11.png)
 
 现在返回的就是User.find()这个query的值，而不是查询结果。
 

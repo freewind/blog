@@ -17,7 +17,7 @@ title: Atom vs Spark：用Node/Dart+css+html打造编辑器
 
 运行起来很流畅，有点sublime的感觉，所以我怀疑它自己并不是用nodejs写的：
 
-[![QQ20140327-2](http://freewind.me/wp-content/uploads/2014/03/QQ20140327-2.png)](http://freewind.me/wp-content/uploads/2014/03/QQ20140327-2.png)
+[![QQ20140327-2](/user_images/2461-1.png)](/user_images/2461-1.png)
 
 从官方文档上可以看到其功能已经相当完善，插件生态圈也差不多建起来了，目前已经有600多插件。我挑了一个插件看了一下，里面用到了coffeescript/less等，功能还比较复杂，但结构很清晰。也许因为Javascript给人的轻量感觉，让我觉得写一个插件出来似乎不是一件很困难的事情，不像给Eclipse/Idea写插件那样压力巨大。
 
@@ -31,7 +31,7 @@ Dart有一个叫Spark的项目，利用Dart + Polymer在chrome上创建一个编
 
 我经过一翻折腾，终于在今天把它跑起来了，果然是相当的早期！与前面的Atom大哥相比，实在不好意思露脸。。。
 
-[![QQ20140327-1](http://freewind.me/wp-content/uploads/2014/03/QQ20140327-1.png)](http://freewind.me/wp-content/uploads/2014/03/QQ20140327-1.png)
+[![QQ20140327-1](/user_images/2461-3.png)](/user_images/2461-3.png)
 
 不论是界面还是功能都非常的简陋，我感觉和一个“记事本”差不多，后台还经常报错。只能说Dart很新，Polymer也很新，一切都还在探索之中。
 

@@ -19,6 +19,6 @@ Make输出后来想了想可能是javac返回给IDEA的，所以通过Compiler P
 
 搞定了。一定要 `override default fonts `
 
-[![image](http://freewind.me/wp-content/uploads/2013/01/image97.png "image")](http://freewind.me/wp-content/uploads/2013/01/image97.png)
+[![image](/user_images/1733-1.png "image")](/user_images/1733-1.png)
 
 这里才是全局，一开始这些都是方块。

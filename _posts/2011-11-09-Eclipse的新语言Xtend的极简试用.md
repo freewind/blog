@@ -26,17 +26,17 @@ Xtend是对Java的一些小小改进，提供了一些Javaer一直想要却迟�
 <span id="more-571"></span>
 <p>怀着激动的心情与漫长的安装，终于把xtend装好了，新建了一个内置的xtend教学项目，看看代码的截图：
 
-[![image](http://freewind.me/wp-content/uploads/2011/11/image6.png "image")](http://freewind.me/wp-content/uploads/2011/11/image6.png)
+[![image](/user_images/571-1.png "image")](/user_images/571-1.png)
 
 看起来不错，很有Java的感觉。语法像、配色像，但有一些增强的功能，比如图中的多行文本以及字符串中的内嵌表达式，很爽吧！再来个闭包：
 
-[![image](http://freewind.me/wp-content/uploads/2011/11/image7.png "image")](http://freewind.me/wp-content/uploads/2011/11/image7.png)
+[![image](/user_images/571-3.png "image")](/user_images/571-3.png)
 
 还没看来及细看，马上发现了问题：太卡了！太卡了！太卡了！太卡了！太卡了！太卡了！
 
 稍稍修改一下代码，保存一下，就会出现如下等待框：
 
-[![image](http://freewind.me/wp-content/uploads/2011/11/image8.png "image")](http://freewind.me/wp-content/uploads/2011/11/image8.png)
+[![image](/user_images/571-5.png "image")](/user_images/571-5.png)
 
 如果你随便改点东西，然后快速按两次保存，这个对话会卡住超过10秒钟！在此期间什么也不能操作，只能干等！
 

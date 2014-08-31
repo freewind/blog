@@ -459,4 +459,4 @@ Nodejs现在发展势头良好，正在紧张开发之中，每隔几天就看�
 
 ## 完成效果
 
-[![image](http://freewind.me/wp-content/uploads/2013/01/grunt-typescript.gif "image")](http://freewind.me/wp-content/uploads/2013/01/grunt-typescript.gif)
+[![image](/user_images/2027-1.gif "image")](/user_images/2027-1.gif)

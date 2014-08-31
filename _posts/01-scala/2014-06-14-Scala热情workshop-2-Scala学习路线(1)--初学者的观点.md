@@ -9,7 +9,7 @@ title: Scala热情workshop: 2. Scala学习路线(1)  初学者的观点
 
 这是一篇为公司内部”scala热情workshop”活动准备的文章，面向Scala初学者，目的在于帮助大家能尽早就建立起对Scala的整体认识，少走弯路。当然由于水平有限，有些地方可能不准确，不过如果能促进大家多思考多求证，也算达到了目的。
 
-![](http://freewind.me/wp-content/uploads/2014/06/182.png)
+![](/user_images/2704-0.png)
 
 我最开始接触Scala是2010年初，到现在竟然已经过了4年半了。想到自己现在的scala水平，还处于入门后刚有点感觉的状态，感觉十分的惭愧。这四年多，一直断断续续的学习，中间多次放弃又多次拿起，就像是一本厚书，每次都是从头看了几十页便放下，多次之后，看到的还是前几十页。
 
@@ -20,7 +20,7 @@ title: Scala热情workshop: 2. Scala学习路线(1)  初学者的观点
 
 所以我想把其中一些重要的东西记录下来，让和我一样正在学习scala的同学能多一些思考，少走一些弯路。
 
-![](http://freewind.me/wp-content/uploads/2014/06/966.png)
+![](/user_images/2704-1.png)
 
 刚接触Scala的同学，看到的基本上都是一些宣传性的文章，也因此对它有一些不太正确的观点。
 
@@ -45,7 +45,7 @@ title: Scala热情workshop: 2. Scala学习路线(1)  初学者的观点
 
 看起来，学习Scala就像爬楼梯一样，哪有什么学习曲线？
 
-![](http://freewind.me/wp-content/uploads/2014/06/571.png)![](undefined)
+![](/user_images/2704-2.png)![](undefined)
 
 当我们基本掌握上面那些知识点之后，也许一些基本的Scala开发还能勉强胜任，但是我们很快就会发现很多别人写的Scala代码我们看不懂，别人讨论的Scala知识我们也看不懂，我们只是在把Scala当Java用。为什么？
 
@@ -59,13 +59,13 @@ title: Scala热情workshop: 2. Scala学习路线(1)  初学者的观点
 
 当我们决定把这些都学会的时候，会惊讶的发现，难度变成了这样：
 
-![](http://freewind.me/wp-content/uploads/2014/06/475.png)
+![](/user_images/2704-3.png)
 
 因为我们会发现，自己缺少了太多的背景知识，需要先补很多东西，甚至学一门别的函数式语言之后，才能回来学Scala。
 
 ## Groovy创始人曾经说过：如果Scala早点出来，我就不会搞groovy了
 
-![](http://freewind.me/wp-content/uploads/2014/06/607.png)
+![](/user_images/2704-4.png)
 
 不太清楚Groovy的创始人在什么场合说了这句开玩笑的话，但有些人就信以为真，经常在群里喊：都来学Scala吧，还学什么groovy啊，你没听说那谁都这么说了。
 
@@ -89,7 +89,7 @@ Scala是一门静态类型，结合了面向对象和函数式的，拥有强大
 
 ## Scala和Java互操作很简单
 
-![](http://freewind.me/wp-content/uploads/2014/06/330.png)
+![](/user_images/2704-5.png)
 
 Scala运行于JVM上，可以与Java互操作。我们甚至在同一个项目中，可以既有Java代码，又有scala代码。这是不是意味着，我们可以让项目中的一部分代码使用Java实现，另一部分使用Scala？
 
@@ -109,7 +109,7 @@ Java里有一些很好的库想在scala使用，人们通常都会先写一个wr
 
 ## Java程序员学习Scala最容易
 
-![](http://freewind.me/wp-content/uploads/2014/06/635.png)
+![](/user_images/2704-6.png)
 
 初看起来Scala的语法跟Java比较像，对于Java程序员比较友好，所以很多人认为Java程序员学习Scala最容易。然而对于Java程序员来说，如果以前没有接触过函数式编程，对于类型系统了解不多的话，到后期会面临巨大的压力，因为有太多与函数式及类型系统相关的概念需要学习，而这往往不是短期内就能掌握的。甚至有可能为了学习scala而中途专门去学习另一门函数式语言（如haskell, lisp等），掌握了那些概念后，再回来看scala。
 
@@ -121,7 +121,7 @@ Scala是一门过程式与函数式结合的语言，Scala代码中，过程式�
 
 ## 函数式很简单
 
-![](http://freewind.me/wp-content/uploads/2014/06/212.png)
+![](/user_images/2704-7.png)
 
 对于像我这样的Java程序员来说，函数式编程是一个很神秘的话题。从前以为，像Java/C这样的过程式语言的编程方式，就是全部，想不出除此之外还能有什么编程方式。所以对于“函数式”，我们往往通过一两个简单的定义会想像，然后得到“函数式编程”很简单的结论。
 
@@ -144,7 +144,7 @@ Scala是一门过程式与函数式结合的语言，Scala代码中，过程式�
 
 ## Scala的DSL很强大
 
-![](http://freewind.me/wp-content/uploads/2014/06/454.png)
+![](/user_images/2704-8.png)
 
 由于Scala强大的类型系统和它的语法支持，我们可以设计出强大的类型安全的DSL。
 
