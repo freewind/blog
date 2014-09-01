@@ -393,3 +393,78 @@ requirejs(['jquery'], function(jq) {
 ```
 
 这样做，就解决了前面的问题：在除了jquery-private之外的任何依赖中，还可以直接使用`jqurey`这个模块名，并且总是被替换为对`jquery-private`的依赖，使得它最先被执行。
+
+## 合并
+
+在开发过程中，我们常常会创建很多个小js文件，每个文件一个module。这样在开发时比较方便，但在产品环境中，会导致浏览器下载很多次，性能比较慢。为了解决这个问题，requirejs提供了一个叫r.js的工具，可以把多个文件合并成一个或者少数几个。
+
+这样自然而然就会有一个疑问：它们是怎么合并的？仅仅是把两个文件的内容原封不动的合并在一起吗？如果是这样的话，会有问题。
+
+比如，我之前有两个js文件
+
+**a.js**
+
+```js
+define([], function() {
+  return "aaa";
+});
+```
+
+**b.js**
+
+```js
+define([], function() {
+  return "bbb";
+});
+```
+
+它们合并以后，如果是这样的：
+
+**one.js**
+
+```js
+define([], function() {
+  return "aaa";
+});
+define([], function() {
+  return "bbb";
+});
+```
+
+那我们引用这个文件时，到底用的是哪个模块呢？
+
+Requirejs聪明的解决了这个问题。它并不是原封不动的合并，而是根据我们在使用每个模块时给的命名，自动加到每个模块的定义处。假设我们分别通过module `a`和`b`去引用这两个文件的话，上面合并后的代码实际是：
+
+```js
+define('a', [], function() {
+  return "aaa";
+});
+define('b', [], function() {
+  return "bbb";
+});
+```
+
+这样就算有再多的模块放在同一个文件中，我们也能准确的拿到某一个模块。
+
+TODO: grunt的示例
+
+## bundles
+
+当一个文件中定义了多个模块（或者如前一个例子中所示，多个模块文件合并在同一个文件之后），我们可能不太清楚一个文件中到底有多少个模块，也无法控制哪些模块是我们想用的。
+
+requirejs又提供了一个叫`bundles`的功能。代码如下：
+
+```js
+require.config({
+  paths: {
+    mybundleSet: 'one'
+  },
+  bundles: {
+    mybundleSet: ['a', 'b']
+  }
+});
+```
+
+这里我们在`paths`中，通过`mybundleSet`引用了`one.js`文件。这个`one.js`里包含了多个模块，所以在后面的`bundles`配置中，我们又声明将使用其中的`a`和`b`两个模块。
+
+如果`one.js`中缺少`a`或`b`，代码会出错。如果有其它的模块，但没有在`bundles`中声明，也是没有办法使用的。
