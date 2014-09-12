@@ -2,7 +2,7 @@
 layout: post
 id: 2741
 alias: understand-requirejs-quickly
-tags: 未分类
+tags: requirejs AMD
 date: 2014-07-29 00:49:48
 title: 快速理解RequireJs
 ---
