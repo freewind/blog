@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 2767
+id: 2779
 alias: use-a-jar-not-inside-a-maven-repo-as-dependency-in-sbt
 tags: sbt
 date: 2014-09-13 13:40:38

@@ -371,6 +371,40 @@ $ sbt
 
 由此可见，我们可以把Global当作安全网，定义一些比较通用的默认值。这样，当我们执行与某个config特定的任务但又找不到相应的值的时候，还可以用global的值来顶一下。
 
+## ThisBuild
+
+还可以指定一个key的scope是整个build，它不属于某一个特定的project。
+
+首先看一个普通的`build.sbt`：
+
+```scala
+lazy val root = project in file(".")
+
+lazy val util = project
+
+lazy val core = project
+
+lazy val myname = settingKey[String]("a setting of myname")
+
+myname := "Freewind"
+```
+
+这个`myname`的值`Freewind`属于哪个project呢？属于它所在的project，即`root`。
+
+我们在`core`和`util`这两个project是，是没法使用它的。
+
+来个`ThisBuild`:
+
+```scala
+myname in ThisBuild := "Freewind"
+```
+
+此时`myname`的值`Freewind`就不再属于某一个project了，我们可以在任何一个project中使用它
+
+#### ThisBuild和global project
+
+这两者很相似，会另写一篇文章介绍。
+
 ## key的完整形式
 
 根据前面的说明，一个key实际上要跟`project`,`config`,`task`等绑定在一起的。那么我们需要制定一个格式，即可以让我们精确指定，又可以在显示时准确显示。
@@ -446,7 +480,16 @@ $ sbt
 4. `inkey`: 该key所属的task `hello`
 5. `key`: 该key的名称`myname`
 
-这种格式在我们`inspect`某个key时非常常见，我们一定要记住。
+如果某一项是`global`或者没有指定，则会写成`*`，比如：
+
+    root/*:myname
+
+如果是属于整个build，即`ThisBuild`，则相应处格式为：
+
+    {.}/*:myname
+
+
+上面这些表示key和scope的格式在我们`inspect`某个key时非常常见，我们一定要记住。
 
 关于如何读懂`inspect`的结果，将会写在另一篇博客里。
 
