@@ -1,0 +1,13 @@
+html {
+    font-family: 'Open Sans', 'Helvetica Neue', 'Arial', 'Verdana', 'Hiragino Sans GB', 'STHeiti', 'SimSun', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+body {
+    padding: 0 20px;
+}
+
+.index_articles a {
+    text-decoration: none;
+}
