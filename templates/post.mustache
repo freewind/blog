@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{article.title}}</title>
+    {{>partials/head}}
+</head>
+<body>
+
+<h1>
+    ({{article.dateOnly}}) {{article.title}}
+</h1>
+
+{{>partials/ad}}
+
+<div>
+    {{{article.contentAsHtml}}}
+</div>
+
+{{>partials/disqus}}
+
+</body>
+{{>partials/google_analytics}}
+</html>

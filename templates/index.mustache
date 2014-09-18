@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{siteConfig.title}}</title>
+    <meta name="google-site-verification" content="-MiHuI8WJDqGGbvp55Oi2Voi-1HSAN2XsCJPcR7hUo0" />
+    {{>partials/head}}
+</head>
+<body>
+
+<div>
+    <span>{{siteConfig.title}}</span>
+    {{#categories}}
+        <span><a href="/category/{{alias}}">{{name}}</a></span>
+    {{/categories}}
+    <span><a href="https://freewind.disqus.com/admin/moderate">[comments admin]</a></span>
+    <span><a href="/feed.xml">[feed]</a></span>
+</div>
+<div>
+    <ul class="index_articles">
+        {{#articles}}
+            <li>
+                <a href="/posts/{{alias}}">
+                    {{title}}
+                </a>
+            </li>
+        {{/articles}}
+    </ul>
+</div>
+</body>
+{{>partials/google_analytics}}
+</html>

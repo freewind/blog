@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{siteConfig.title}}</title>
+    {{>partials/head}}
+</head>
+<body>
+
+<div>
+    {{category.name}}
+</div>
+<div>
+    <ul class="index_articles">
+        {{#articles}}
+            <li>
+                <a href="/posts/{{alias}}">
+                    {{title}}
+                </a>
+            </li>
+        {{/articles}}
+    </ul>
+</div>
+</body>
+{{>partials/google_analytics}}
+</html>
