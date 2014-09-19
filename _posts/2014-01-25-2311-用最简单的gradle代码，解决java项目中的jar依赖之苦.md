@@ -92,7 +92,7 @@ Jetty
 
 只需要在build.gradle中添加：
 
-apply plugin: &#8220;jetty&#8221;
+apply plugin: &#8220;jetty"
 
 即可。然后执行：
 

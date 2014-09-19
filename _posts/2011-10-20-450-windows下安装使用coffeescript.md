@@ -20,7 +20,7 @@ coffeescript有一个黄金定律：它就是Javascript
 这里讲的是如果在windows下安装coffeescript。
 
  <span id="more-450"></span>
-<p>coffeescript依赖于node.js，它们这一套&#8221;运行于服务器端的js&#8221;通常在linux下会用的比较爽，因为node有一个叫npm(Node Package Manager)的工具，可以让我们方便地安装各种js库。比如在linux下安装coffee，只需要：
+<p>coffeescript依赖于node.js，它们这一套"运行于服务器端的js"通常在linux下会用的比较爽，因为node有一个叫npm(Node Package Manager)的工具，可以让我们方便地安装各种js库。比如在linux下安装coffee，只需要：
 
 ```
 npm install -g coffee-script

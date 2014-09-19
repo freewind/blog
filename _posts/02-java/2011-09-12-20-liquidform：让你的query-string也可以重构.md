@@ -29,7 +29,7 @@ title: liquidform：让你的query string也可以重构
 }
 ```
 
-List people = em.createQuery( &#8220;SELECT FROM Person p WHERE p.surname LIKE 'Smith%'&#8221;) .getResultList();
+List people = em.createQuery( &#8220;SELECT FROM Person p WHERE p.surname LIKE 'Smith%'") .getResultList();
 
 变为：
 

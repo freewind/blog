@@ -68,7 +68,7 @@ http://confluence.jetbrains.com/display/IDEADEV/PluginDevelopment
 
     ## 创建项目
 
-    打开Idea，创建一个新项目，记得要选左右要选&#8221;Intellij Plugin Platform&#8221;类型：
+    打开Idea，创建一个新项目，记得要选左右要选"Intellij Plugin Platform"类型：
 
     ![QQ20140406-4](/user_images/2503-2.png)
 
@@ -84,7 +84,7 @@ http://confluence.jetbrains.com/display/IDEADEV/PluginDevelopment
 
     ## 添加Action
 
-    我打算实现一个功能：在菜单最后添加一项&#8221;Pub Editor&#8221;，里面有一个&#8221;Hello world&#8221;的子菜单。当点击它以后，会提示一个对话框，让我们输入自己的名字，然后弹出欢迎的信息。
+    我打算实现一个功能：在菜单最后添加一项"Pub Editor"，里面有一个"Hello world"的子菜单。当点击它以后，会提示一个对话框，让我们输入自己的名字，然后弹出欢迎的信息。
 
     首先我们需要实现一个`AnAction`的子类，用于实现触发之后的功能：
 
@@ -147,11 +147,11 @@ http://confluence.jetbrains.com/display/IDEADEV/PluginDevelopment
 
     ## 运行插件
 
-    不能直接运行，而要先建立一个配置。打开菜单&#8221;Run&#8221;->&#8221;Configuration&#8221;，点击左上角的&#8221;+&#8221;新建，选择&#8221;Plugin&#8221;，如图：
+    不能直接运行，而要先建立一个配置。打开菜单"Run"->"Configuration"，点击左上角的"+"新建，选择"Plugin"，如图：
 
     ![QQ20140406-18](/user_images/2503-6.png)
 
-    基本上不用改什么，我就只把名字设成了&#8221;Pub Editor&#8221;，然后点击&#8221;OK&#8221;.
+    基本上不用改什么，我就只把名字设成了"Pub Editor"，然后点击"OK".
 
     这时右上角运行栏处会变成这样：
 
@@ -163,11 +163,11 @@ http://confluence.jetbrains.com/display/IDEADEV/PluginDevelopment
 
     ![QQ20140406-20](/user_images/2503-8.png)
 
-    由于我们添加的菜单只能在进入项目后才能看到，所以我们需要随便创建一个项目。我建的是&#8221;TestPlugin&#8221;，进去后可以看到上面的菜单最右边多了一项&#8221;Pub Editor&#8221;，以及&#8221;Hello world&#8221;:
+    由于我们添加的菜单只能在进入项目后才能看到，所以我们需要随便创建一个项目。我建的是"TestPlugin"，进去后可以看到上面的菜单最右边多了一项"Pub Editor"，以及"Hello world":
 
     ![QQ20140406-22](/user_images/2503-9.png)
 
-    点击&#8221;Hello world&#8221;后，会弹出对话框，提示我们输入名称：
+    点击"Hello world"后，会弹出对话框，提示我们输入名称：
 
     ![QQ20140406-23](/user_images/2503-10.png)
 
@@ -181,4 +181,4 @@ http://confluence.jetbrains.com/display/IDEADEV/PluginDevelopment
 
     http://github.com/freewind/PubEditor
 
-本文所对应的tag为&#8221;1_hello_world&#8221;，你可以checkout它运行一下看结果。
+本文所对应的tag为"1_hello_world"，你可以checkout它运行一下看结果。

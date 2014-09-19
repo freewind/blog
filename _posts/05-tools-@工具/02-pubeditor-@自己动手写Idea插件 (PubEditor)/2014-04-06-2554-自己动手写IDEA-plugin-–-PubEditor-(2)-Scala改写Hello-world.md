@@ -17,7 +17,7 @@ title: 自己动手写IDEA plugin – PubEditor (2) Scala改写Hello world
 
 ## 在项目中添加Scala支持
 
-首先打开项目属性，在&#8221;Facets&#8221;中添加Scala：
+首先打开项目属性，在"Facets"中添加Scala：
 
 ![QQ20140406-25](/user_images/2554-0.png)
 

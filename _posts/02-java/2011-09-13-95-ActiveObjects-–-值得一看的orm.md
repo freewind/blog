@@ -63,7 +63,7 @@ public String name;
 
 }
 
-调用者直接使用Person.name = &#8220;sss&#8221;这样的方式来赋值，ActiveObjects在后台把它变为getter/setter呢？结果一尝试，发现这样是行不通的，因为接口中的常量都是final，无法再赋值，所以ActiveObjects只好使用getter/setter来做。
+调用者直接使用Person.name = &#8220;sss"这样的方式来赋值，ActiveObjects在后台把它变为getter/setter呢？结果一尝试，发现这样是行不通的，因为接口中的常量都是final，无法再赋值，所以ActiveObjects只好使用getter/setter来做。
 
 我觉得如果不用接口而用类来做，就可以实现只使用字段不用getter/setter，可以简化很多，像play中就是这么做的。可是这样需要使用cglib的库去动态改变字节码，而ActiveObjects强调它们不想使用这样的方式，所以只好用接口。
 

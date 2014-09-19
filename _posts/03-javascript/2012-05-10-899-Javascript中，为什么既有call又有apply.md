@@ -31,7 +31,7 @@ arguments是函数中预定义的一个变量，它表示实际传递给该函�
 > alert(arguments.length + ": " + join(arguments));      
 > }      
 > function join(args) {      
-> var s = &#8221;;      
+> var s = ";      
 > for(i in args) {      
 > s += args[i] + ' ';      
 > }      
