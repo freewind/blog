@@ -531,24 +531,6 @@ function addEventListeners() {
 
 /* Initialization */
 
-function addPrettify() {
-  var els = document.querySelectorAll('pre');
-  for (var i = 0, el; el = els[i]; i++) {
-    if (!el.classList.contains('noprettyprint')) {
-      el.classList.add('prettyprint');
-    }
-  }
-
-  var el = document.createElement('script');
-  el.type = 'text/javascript';
-  /* el.src = PERMANENT_URL_PREFIX + 'prettify.js'; */ /* ogom commented out */
-  el.src = '/assets/slide/js/prettify.js'; /* ogom added */
-  el.onload = function() {
-    prettyPrint();
-  }
-  document.body.appendChild(el);
-};
-
 function addFontStyle() {
   var el = document.createElement('link');
   el.rel = 'stylesheet';
@@ -596,7 +578,6 @@ function handleDomLoaded() {
 
   /* addFontStyle(); */ /* ogom commented out */
   addGeneralStyle();
-  addPrettify();
   addEventListeners();
 
   updateSlides();
