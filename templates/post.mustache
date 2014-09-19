@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{article.title}}</title>
+    <title>{{post.title}}</title>
     {{>partials/head}}
 </head>
 <body>
 
 <h1>
-    ({{article.dateOnly}}) {{article.title}}
+    ({{post.dateOnly}}) {{post.title}}
 </h1>
 
 {{>partials/ad}}
 
+<hr/>
+
 <div>
-    {{{article.contentAsHtml}}}
+    {{{post.contentAsHtml}}}
 </div>
 
 {{>partials/disqus}}

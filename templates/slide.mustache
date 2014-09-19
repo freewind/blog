@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{post.title}}</title>
+    {{>partials/head}}
+
+    <script src='/assets/slide/js/slides.js'></script>
+    <script src='/assets/slide/js/slide-resize.js'></script>
+</head>
+
+<style>
+    /* Your individual styles here, or just use inline styles if that’s what you want. */
+</style>
+
+<body style='display: none'>
+
+<section class='slides layout-regular template-default'>
+    <!-- Your slides (<article>s) go here. Delete or comment out the slides below. -->
+
+    <!-- <article class='biglogo'></article> -->
+
+    {{#post.slideSections}}
+        <article>
+            <p>{{{.}}}</p>
+        </article>
+    {{/post.slideSections}}
+
+</section>
+
+</body>
+</html>

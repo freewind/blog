@@ -14,7 +14,8 @@ Play为了能够对java源代码的编译过程进行控制，以实现一些魔
 
 当我们安装了eclipse后，它里面就自带了jdt的库，并且以jar的形式提供了字节码文件和源文件。以我下载的eclipse 4.2为例，可以在其plugins目录下找到：
 
-1.  org.eclipse.jdt.core_3.8.3.v20130121-145325.jar2.  org.eclipse.jdt.core_3.8.3_source.v20130121-145325.jar
+1. org.eclipse.jdt.core_3.8.3.v20130121-145325.jar
+2. org.eclipse.jdt.core_3.8.3_source.v20130121-145325.jar
 
 前者是字节码，后者是源文件。最好把两个都拷贝到项目中，因为在调用ecilpse相关的类时，肯定需要查看源代码和注释。
 
@@ -26,13 +27,15 @@ org.eclipse.jdt包下还有其它几个jar，不过对于编译这个基本功�
 
 首先看一下Compiler庞大的构造函数：
 
-<pre>public Compiler(
+```java
+public Compiler(
 	INameEnvironment environment,
 	IErrorHandlingPolicy policy,
 	CompilerOptions options,
 	final ICompilerRequestor requestor,
 	IProblemFactory problemFactory) {
-}```
+}
+```
 
 每个参数都有自己的作用，这里一一道来。
 
@@ -40,21 +43,21 @@ org.eclipse.jdt包下还有其它几个jar，不过对于编译这个基本功�
 
 我们需要自己写个类实现该接口，它用于根据JDT传过来的包名类名，找到正确的字节码或者源文件给它。比如它会传过来类似于java.lang.String这样的数据，我们就需要调用classloader.getResourceAsString(“java/lang/String.class”)找到正确的字节码文件对应的二进制数据，回传过去。如果传来的是我们自己的文件路径，比如"aaa.BBB"，那我们就要去寻找自己指定的目录下的"aaa/BBB.java"文件，把该文件传过去，让它继续编译。
 
-**IErrorHandlingPolicy **
+**IErrorHandlingPolicy**
 
 遇到错误时怎么办。一般采用DefaultErrorHandlingPolicies.exitOnFirstError()，即遇到第一个错误就退出。
 
-**CompilerOptions **
+**CompilerOptions**
 
 控制编译的参数，比如OPTION_LineNumberAttribute，OPTION_SourceFileAttribute，OPTION_LocalVariableAttribute等等，可让JDT在编译时，是否保留某些信息。
 
 对于上面的三个参数，Play都指定为GENERATE，让JDT在字节码中尽可能多的保留源文件中的信息，以方便后面使用javassist进行字节码增强。
 
-**ICompilerRequestor **
+**ICompilerRequestor**
 
 取回编译结果。如果编译成功，则可以拿到编译后的字节码二进制数据，否则可以拿到错误信息。
 
-**IProblemFactory **
+**IProblemFactory**
 
 控制错误信息的locale、格式等。这里可直接使用new DefaultProblemFactory(Locale.ENGLISH)，即返回英文的错误信息。
 
@@ -66,7 +69,8 @@ org.eclipse.jdt包下还有其它几个jar，不过对于编译这个基本功�
 
 下面是具体的代码，需要注释说明的地方都已经注明，另外强烈建议查看JDT相关类的注释，写得很详细：
 
-<pre>import org.apache.commons.io.FileUtils;
+```
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.eclipse.jdt.core.compiler.IProblem;
 import org.eclipse.jdt.internal.compiler.ClassFile;
@@ -96,7 +100,7 @@ import java.util.Map;
  * User: Freewind
  * Date: 13-3-31
  * Time: 下午5:22
- * Blog: http://freewind.me
+ * Blog: http://freewind.github.io
  */
 public class CompileWithJDT {
 
@@ -302,23 +306,27 @@ public class CompileWithJDT {
         return sb.toString();
     }
 
-}```
+}
+```
 
 我在代码中，要求它编译sources目录下的aaa包下的BBB.java文件。它们的源代码如下：
 
 **aaa/BBB.java**
 
-<pre>package aaa;
+```
+package aaa;
 
 public class BBB {
     public static void main(String[] args) {
         new CCC().hello("JDT");
     }
-}```
+}
+```
 
 **aaa/CCC.java**
 
-<pre>package aaa;
+```
+package aaa;
 
 public class CCC {
 
@@ -326,7 +334,8 @@ public class CCC {
         System.out.println("Hello, " + name);
     }
 
-}```
+}
+```
 
 运行成功后，将会成功的在bytecodes目录下，生成BBB.class和CCC.class文件。
 

@@ -427,10 +427,6 @@ code {
   color: black;
 }
 
-pre > code {
-  background: rgb(240, 240, 240);
-}
-
 iframe {
   width: 100%;
 

@@ -2,7 +2,7 @@
 layout: post
 id: 2456
 alias: access-control-allow-origin-and-cross-domain
-tags: 未分类
+tags: http
 date: 2014-03-27 20:24:31
 title: Access-Control-Allow-Origin与跨域
 ---
@@ -30,26 +30,32 @@ title: Access-Control-Allow-Origin与跨域
 
 我在jsbin上[做了一个试验](http://jsbin.com/fusaweqe/1/edit)，使用Chrome打开。当点击“Run with Js”时，控制台上会打出：
 
-    XMLHttpRequest cannot load http://google.com/. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://run.jsbin.io' is therefore not allowed access. 
-    
+```
+XMLHttpRequest cannot load http://google.com/. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://run.jsbin.io' is therefore not allowed access. 
+```
 
-    但开发者工具的&#8221;Network&#8221;栏并没有任何记录。它到底发请求了没？
+但开发者工具的"Network"栏并没有任何记录。它到底发请求了没？
 
-    我又使用`python -m SimpleHTTPServer`在本地创建了一个小服务器，然后把地址改成它，结果发现在python这边的确打印出请求来了，可见浏览器的确发出了请求。
+我又使用`python -m SimpleHTTPServer`在本地创建了一个小服务器，然后把地址改成它，结果发现在python这边的确打印出请求来了，可见浏览器的确发出了请求。
 
-    ## Access-Control-Allow-Origin
+## Access-Control-Allow-Origin
 
-    现在该`Access-Control-Allow-Origin`出场了。只有当目标页面的response中，包含了`Access-Control-Allow-Origin`这个header，并且它的值里有我们自己的域名时，浏览器才允许我们拿到它页面的数据进行下一步处理。如：
+现在该`Access-Control-Allow-Origin`出场了。只有当目标页面的response中，包含了`Access-Control-Allow-Origin`这个header，并且它的值里有我们自己的域名时，浏览器才允许我们拿到它页面的数据进行下一步处理。如：
 
     Access-Control-Allow-Origin: http://run.jsbin.io
-    
 
-    如果它的值设为`*`，则表示谁都可以用：
+如果它的值设为`*`，则表示谁都可以用：
 
     Access-Control-Allow-Origin: *
 
 没错，在产品环境中，没人会用`*`
 
-你可以阅读下面这篇文章了解更多，并可找到其中的&#8221;Run Sample&#8221;链接，实际体验一下：
+另外注意，它不支持部分通配符，如
 
-[http://www.html5rocks.com/en/tutorials/cors/](http://www.html5rocks.com/en/tutorials/cors/)
+    http://*.jsbin.io
+
+要么是`*`，要么是一个确定的地址
+
+你可以阅读下面这篇文章了解更多，并可找到其中的"Run Sample"链接，实际体验一下：
+
+<http://www.html5rocks.com/en/tutorials/cors/>
