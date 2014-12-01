@@ -9,5 +9,16 @@ body {
 }
 
 .index_posts a {
-    text-decoration: none;
+    text-decoration: underline;
+    color: #21759b;
 }
+
+.index_posts a:visited {
+	color: #9f9f9f;
+}
+
+.index_posts li {
+	font-size: 18px;
+	line-height: 32px;
+}
+

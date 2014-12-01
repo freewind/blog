@@ -31,39 +31,40 @@ title: 自己动手写IDEA plugin – PubEditor (2) Scala改写Hello world
 
 删除原来的`HelloWorldAction.java`，新建一个`HelloWorldAction.scala`，内容如下：
 
-    package com.thoughtworks.pli.pub_editor
+```scala
+package com.thoughtworks.pli.pub_editor
 
-    import com.intellij.openapi.actionSystem.{CommonDataKeys, AnAction, AnActionEvent}
-    import com.intellij.openapi.project.Project
-    import com.intellij.openapi.ui.Messages
+import com.intellij.openapi.actionSystem.{CommonDataKeys, AnAction, AnActionEvent}
+import com.intellij.openapi.project.Project
+import com.intellij.openapi.ui.Messages
 
-    class HelloWorldAction extends AnAction {
+class HelloWorldAction extends AnAction {
 
-      def actionPerformed(event: AnActionEvent) {
-        val project = event.getData(CommonDataKeys.PROJECT)
-        val userName = askForName(project)
-        sayHello(project, userName)
-      }
+  def actionPerformed(event: AnActionEvent) {
+    val project = event.getData(CommonDataKeys.PROJECT)
+    val userName = askForName(project)
+    sayHello(project, userName)
+  }
 
-      private def askForName(project: Project) = {
-        Messages.showInputDialog(project, "What is your name?", "Input Your Name", Messages.getQuestionIcon)
-      }
+  private def askForName(project: Project) = {
+    Messages.showInputDialog(project, "What is your name?", "Input Your Name", Messages.getQuestionIcon)
+  }
 
-      private def sayHello(project: Project, userName: String) {
-        Messages.showMessageDialog(project,
-          s"Hello, $userName!\n Welcome to PubEditor.", "Information",
-          Messages.getInformationIcon)
-      }
+  private def sayHello(project: Project, userName: String) {
+    Messages.showMessageDialog(project,
+      s"Hello, $userName!\n Welcome to PubEditor.", "Information",
+      Messages.getInformationIcon)
+  }
 
-    }
-    
+}
+```
 
-    可以看到代码跟以前很相似，有一个重要的不同是这一行：
+
+可以看到代码跟以前很相似，有一个重要的不同是这一行：
 
     val project = event.getData(CommonDataKeys.PROJECT)
-    
-
-    以前的Java版是这样的：
+  
+以前的Java版是这样的：
 
     Project project = event.getData(PlatformDataKeys.PROJECT);
 

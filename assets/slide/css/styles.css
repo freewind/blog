@@ -330,11 +330,8 @@ h2 {
   font-size: 45px;
   line-height: 45px;
 
-  position: absolute;
-  bottom: 150px;
-
   padding: 0;
-  margin: 0;
+  margin: 0 0 50px -20px;
   padding-right: 40px;
 
   font-weight: 600;

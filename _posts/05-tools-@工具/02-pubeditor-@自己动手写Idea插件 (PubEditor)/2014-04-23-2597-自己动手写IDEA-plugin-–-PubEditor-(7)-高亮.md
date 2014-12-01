@@ -21,110 +21,118 @@ title: 自己动手写IDEA plugin – PubEditor (7) 高亮
 
 代码如下：
 
-    package com.thoughtworks.pli.pub_editor.highlight
+```scala
+package com.thoughtworks.pli.pub_editor.highlight
 
-    import com.intellij.lexer.Lexer
-    import com.intellij.openapi.editor.colors.TextAttributesKey
-    import com.intellij.openapi.fileTypes.SyntaxHighlighterBase
-    import com.intellij.psi.tree.IElementType
-    import com.thoughtworks.pli.pub_editor.parser.PubSpecLexer
-    import com.thoughtworks.pli.pub_editor.parser.PubTokenTypes
-    import com.intellij.openapi.editor.DefaultLanguageHighlighterColors
+import com.intellij.lexer.Lexer
+import com.intellij.openapi.editor.colors.TextAttributesKey
+import com.intellij.openapi.fileTypes.SyntaxHighlighterBase
+import com.intellij.psi.tree.IElementType
+import com.thoughtworks.pli.pub_editor.parser.PubSpecLexer
+import com.thoughtworks.pli.pub_editor.parser.PubTokenTypes
+import com.intellij.openapi.editor.DefaultLanguageHighlighterColors
 
-    class PubHighlighter extends SyntaxHighlighterBase {
+class PubHighlighter extends SyntaxHighlighterBase {
 
-      object keys {
-        val Comment = newKey("Pub.Comment", DefaultLanguageHighlighterColors.LINE_COMMENT)
-        val KnownKey = newKey("Pub.KnownKey", DefaultLanguageHighlighterColors.KEYWORD)
-        val UnknownKey = newKey("Pub.UnknownKey", DefaultLanguageHighlighterColors.INSTANCE_FIELD)
-        val Value = newKey("Pub.Value", DefaultLanguageHighlighterColors.MARKUP_ENTITY)
-        val String = newKey("Pub.String", DefaultLanguageHighlighterColors.STRING)
-        val Unknown = newKey("Pub.Unknown", DefaultLanguageHighlighterColors.BLOCK_COMMENT)
+  object keys {
+    val Comment = newKey("Pub.Comment", DefaultLanguageHighlighterColors.LINE_COMMENT)
+    val KnownKey = newKey("Pub.KnownKey", DefaultLanguageHighlighterColors.KEYWORD)
+    val UnknownKey = newKey("Pub.UnknownKey", DefaultLanguageHighlighterColors.INSTANCE_FIELD)
+    val Value = newKey("Pub.Value", DefaultLanguageHighlighterColors.MARKUP_ENTITY)
+    val String = newKey("Pub.String", DefaultLanguageHighlighterColors.STRING)
+    val Unknown = newKey("Pub.Unknown", DefaultLanguageHighlighterColors.BLOCK_COMMENT)
 
-        def newKey(keyId: String, color: TextAttributesKey): TextAttributesKey = {
-          TextAttributesKey.createTextAttributesKey(keyId, color)
-        }
-      }
-
-      def getHighlightingLexer: Lexer = new PubSpecLexer
-
-      def getTokenHighlights(tokenType: IElementType): Array[TextAttributesKey] = {
-        import PubTokenTypes._
-        tokenType match {
-          case Comment => Array(keys.Comment)
-          case OneLineOfMultiLineString => Array(keys.String)
-          case BadCharacter => Array(keys.Unknown)
-          case KnownKey => Array(keys.KnownKey)
-          case MultiLineStringKey | ParentKey | InlineKey => Array(keys.UnknownKey)
-          case _ => Array()
-        }
-      }
-
+    def newKey(keyId: String, color: TextAttributesKey): TextAttributesKey = {
+      TextAttributesKey.createTextAttributesKey(keyId, color)
     }
-    
+  }
 
-    代码比较直白，不多讲
+  def getHighlightingLexer: Lexer = new PubSpecLexer
 
-    ## HighlighterFactory
-
-    然后我还要建立一个HighlighterFactory，注册到Idea，告诉它当编辑pubspec.yaml文件时，使用我们提供的Highlighter。
-
-    class PubHighlighterFactory extends SyntaxHighlighterFactory {
-
-      def getSyntaxHighlighter(project: Project, virtualFile: VirtualFile): SyntaxHighlighter = {
-        new PubHighlighter
-      }
-
+  def getTokenHighlights(tokenType: IElementType): Array[TextAttributesKey] = {
+    import PubTokenTypes._
+    tokenType match {
+      case Comment => Array(keys.Comment)
+      case OneLineOfMultiLineString => Array(keys.String)
+      case BadCharacter => Array(keys.Unknown)
+      case KnownKey => Array(keys.KnownKey)
+      case MultiLineStringKey | ParentKey | InlineKey => Array(keys.UnknownKey)
+      case _ => Array()
     }
-    
+  }
 
-    然后在plugin.xml中添加以下代码：
+}
+```
 
-    <lang.syntaxHighlighterFactory key="pub" implementationClass="com.thoughtworks.pli.pub_editor.highlight.PubHighlighterFactory"/>
-    
+代码比较直白，不多讲
 
-    其中的`key`的值很重要，一定是我们定义的language名称，否则Idea没法匹配。其值跟这里定义的Language相同：
+## HighlighterFactory
 
-    class PubLanguage extends Language("pub")
-    
+然后我还要建立一个HighlighterFactory，注册到Idea，告诉它当编辑pubspec.yaml文件时，使用我们提供的Highlighter。
 
-    ## 对认识的key特殊对待
+```scala
+class PubHighlighterFactory extends SyntaxHighlighterFactory {
 
-    [Pub的文档](https://www.dartlang.org/tools/pub/pubspec.html)中定义了哪些key是它所识别的，对于这个key我们可以以特殊的颜色显示，跟其它的key区分开。
+  def getSyntaxHighlighter(project: Project, virtualFile: VirtualFile): SyntaxHighlighter = {
+    new PubHighlighter
+  }
 
-    以下key是可识别的：
+}
+```
 
+然后在plugin.xml中添加以下代码：
+
+```xml
+<lang.syntaxHighlighterFactory key="pub" implementationClass="com.thoughtworks.pli.pub_editor.highlight.PubHighlighterFactory"/>
+```
+
+其中的`key`的值很重要，一定是我们定义的language名称，否则Idea没法匹配。其值跟这里定义的Language相同：
+
+```scala
+class PubLanguage extends Language("pub")
+```
+
+## 对认识的key特殊对待
+
+[Pub的文档](https://www.dartlang.org/tools/pub/pubspec.html)中定义了哪些key是它所识别的，对于这个key我们可以以特殊的颜色显示，跟其它的key区分开。
+
+以下key是可识别的：
+
+```
+"name", "version", "description", "author",
+"homepage", "documentation", "dependencies", 
+"dev_dependencies", "dependency_overrides"
+```
+
+为了跟其它key分开，我们必须定义一种新的token类型`KnownKey`，同时把由Lexer解析出来的`InlineKey`, `ParentKey`和`MultiLineStringKey`根据其值转换为`KnownKey`类型。
+
+首先定义一个`PubWithKnownKeyLexer`:
+
+```
+class PubWithKnownKeyLexer extends PubSpecLexer {
+
+  val KeyTypes = List(InlineKey, ParentKey, MultiLineStringKey)
+  val KnownKeys = List(
     "name", "version", "description", "author",
-    "homepage", "documentation", "dependencies", 
-    "dev_dependencies", "dependency_overrides"
-    
+    "homepage", "documentation", "dependencies", "dev_dependencies", "dependency_overrides"
+  )
 
-    为了跟其它key分开，我们必须定义一种新的token类型`KnownKey`，同时把由Lexer解析出来的`InlineKey`, `ParentKey`和`MultiLineStringKey`根据其值转换为`KnownKey`类型。
+  override def getTokenType: IElementType = {
+    val tokenType = super.getTokenType
+    if (KeyTypes.contains(tokenType) && KnownKeys.contains(getKey(getTokenText)))
+      PubTokenTypes.KnownKey
+    else tokenType
+  }
 
-    首先定义一个`PubWithKnownKeyLexer`:
+  private def getKey(token: String) = StringUtils.substringBefore(token, ":").trim.toLowerCase
+}
+```
 
-    class PubWithKnownKeyLexer extends PubSpecLexer {
+然后修改`PubHighlighter`，让它返回新的Lexer:
 
-      val KeyTypes = List(InlineKey, ParentKey, MultiLineStringKey)
-      val KnownKeys = List(
-        "name", "version", "description", "author",
-        "homepage", "documentation", "dependencies", "dev_dependencies", "dependency_overrides"
-      )
-
-      override def getTokenType: IElementType = {
-        val tokenType = super.getTokenType
-        if (KeyTypes.contains(tokenType) && KnownKeys.contains(getKey(getTokenText)))
-          PubTokenTypes.KnownKey
-        else tokenType
-      }
-
-      private def getKey(token: String) = StringUtils.substringBefore(token, ":").trim.toLowerCase
-    }
-    
-
-    然后修改`PubHighlighter`，让它返回新的Lexer:
-
-    def getHighlightingLexer: Lexer = new PubWithKnownKeyLexer
+```
+def getHighlightingLexer: Lexer = new PubWithKnownKeyLexer
+```
 
 这样就大功告成了。
 

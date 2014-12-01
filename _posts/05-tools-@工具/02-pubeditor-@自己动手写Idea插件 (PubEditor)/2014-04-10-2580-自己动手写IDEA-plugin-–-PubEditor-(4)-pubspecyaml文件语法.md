@@ -11,24 +11,26 @@ pubspec.yaml在本质上是一个YAML文件，所以它的语法遵守YAML的规
 
 全部有效选项如下：
 
-    name: newtify
-    version: 1.2.3
-    description: >
-      Have you been turned into a newt?  Would you like to be?
-      This package can help: it has all of the
-      newt-transmogrification functionality you've been looking
-      for.
-    author: Nathan Weizenbaum <nweiz@google.com>
-    homepage: http://newtify.dartlang.org
-    documentation: http://docs.newtify.com
-    dependencies:
-      efts: '>=2.0.4 <3.0.0'
-      transmogrify: '>=0.4.0 <1.0.0'
-    dev_dependencies:
-      unittest: '>=0.6.0'
-    dependency_overrides:
-      transmogrify:
-        path: ../transmogrify_patch/
+```yaml
+name: newtify
+version: 1.2.3
+description: >
+  Have you been turned into a newt?  Would you like to be?
+  This package can help: it has all of the
+  newt-transmogrification functionality you've been looking
+  for.
+author: Nathan Weizenbaum <nweiz@google.com>
+homepage: http://newtify.dartlang.org
+documentation: http://docs.newtify.com
+dependencies:
+  efts: '>=2.0.4 <3.0.0'
+  transmogrify: '>=0.4.0 <1.0.0'
+dev_dependencies:
+  unittest: '>=0.6.0'
+dependency_overrides:
+  transmogrify:
+    path: ../transmogrify_patch/
+```
 
 其中只有`name`项是在所有情况下都必须的，`version`和`description`只有当要发布时才是必须的，其它的都是可选的。除它们以外的内容都会被忽略。
 

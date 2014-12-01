@@ -33,7 +33,7 @@ title: 自己动手写IDEA plugin – PubEditor (1) Hello, world
 
 http://confluence.jetbrains.com/display/IDEADEV/PluginDevelopment
 
-但是其中关于[如何建立项目](http://confluence.jetbrains.com/display/IDEADEV/Getting+Started+with+Plugin+Development#GettingStartedwithPluginDevelopment-anchor2)的一节讲得太繁琐，根本看不懂。不过好在没不是很复杂，跟着本文走就行了。
+但是其中关于[如何建立项目](http://confluence.jetbrains.com/display/IDEADEV/Getting+Started+with+Plugin+Development#GettingStartedwithPluginDevelopment-anchor2)的一节讲得太繁琐，根本看不懂。不过好在不是很复杂，跟着本文走就行了。
 
 另外，上面列出的内容比较多，我没有全部看完，只看了前几篇，足够把本篇的任务完成。
 
@@ -41,7 +41,7 @@ http://confluence.jetbrains.com/display/IDEADEV/PluginDevelopment
 
 如果临时试一下，下载IDEA的社区版或企业版都行，也不需要下载源代码。但如果深入开发，就只能使用社区版，因为它可以跟源代码结合起来，方便调试。
 
-下载IDEA: [http://www.jetbrains.com/idea/download/](http://www.jetbrains.com/idea/download/)
+下载IDEA: <http://www.jetbrains.com/idea/download/>
 
 随便下一个就行，不过为了方便，推荐社区版。
 
@@ -51,134 +51,137 @@ http://confluence.jetbrains.com/display/IDEADEV/PluginDevelopment
 
 使用git下载社区版对应的源代码：
 
-    git clone git://git.jetbrains.org/idea/community.git idea --depth 1
-    
+    git clone git://git.jetbrains.org/idea/community.git idea --depth 1    
 
-    这是一个非常大的库，就算添加了`--depth 1`的参数，下载的源代码打成.tar.gz包后也超过了1G。由于代码库在国外，对于我们大部分人来说，这不是一天两天能完成的任务。
+这是一个非常大的库，就算添加了`--depth 1`的参数，下载的源代码打成.tar.gz包后也超过了1G。由于代码库在国外，对于我们大部分人来说，这不是一天两天能完成的任务。
 
-    这几天访问国外网络非常不稳定，所以我只好在一个国外的vpn上下载完代码，然后打包传过来。gz包的大小为1.18G，还要传19个小时。。。
+这几天访问国外网络非常不稳定，所以我只好在一个国外的vpn上下载完代码，然后打包传过来。gz包的大小为1.18G，还要传19个小时。。。
 
-    ### 启用Plugin DevKit插件
+### 启用Plugin DevKit插件
 
-    Idea中默认自带了`Plugin DevKit`插件，但是没有开启。首先我们需要将它开启:
+Idea中默认自带了`Plugin DevKit`插件，但是没有开启。首先我们需要将它开启:
 
-    [![QQ20140406-16](/user_images/2503-1.png)](/user_images/2503-1.png)
+[![QQ20140406-16](/user_images/2503-1.png)](/user_images/2503-1.png)
 
-    然后激动人心的时刻就要开始了！
+然后激动人心的时刻就要开始了！
 
-    ## 创建项目
+## 创建项目
 
-    打开Idea，创建一个新项目，记得要选左右要选"Intellij Plugin Platform"类型：
+打开Idea，创建一个新项目，记得要选左右要选"Intellij Plugin Platform"类型：
 
-    ![QQ20140406-4](/user_images/2503-2.png)
+![QQ20140406-4](/user_images/2503-2.png)
 
-    然后输入项目名，我选的是`PubEditor`:
+然后输入项目名，我选的是`PubEditor`:
 
-    ![QQ20140406-5](/user_images/2503-3.png)
+![QQ20140406-5](/user_images/2503-3.png)
 
-    创建完成后，就自动打开项目，注意在`META-INF`下有一个`plugin.xml`文件：
+创建完成后，就自动打开项目，注意在`META-INF`下有一个`plugin.xml`文件：
 
-    ![QQ20140406-6](/user_images/2503-4.png)
+![QQ20140406-6](/user_images/2503-4.png)
 
-    这个plugin.xml文件是一个重要的配置文件，用于向IDEA平台注册我们的提供的功能。如果你开发过eclipse插件，会知道那边也有一个类似的文件。
+这个plugin.xml文件是一个重要的配置文件，用于向IDEA平台注册我们的提供的功能。如果你开发过eclipse插件，会知道那边也有一个类似的文件。
 
-    ## 添加Action
+## 添加Action
 
-    我打算实现一个功能：在菜单最后添加一项"Pub Editor"，里面有一个"Hello world"的子菜单。当点击它以后，会提示一个对话框，让我们输入自己的名字，然后弹出欢迎的信息。
+我打算实现一个功能：在菜单最后添加一项"Pub Editor"，里面有一个"Hello world"的子菜单。当点击它以后，会提示一个对话框，让我们输入自己的名字，然后弹出欢迎的信息。
 
-    首先我们需要实现一个`AnAction`的子类，用于实现触发之后的功能：
+首先我们需要实现一个`AnAction`的子类，用于实现触发之后的功能：
 
-    package com.thoughtworks.pli.pub_editor;
+```java
+package com.thoughtworks.pli.pub_editor;
 
-    import com.intellij.openapi.actionSystem.AnAction;
-    import com.intellij.openapi.actionSystem.AnActionEvent;
-    import com.intellij.openapi.actionSystem.PlatformDataKeys;
-    import com.intellij.openapi.project.Project;
-    import com.intellij.openapi.ui.Messages;
+import com.intellij.openapi.actionSystem.AnAction;
+import com.intellij.openapi.actionSystem.AnActionEvent;
+import com.intellij.openapi.actionSystem.PlatformDataKeys;
+import com.intellij.openapi.project.Project;
+import com.intellij.openapi.ui.Messages;
 
-    public class HelloWorldAction extends AnAction {
+public class HelloWorldAction extends AnAction {
 
-        @Override
-        public void actionPerformed(AnActionEvent event) {
-            Project project = event.getData(PlatformDataKeys.PROJECT);
-            String userName = askForName(project);
-            sayHello(project, userName);
-        }
-
-        private String askForName(Project project) {
-            return Messages.showInputDialog(project,
-                    "What is your name?", "Input Your Name",
-                    Messages.getQuestionIcon());
-        }
-
-        private void sayHello(Project project, String userName) {
-            Messages.showMessageDialog(project,
-                    String.format("Hello, %s!\n Welcome to PubEditor.", userName), "Information",
-                    Messages.getInformationIcon());
-        }
+    @Override
+    public void actionPerformed(AnActionEvent event) {
+        Project project = event.getData(PlatformDataKeys.PROJECT);
+        String userName = askForName(project);
+        sayHello(project, userName);
     }
-    
 
-    可以看到，它实现了父类`AnAction`中的`actionPerformed`方法，提供了自己的逻辑。一个是弹出一个`inputDialog`让用户输入自己的名字，另一个是弹出一个`messageDialog`显示欢迎信息。
+    private String askForName(Project project) {
+        return Messages.showInputDialog(project,
+                "What is your name?", "Input Your Name",
+                Messages.getQuestionIcon());
+    }
 
-    ## 在plugin.xml中注册
+    private void sayHello(Project project, String userName) {
+        Messages.showMessageDialog(project,
+                String.format("Hello, %s!\n Welcome to PubEditor.", userName), "Information",
+                Messages.getInformationIcon());
+    }
+}
+```
 
-    只提供上面的类还不够，还需要在plugin.xml中添加一些注册信息。
 
-    打开plugin.xml，找到其中的`<actions>`一节，添加：
+可以看到，它实现了父类`AnAction`中的`actionPerformed`方法，提供了自己的逻辑。一个是弹出一个`inputDialog`让用户输入自己的名字，另一个是弹出一个`messageDialog`显示欢迎信息。
 
-    <group id="PubEditorPlugin.Menu" text="_Pub Editor" description="Pub Editor Menu">
-        <add-to-group group-id="MainMenu" anchor="last"/>
-        <action id="PubEditorPlugin.HelloWorldAction" 
-                class="com.thoughtworks.pli.pub_editor.HelloWorldAction"
-                text="_Hello world" description="Hello world from PubEditor"/>
-    </group>
-    
+## 在plugin.xml中注册
 
-    这是一段信息量很大的配置代码。外面的`group`指定了菜单组的位置`last`，显示的内容为`Pub Editor`，它前面的`_`表示可用快捷键`p`访问。里面的`action`指定了菜单项显示的内容为`Hello world`，对应的类为我们刚创建的`HelloWorldAction`类。
+只提供上面的类还不够，还需要在plugin.xml中添加一些注册信息。
 
-    ## 代码部分结束
+打开plugin.xml，找到其中的`<actions>`一节，添加：
 
-    代码部分就结束了，东西不多，过程还是很轻松的。我的项目文件是这样的：
+```xml
+<group id="PubEditorPlugin.Menu" text="_Pub Editor" description="Pub Editor Menu">
+    <add-to-group group-id="MainMenu" anchor="last"/>
+    <action id="PubEditorPlugin.HelloWorldAction" 
+            class="com.thoughtworks.pli.pub_editor.HelloWorldAction"
+            text="_Hello world" description="Hello world from PubEditor"/>
+</group>
+```
 
-    ![QQ20140406-17](/user_images/2503-5.png)
 
-    下面是运行效果了。
+这是一段信息量很大的配置代码。外面的`group`指定了菜单组的位置`last`，显示的内容为`Pub Editor`，它前面的`_`表示可用快捷键`p`访问。里面的`action`指定了菜单项显示的内容为`Hello world`，对应的类为我们刚创建的`HelloWorldAction`类。
 
-    ## 运行插件
+## 代码部分结束
 
-    不能直接运行，而要先建立一个配置。打开菜单"Run"->"Configuration"，点击左上角的"+"新建，选择"Plugin"，如图：
+代码部分就结束了，东西不多，过程还是很轻松的。我的项目文件是这样的：
 
-    ![QQ20140406-18](/user_images/2503-6.png)
+![QQ20140406-17](/user_images/2503-5.png)
 
-    基本上不用改什么，我就只把名字设成了"Pub Editor"，然后点击"OK".
+下面是运行效果了。
 
-    这时右上角运行栏处会变成这样：
+## 运行插件
 
-    ![QQ20140406-19](/user_images/2503-7.png)
+不能直接运行，而要先建立一个配置。打开菜单"Run"->"Configuration"，点击左上角的"+"新建，选择"Plugin"，如图：
 
-    点击绿色小三角即可。
+![QQ20140406-18](/user_images/2503-6.png)
 
-    它会打开一个新的IDEA。如果你运行的是企业版，可能会提示你输入license等信息，可以选择“继续试用”，进入开始界面：
+基本上不用改什么，我就只把名字设成了"Pub Editor"，然后点击"OK".
 
-    ![QQ20140406-20](/user_images/2503-8.png)
+这时右上角运行栏处会变成这样：
 
-    由于我们添加的菜单只能在进入项目后才能看到，所以我们需要随便创建一个项目。我建的是"TestPlugin"，进去后可以看到上面的菜单最右边多了一项"Pub Editor"，以及"Hello world":
+![QQ20140406-19](/user_images/2503-7.png)
 
-    ![QQ20140406-22](/user_images/2503-9.png)
+点击绿色小三角即可。
 
-    点击"Hello world"后，会弹出对话框，提示我们输入名称：
+它会打开一个新的IDEA。如果你运行的是企业版，可能会提示你输入license等信息，可以选择“继续试用”，进入开始界面：
 
-    ![QQ20140406-23](/user_images/2503-10.png)
+![QQ20140406-20](/user_images/2503-8.png)
 
-    输入名字后，会弹出一个新的信息框：
+由于我们添加的菜单只能在进入项目后才能看到，所以我们需要随便创建一个项目。我建的是"TestPlugin"，进去后可以看到上面的菜单最右边多了一项"Pub Editor"，以及"Hello world":
 
-    ![QQ20140406-24](/user_images/2503-11.png)
+![QQ20140406-22](/user_images/2503-9.png)
 
-    ## 源代码
+点击"Hello world"后，会弹出对话框，提示我们输入名称：
 
-    作为Hello world，本文到此就结束了。源代码已经上传至:
+![QQ20140406-23](/user_images/2503-10.png)
 
-    http://github.com/freewind/PubEditor
+输入名字后，会弹出一个新的信息框：
+
+![QQ20140406-24](/user_images/2503-11.png)
+
+## 源代码
+
+作为Hello world，本文到此就结束了。源代码已经上传至:
+
+http://github.com/freewind/PubEditor
 
 本文所对应的tag为"1_hello_world"，你可以checkout它运行一下看结果。
