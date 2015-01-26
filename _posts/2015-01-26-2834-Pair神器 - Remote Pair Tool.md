@@ -252,7 +252,7 @@ title: Pair神器 - Remote Pair Tool
 
 ---
 
-# A & Q
+# Q & A
 
 
 
