@@ -45,7 +45,7 @@ println("### end in main thread: " + Thread.currentThread().getName)
 ### enter future in pool: ForkJoinPool-1-worker-5
 ```
 
-可以看到`### end`在`### enter future`前打印出来（也许不是绝对，但也能说明问题），说明`Future`中的那段耗时代码并不会阻塞当前线程。
+可以看到`### end`在`### enter future`前打印出来（[不是绝对，也有可能在后面，但也能说明问题](http://stackoverflow.com/questions/29982452/does-the-code-inside-a-future-have-chances-to-run-before-the-code-in-main-thread/29982526)），说明`Future`中的那段耗时代码并不会阻塞当前线程。
 
 通过这样的方式，我们就可以方便地在多个线程中同时执行操作，互不干扰，也不会阻塞当前线程，提高了执行效率。
 
@@ -92,6 +92,18 @@ pageFuture.flatMap ( page =>  parsePage(page) )
 ```
 
 可以看到，之前的嵌套回调变成了顺序回调，功能未变，但代码的可读性得到了极大提高。
+
+当然还可以使用`for`表达式，再次提高可读性：
+
+```scala
+val pageFuture = Future { getPageFromUrl(...) }
+for {
+    page <- pageFuture
+    tree <- parsePage(page)
+    images <- findImages(tree)
+} println("Found images: " + images)
+```
+
 
 Await.ready/result
 ------------------
@@ -169,7 +181,7 @@ if (await(f1)) {
 async/await
 -----------
 
-自从scala提供了宏的功能以后，我们就可以实现各种奇葩的功能，包括这里要介绍的`async/await`:https://github.com/scala/async
+自从scala提供了宏的功能以后，我们就可以实现各种奇葩的功能，包括这里要介绍的`async/await`:<https://github.com/scala/async>
 
 这个库实现了C#中引入的`async/await`关键字（类似的还有Javascript将在ES7中提供的`async/await`），让我们可以写出看起来非常简洁的同步形式的代码，但实际执行却是异步的。
 
@@ -198,14 +210,18 @@ async {
 
 看起来跟前面的`Await.result`的版本非常像，只是用`async`替换了`Future`，然后使用了它提供了`await`函数。
 
-但是神奇之处在于，这段代码中的`await`是不会阻塞当前线程的！这段代码在编译期，会被转换成异步形式，依然是非阻塞的。（实际代码是用状态机，但可以按前面`future.foreach`那种多重嵌套的代码来理解）
+但是神奇之处在于，这段代码中的`await`是不会阻塞当前线程的！这段代码在编译期，会被转换成异步形式，依然是非阻塞的。（实际代码是用状态机，见后面解释，但可以按前面`future.foreach`那种多重嵌套的代码来理解）
 
-使用这种方式，会有一些条件限制，详情可见其主页。但是对于多数情况，只要能使用就应该尽量使用，因为它可以大大提高代码的可读性。
+使用这种方式，会有一些条件限制，详情可见其主页。
+
+如果对一个future进行连续操作，或者用到了多个future但它们之间没什么关系时，尽量使用`flatMap/map`或者`for表达式`。但是对于同时操作多个有关系的future时，如果使用`async/await`可以大幅提高代码可读性的时候，可以考虑使用它们。
+
+(另外根据经验，使用宏实现的功能时，很容易出现诡异的问题，难以定位，难以调试)
 
 基本实现原理
 ----------
 
-在这份文档中，详细描述了它的实现原理：http://docs.scala-lang.org/sips/pending/async.html
+在这份文档中，详细描述了它的实现原理：<http://docs.scala-lang.org/sips/pending/async.html>
 
 文档在最后展示了下面这段代码： 
 

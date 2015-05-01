@@ -210,6 +210,14 @@ private object DefaultBlockContext extends BlockContext {
 
 但是，如果我们的任务是运行在一个实现了`BlockContext`的特殊线程中，那么这个`blocking`就会起作用。比如在Scala中的某处，就有一个用`ForkJoinPool`实现的`blocking`。
 
+ForkJoinPool
+------------
+
+这个东西也值得一看：
+
+1. <http://www.javabeat.net/simple-introduction-to-fork-join-framework-in-java-7/>
+2. <http://stackoverflow.com/questions/29988713/difference-between-forkjoinpool-and-normal-executionservice/29988883>
+
 
 
 
