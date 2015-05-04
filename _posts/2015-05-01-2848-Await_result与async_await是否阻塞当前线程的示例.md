@@ -210,13 +210,34 @@ private object DefaultBlockContext extends BlockContext {
 
 但是，如果我们的任务是运行在一个实现了`BlockContext`的特殊线程中，那么这个`blocking`就会起作用。比如在Scala中的某处，就有一个用`ForkJoinPool`实现的`blocking`。
 
-ForkJoinPool
-------------
+blocking
+--------
 
-这个东西也值得一看：
+据说在一个任务中，如果有一段很耗时的代码，最好放在`blocking`中，如：
+
+```scala
+blocking {
+  Thread.sleep(100000)
+}
+```
+
+开始不太明白为什么要这么做，后来发现，它其实是为了规避一个问题。
+
+考虑一下这种情况：开了一个线程池，里面有若干个线程，然后提交了一些任务，这些任务中有一些耗时代码。
+
+第一种情况：线程池中的线程个数是固定的。那么如果我们提交了多个含有耗时代码的任务，把所有的线程都占住了，后面提交的任务就会卡住，等待空闲线程。这样程序的运行效率就下来了。
+
+第二种情况：线程池中的线程个数是无限的，自动增长的。那么我们提交了多个含有耗时代码的任务后，就会占住一批线程，后面新提交的任务就会创建新线程，当线程太多的时候，程序效率也下来了。
+
+所以对于`blocking`，有一种实现是避开当前的线程池，而另开一个`ForkJoinPool`，专门处理它。这样原有线程池的线程就不会被阻塞，可以很快被其它任务使用。而在`ForkJoinPool`中，会另开线程来处理`blocking`中的代码。粗看起来，这跟“无限的线程池”似乎没什么区别，不同之处在于，`ForkJoinPool`通过特殊的机制，让线程间可以互相取出其它任务的子任务，从而可以利用较少的线程处理较多的任务，节省了线程的创建。
+
+参看：<http://stackoverflow.com/a/13099594/342235>
+
+另：关于ForkJoinPool的资料：
 
 1. <http://www.javabeat.net/simple-introduction-to-fork-join-framework-in-java-7/>
 2. <http://stackoverflow.com/questions/29988713/difference-between-forkjoinpool-and-normal-executionservice/29988883>
+
 
 
 
