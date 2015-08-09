@@ -17,9 +17,8 @@ title: liquidform：让你的query string也可以重构
 
 原代码：
 
-```
-
-   @Entity
+```java
+@Entity
    public class Person {
    private String firstName;
    private String surname;
@@ -27,18 +26,16 @@ title: liquidform：让你的query string也可以重构
    public String getSurname() { return surname; }
    // setters omitted
 }
+List people = em.createQuery("SELECT FROM Person p WHERE p.surname LIKE 'Smith%'") .getResultList();
 ```
-
-List people = em.createQuery( &#8220;SELECT FROM Person p WHERE p.surname LIKE 'Smith%'") .getResultList();
 
 变为：
 
-```
+```java
 Person p = LiquidForm.use(Person.class, "p");
    List people = em.createQuery(
-   select(p).from(Person.class).as(p).where(like(p.getSurname(), "Smith%")).toString())
-   .getResultList();
-
+       select(p).from(Person.class).as(p).where(like(p.getSurname(), "Smith%")).toString()
+   ).getResultList();
 ```
 
 魔术就在，通过LiquidForm#use方法，给pojo包上了一层。当使用那一连串函数模拟sql语句的时候，表面上调用的是pojo的函数，实际上在内部记录了其它的信息。这样，我们既可以利用到IDE的重构功能，又能保证得到正确的sql。
